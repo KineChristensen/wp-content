@@ -1,0 +1,90 @@
+// main: ../style.less
+
+/*
+  Components theme styles (breadcrubs, pagination, etc)
+*/
+
+/*
+- Breadcrumbs
+-------------------------------------------------- */
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: @font-size-small;
+}
+
+/*
+- Pagination
+-------------------------------------------------- */
+.bootstrap-pagination {
+  border-top: 1px dashed @hr-border;
+}
+
+/*
+- Carousel
+-------------------------------------------------- */
+.carousel {
+  margin-bottom: @line-height-computed * 2;
+
+  .carousel-inner .item {
+    &:after {
+      content: "";
+      height: @line-height-computed*5;
+      width: 100%;
+      #gradient > .vertical(fade(@gray-base,0), fade(@gray-base,75%));
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    img {
+      width: 100vw;
+    }
+  }
+
+  .carousel-caption {
+
+    padding-bottom: @line-height-computed/2;
+    h1,h2,h3 {
+      .transition(all .2s ease);
+      color: @body-bg;
+      font-size: @font-size-h1;
+    }
+
+    @media (max-width: @screen-sm-min) {
+      text-shadow: 0 1px 2px darken(@brand-primary, 15%);
+      background: @brand-primary;
+      position: relative;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-bottom: @line-height-computed*2;
+      h1,h2,h3 {
+        margin: 0;
+        font-size: @font-size-h3;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    z-index: 8;
+    bottom: 5px;
+  }
+
+  a:hover {
+    .carousel-caption {
+      h1,h2,h3 {
+        text-shadow: 0 0 15px fade(@body-bg, 75%);
+      }
+    }
+  }
+
+  .carousel-control {
+    background: none!important;
+    .transition(all .2s ease);
+  }
+}

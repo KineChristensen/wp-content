@@ -1,0 +1,288 @@
+// main: ../style.less
+
+/*
+  Layout theme styles
+*/
+
+/*
+- General
+-------------------------------------------------- */
+body {
+    padding-top: @navbar-height;
+    &.has-slider {
+
+        @media (min-width: @grid-float-breakpoint) {
+            padding-top: 0;
+        }
+
+    }
+}
+
+body.custom-background, #site-content {
+    background-color:#fff;
+    box-shadow:none !important;
+}
+
+/*
+- Site Header
+-------------------------------------------------- */
+#site-header {
+    position: relative;
+    z-index: 9;
+
+    .site-title{
+        height:60px;
+        line-height:60px;
+        font-size:25px;
+    }
+
+    // Primary menu
+    #nav-primary {
+        background: fade(@body-bg, 90%);
+        border-top: none;
+        border-color: fade(@gray-base, 10%);
+        margin: 0;
+
+        // logo with text & image
+        .navbar-brand {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .navbar-form {
+            border-top: none;
+            padding-top: 7px;
+            @media (min-width: @grid-float-breakpoint) {
+                padding-top: 0;
+            }
+        }
+
+        .navbar-header {
+
+            .navbar-toggle {
+                background: @body-bg;
+
+                .glyphicon {
+                    font-size: @font-size-large;
+                }
+
+                &.navbar-toggle-expanded {
+                    padding: 7px 8px;
+                    .icon-bar {
+                        .hidden;
+                    }
+                    .glyphicon {
+                        .show;
+                    }
+                }
+
+                .icon-bar {
+                    &.has-cart-items {
+                        background: @brand-primary;
+                    }
+                }
+            }
+        }
+
+        // mobile
+        &.navbar-fixed-top .navbar-collapse,
+        &.navbar-fixed-bottom .navbar-collapse {
+            height: 100vh;
+            max-height: none;
+            padding-bottom: 60px;
+            @media (min-width: @grid-float-breakpoint) {
+                padding-bottom: 0 !important;
+            }
+        }
+
+        // menu
+        .dropdown-menu .divider {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .user_logged_in {
+            a {
+                color: @brand-primary;
+            }
+            &.active a {
+                color: @body-bg;
+            }
+        }
+
+        .menu-item-cart {
+            .badge {
+                margin-top: -4px;
+                font-size: 12px;
+                background: @brand-primary;
+                border-radius: 100%;
+                width: 19px;
+                height: 19px;
+                padding: 0;
+                line-height: 19px;
+            }
+            &.active .badge {
+                background: darken(@brand-primary, 20%);
+            }
+        }
+    }
+
+    &.navbar-toggle-expanded {
+        #nav-primary {
+            background: @body-bg;
+        }
+    }
+
+}
+
+/*
+- Site Content
+-------------------------------------------------- */
+#site-content {
+    min-height: 600px;
+    /*background: @body-bg;*/
+    padding-bottom: @line-height-computed;
+
+    .jumbotron {
+        padding-top: 0;
+        padding-bottom: 0px;
+    }
+
+    .site-branding-text{
+        padding-bottom:30px;
+    }
+
+    .entry-header {
+        background: @gray-lighter ~"url('@{img-path}patterns/symphony.png')" repeat center;
+        padding-top: @line-height-computed * 2;
+        padding-bottom: @line-height-computed * 2;
+        margin-bottom: @line-height-computed * 2;
+        h1, h2, h3 {
+            margin: 0;
+        }
+        .lead {
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+    }
+
+    .site-narrow {
+        max-width: @container-sm;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*
+- Site Footer
+-------------------------------------------------- */
+#site-footer {
+    #gradient > .vertical(lighten(@brand-secondary, 5%), lighten(@brand-secondary, 0%));
+    color: fade(@body-bg, 75%);
+    padding-top: @line-height-computed * 2;
+    padding-bottom: @line-height-computed/2;
+    width: 100vw;
+
+    hr {
+        border-top-color: lighten(@brand-secondary, 20%);
+        margin-top: @line-height-computed;
+        margin-bottom: @line-height-computed;
+    }
+
+    .widget {
+        .widget-title {
+            .h4;
+            margin-top: 0;
+            color: @body-bg;
+            background: lighten(@brand-secondary, 15%);
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            @media (min-width: @grid-float-breakpoint) {
+                background: none;
+                padding: 0;
+                cursor: auto;
+            }
+        }
+
+        .widget-content {
+            display: none;
+            overflow: hidden;
+            margin-bottom: @line-height-computed/2;
+            @media (min-width: @grid-float-breakpoint) {
+                display: block;
+            }
+        }
+
+        &.widget-collapsed {
+            .widget-content {
+                display: block;
+            }
+        }
+
+    }
+
+    #site-copyright {
+        font-size: @font-size-small;
+        margin: 0;
+        padding-right: 5px;
+        font-style: italic;
+    }
+
+    .footer-menu {
+        font-size: @font-size-small;
+        margin: 0;
+        padding: 0;
+        font-style: italic;
+        float: right;
+    }
+}
+
+/*
+- Widgets
+-------------------------------------------------- */
+.widget {
+
+    .widget-title {
+
+    }
+
+}
+
+// Customizes front page button
+.site-parallax.parallax {
+    text-align: center;
+    margin-bottom: 90px;
+    margin-top: 35px;
+}
+
+
+.jumbotron h1, .jumbotron .h1{
+    &:extend(h1);
+    font-size:40px;
+}
+
+.site-name, .site-description, .jumbotron h1{
+    color: @headings-color
+}
+
+.site-branding-text{
+    background:#f3f3f3;
+    border-bottom:1px solid #ddd;
+    padding:10px 0;
+    text-align:center;
+    h2{
+        margin:0;
+        display:inline-block;
+        vertical-align: middle;
+        font-size:17px;
+        font-weight:bold;
+    }
+    .site-description{
+        display:inline-block;
+        vertical-align: middle;
+        font-size:15px;
+        font-weight:normal;
+    }
+}
+

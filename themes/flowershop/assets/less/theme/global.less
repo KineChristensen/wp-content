@@ -1,0 +1,123 @@
+// main: ../style.less
+
+/*
+  Global theme styles (General HTMl styles for various parts of our Theme)
+*/
+
+// -  Required for form fields
+.required,
+abbr.required {
+  color: @brand-danger;
+  border: none;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: bold;
+  font-size: @font-size-small;
+}
+
+// - HR rules
+hr {
+  margin-top: @line-height-computed;
+  margin-bottom: @line-height-computed;
+  border-top-style: dashed;
+  &.site-sep {
+    border-top: none;
+    width: 100%;
+    margin-top: @line-height-computed;
+    margin-bottom: @line-height-computed;
+    background: transparent ~"url('@{img-path}site-sep.png')" no-repeat center;
+    height: 90px;
+  }
+}
+
+// headings
+h1,h2,h3,.h1,.h2,.h3 {
+  -webkit-font-smoothing: antialiased;
+}
+
+h4,h5,h6,.h4,.h5,.h6 {
+  font-weight: normal;
+}
+
+// headings with border
+.heading-with-border {
+  position: relative;
+  border:none;
+  margin-bottom: @line-height-computed;
+  //margin-top: @line-height-computed/2;
+  b {
+    display: inline-block;
+    padding-bottom: @line-height-computed/3;
+    font-weight: 200;
+    border-bottom: 2px solid @brand-primary;
+  }
+}
+
+// Lead
+.lead {
+  font-size: @font-size-large;
+  line-height: @line-height-base;
+  color: @gray-light;
+}
+
+h1 + .lead,
+h2 + .lead,
+h3 + .lead {
+  margin-top: -5px;
+}
+
+
+/*
+- Buttons
+-------------------------------------------------- */
+.btn-default {
+}
+
+
+
+/*
+- Tables
+-------------------------------------------------- */
+
+.table {
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        vertical-align: middle;;
+        border-top-style: dashed;
+      }
+    }
+  }
+  // Bottom align for column headings
+  > thead > tr > th {
+    border-bottom-width: 1px;
+  }
+
+}
+
+/*
+- Alerts
+-------------------------------------------------- */
+.alert {
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  &.alert-success {
+    a {
+      color: @alert-success-text;
+    }
+  }
+
+  &.alert-info {
+    a {
+      color: @alert-info-text;
+    }
+  }
+}

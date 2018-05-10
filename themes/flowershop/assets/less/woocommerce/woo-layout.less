@@ -1,0 +1,628 @@
+// main: ../style.less
+
+/*
+  Layout styles for WooCommerce
+*/
+
+/*
+- General
+-------------------------------------------------- */
+
+// Quanity field
+.quantity {
+    .form-control {
+        max-width: 90px;
+        display: inline-block;
+    }
+    display:inline-block;
+    vertical-align: top;
+}
+
+// price
+.price {
+    display: block;
+    font-weight: normal;
+    margin-bottom: @line-height-computed / 2;
+    font-size: ceil(@font-size-large * 1.1);
+    color: @brand-primary;
+    del {
+        display: block;
+        font-size: @font-size-large;
+        .text-muted;
+    }
+}
+
+// On sale badge
+.onsale {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+// Add to Cart button
+.ajax_add_to_cart {
+
+    &.loading {
+        opacity: .5;
+        cursor: wait;
+    }
+    &.added {
+        .glyphicon-shopping-cart:before {
+            content: "\e013";
+        }
+    }
+}
+
+.add_to_cart_button.product_type_variable,
+.btn.product_type_grouped {
+    .glyphicon {
+        display: none;
+    }
+}
+
+.added_to_cart {
+    .btn;
+    .btn-info;
+}
+
+.product_type_variable {
+    .glyphicon {
+        display: none;
+    }
+}
+
+// Notices
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+    .button {
+        .pull-right;
+    }
+}
+
+/*
+- Archive (product list)
+-------------------------------------------------- */
+
+// Ordering
+.woocommerce-ordering {
+
+    @media (min-width: @screen-sm-min) {
+        .pull-right;
+    }
+
+    .orderby {
+    }
+}
+
+// Filters
+.filter-area {
+    @media (min-width: @screen-sm-min) {
+        .pull-left;
+    }
+}
+
+.btn-archive-filters {
+    @media (max-width: @screen-sm-min) {
+        .btn-block;
+        margin-bottom: @line-height-computed/2;
+    }
+}
+
+.btn-archive-clear-filters {
+    @media (max-width: @screen-sm-min) {
+        .btn-block;
+        margin-bottom: @line-height-computed/2;
+    }
+}
+
+#archive-filters {
+    margin-top: @line-height-computed/2;
+
+    .widget {
+        margin-bottom: @line-height-computed;
+        .widget-title {
+            .h4;
+        }
+    }
+
+    .widget_layered_nav_filters {
+        .widget-title {
+        }
+    }
+}
+
+// begin product list
+.products {
+    margin-top: @line-height-computed;
+    margin-bottom: @line-height-computed / 2;
+
+    .product {
+        .text-center;
+        margin-bottom: @line-height-computed * 2;
+
+        @media (max-width: @grid-float-breakpoint) {
+            max-width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img.wp-post-image {
+            .img-responsive;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            .transition(all .2s ease);
+        }
+        a:hover img {
+            opacity: .75;
+        }
+
+        h3 {
+            .h4;
+            font-weight: normal;
+        }
+
+        .woocommerce-LoopProduct-link {
+            text-decoration: none;
+            display: block;
+            position: relative;
+        }
+
+        .star-rating {
+            display: block;
+            margin: -5px auto 10px;
+        }
+
+    }
+
+}
+
+.products-responsive .products .row {
+
+    @media (max-width: @grid-float-breakpoint) {
+        white-space: nowrap;
+        overflow-x: scroll;
+
+
+        &::-webkit-scrollbar {
+            -webkit-appearance: none;
+        }
+
+        &::-webkit-scrollbar:vertical {
+            width: 20px;
+        }
+
+        &::-webkit-scrollbar:horizontal {
+            height: 20px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: fade(@gray-base, 20%);
+            border-radius: 10px;
+            border: 7px solid @body-bg;
+        }
+
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color: transparent;
+        }
+
+        .product {
+            display: inline-block;
+        }
+    }
+}
+
+/*
+- Single (Product item)
+-------------------------------------------------- */
+.product {
+
+    .onsale {
+        right: 15px;
+    }
+
+    .images {
+        position: relative;
+        margin-bottom: @line-height-computed;
+
+        img.wp-post-image,
+        > img {
+            .img-responsive;
+            margin-bottom: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .thumbnails {
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin: 0 -5px 15px;
+        .thumbnail {
+            //display: inline-block;
+            margin: 5px;
+            img {
+                max-width: 90px;
+            }
+        }
+    }
+
+    .summary {
+        margin-bottom: @line-height-computed;
+
+        .lead {
+        }
+
+        .quantity {
+        }
+
+        .star-rating {
+            margin: 0 0 15px;
+        }
+
+        .woocommerce-review-link {
+            color: @gray-light;
+            font-size: @font-size-small;
+            font-style: italic;
+            //vertical-align: sub;
+        }
+
+        .stock {
+            font-size: @font-size-large;
+
+            &.in-stock {
+                color: @brand-info;
+            }
+            &.out-of-stock {
+                color: @brand-danger;
+            }
+        }
+
+    }
+
+    .additional-information {
+        margin-top: @line-height-computed;
+        margin-bottom: @line-height-computed;
+
+        .shop_attributes {
+            dd {
+                margin-bottom: @line-height-computed/2;
+            }
+        }
+    }
+
+    .product_meta {
+        margin-bottom: @line-height-computed;
+        display: block;
+        > span {
+            display: block;
+            margin-right: 15px;
+        }
+    }
+
+    .woo-social-buttons {
+        h3 {
+            .h4;
+        }
+    }
+
+    // gropued products
+    .grouped_products {
+        .quantity .form-control {
+            min-width: 70px;
+        }
+        label {
+            margin: 0;
+        }
+        .btn-cart {
+            margin-top: 20px;
+        }
+    }
+
+    // Variations
+    .variations {
+        text-align: left;
+        margin-bottom: 20px;
+        width: 100%;
+        * {
+            vertical-align: middle;
+        }
+        .label {
+            color: #333;
+        }
+        .value {
+            select {
+                float: left;
+            }
+        }
+        .reset_variations {
+            margin-left: 15px;
+            clear: right;
+        }
+
+        .form-group td{
+            padding-bottom:10px;
+        }
+    }
+
+    // Attributes
+    .shop_attributes {
+        th {
+            padding-right: 15px;
+        }
+        p {
+            margin: 0;
+        }
+    }
+
+
+}
+
+
+/*
+- Categories list
+-------------------------------------------------- */
+.product-category {
+
+    a {
+        img {
+            .img-thumbnail;
+            .img-circle;
+            .img-responsive;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            .transition(all .2s ease);
+        }
+    }
+
+    h3 {
+        font-size: @font-size-base;
+        padding-left: 5px;
+        mark.count {
+            background: none;
+            color: @gray-light;
+            font-size: @font-size-base;
+        }
+    }
+
+    a:hover {
+        text-decoration: none;
+        img {
+            opacity: .75;
+            .rotate(5deg);
+        }
+    }
+}
+
+/*
+- Cart
+-------------------------------------------------- */
+table.cart {
+
+    // thumbnails
+    .product-thumbnail {
+        .text-center;
+        a {
+            display: block;
+            max-width: 60px;
+            min-width: 45px;
+            margin: 0;
+            img {
+                .img-responsive;
+            }
+        }
+    }
+
+    // remove product
+    .product-remove {
+        .text-center;
+        a {
+            line-height: normal;
+            .text-danger;
+            font-size: @font-size-large;
+        }
+    }
+
+    // quanity on cart page
+    .quantity {
+        .form-control {
+            .input-sm;
+            max-width: 75px;
+        }
+    }
+
+    // coupon and update-table
+    td.actions {
+        @media (min-width: @screen-xs-max) {
+            padding: @line-height-computed/2 0;
+        }
+
+        .coupon {
+            .form-control {
+                max-width: 170px;
+            }
+        }
+    }
+}
+
+.cart_totals {
+    margin-bottom: @line-height-computed;
+
+    .cart-discount {
+        a.woocommerce-remove-coupon {
+            .text-danger;
+        }
+    }
+}
+
+/*
+- Checkout
+-------------------------------------------------- */
+.woocommerce-checkout {
+
+    .woocommerce-billing-fields {
+        .create-account {
+
+        }
+    }
+
+    .woocommerce-shipping-fields {
+        .checkbox {
+            margin-top: 0;
+            label {
+                margin-top: 0;
+            }
+        }
+    }
+
+    #ship-to-different-address {
+
+        label {
+        }
+        .input-checkbox {
+        }
+    }
+
+    #order_comments_field {
+        textarea {
+            height: 9em;
+        }
+    }
+    .woocommerce-checkout-payment {
+
+        ul {
+            list-style: none;
+            margin-bottom: @line-height-computed/2;
+            li {
+                label {
+                    cursor: pointer;
+                    margin-left: 5px;
+                    vertical-align: text-top;
+                }
+                img {
+                    max-height: 60px;
+                }
+                .payment_box {
+                    color: @gray-light;
+                    padding-left: 25px;
+                    font-size: @font-size-small;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .wc-terms-and-conditions {
+            margin-top: @line-height-computed/2;
+            margin-bottom: @line-height-computed/2;
+            label {
+                font-size: @font-size-small;
+            }
+            input {
+                font-size: @font-size-base;
+            }
+        }
+    }
+
+}
+
+/*
+- My account
+-------------------------------------------------- */
+// navigation
+.woocommerce-MyAccount-navigation {
+    margin-bottom: @line-height-computed;
+}
+
+.woocommerce-table--order-downloads{
+    width:100%;
+}
+
+/*
+- General
+-------------------------------------------------- */
+// Labels
+.onsale{
+    &:extend(.label-danger);
+    &:extend(.label);
+}
+
+// Wells
+.woocommerce .summary form.cart{
+    &:extend(.well);
+}
+
+// Form controls
+.input-text.qty.text{
+    &:extend(.form-control);
+    &:extend(.quantity .form-control);
+    //border:1px solid red;
+}
+
+// Titles
+.fs-title-1{
+    &:extend(.heading-with-border);
+    &:extend(.heading-with-border b);
+    text-align:center;
+}
+.cross-sells, .up-sells, .upsells{
+    text-align:center;
+    > h2{
+        &:extend(.fs-title-1);
+    }
+}
+
+// Cross sells
+.cross-sells{
+    text-align:center;
+}
+
+// Add to cart button
+.fs-add-to-cart-btn{
+    &:extend(.btn all);
+    &:extend(.btn-primary all);
+    &:before{
+        &:extend(.glyphicon);
+        &:extend(.glyphicon-shopping-cart:before);
+    }
+}
+
+// Comment form
+.comment-form{
+    #submit{
+        &:extend(.btn all);
+        &:extend(.btn-primary all);
+    }
+    #comment{
+        width:100%;
+    }
+}
+
+// Gropued products
+.product-type-grouped {
+    form.cart table{
+        width:100%;
+        td{
+            vertical-align: baseline !important;
+        }
+        .label{
+            display:table-cell;
+        }
+
+        td.price{
+            display:table-cell;
+            text-align:right;
+        }
+
+    }
+
+    .single_add_to_cart_button{
+        margin-top:20px;
+        &:extend(.fs-add-to-cart-btn all);
+    }
+}
