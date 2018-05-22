@@ -1,0 +1,35 @@
+.btn,
+.btn.btn-primary,
+.button,
+button,
+input[type="submit"] {
+  @include default-button();
+  box-shadow: none !important;
+}
+
+.btn:hover,
+.btn.btn-primary:hover,
+.button:hover,
+button:hover,
+input[type="submit"]:hover {
+  @include button-hover();
+}
+
+/* Pricing section */
+.hestia-pricing {
+  .btn,
+  .button,
+  button {
+    border-radius: 30px;
+  }
+}
+
+/* Contact form */
+.hestia-contact {
+  .btn,
+  .button,
+  button,
+  input[type="submit"] {
+    border-radius: 30px;
+  }
+}

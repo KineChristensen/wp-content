@@ -1,0 +1,85 @@
+/* === General === */
+
+/* Blog and Shop sidebar, widget titles */
+aside.blog-sidebar .widget > h5,
+aside.shop-sidebar .widget > h5 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+/* Style search button */
+.blog-sidebar .widget.widget_search .search-form .search-submit {
+  @include no-box-shadow();
+  @include border-radius(50%);
+
+  &:hover {
+    @include button-hover();
+  }
+}
+.shop-sidebar .widget .woocommerce-product-search button {
+  @include no-box-shadow();
+  @include border-radius(50%);
+
+  &:hover {
+    @include button-hover();
+  }
+}
+
+/* === Shop Sidebar === */
+.shop-sidebar-wrapper aside {
+  @include no-box-shadow();
+
+  /* Remove raising effect from images on hover */
+  .widget li:hover a img {
+    transform: none;
+  }
+
+  /* Remove box-shadow from images */
+  .widget li a img {
+    @include no-box-shadow();
+  }
+  .widget li:hover a img {
+    @include no-box-shadow();
+  }
+}
+
+/* === Footer widgets === */
+/* Titles */
+.footer .widget > h5 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+/* Links */
+.footer .widget li a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+}
+/* Product categories links */
+.footer div[id^=woocommerce_product_categories] ul li > a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+}
+/* Footer menu */
+.footer-big .footer-menu li a {
+  font-weight: 400;
+}
+/* Search button */
+.footer .widget.widget_search .search-submit {
+  @include no-box-shadow();
+  @include border-radius(50%);
+
+  &:hover {
+    @include button-hover();
+  }
+}
+.footer .widget.widget_product_search button {
+  @include border-radius(50%);
+}
+/* WooCommerce widgets images */
+.footer .widget.woocommerce li:hover a img {
+  transform: none;
+}

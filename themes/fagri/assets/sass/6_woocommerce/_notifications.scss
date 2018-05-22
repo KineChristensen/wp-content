@@ -1,0 +1,83 @@
+/* Notification style */
+.woocommerce-page .woocommerce-message,
+.woocommerce-page .woocommerce-success,
+.woocommerce-page .woocommerce-error,
+.woocommerce-page .woocommerce-info,
+.woocommerce-page .woocommerce-warning {
+  @include no-font-smooth();
+  @include border-radius(4px);
+  color: #ffffff;
+
+  /* Buttons within the notifications */
+  button,
+  .btn,
+  .button {
+    color: #ffffff;
+    background-color: transparent;
+  }
+  button:hover,
+  .btn:hover,
+  .button:hover {
+    color: #ffffff;
+    background-color: transparent;
+    box-shadow: none !important;
+  }
+  a {
+    color: #ffffff !important;
+  }
+}
+.woocommerce-page .woocommerce-message::before,
+.woocommerce-page .woocommerce-success::before,
+.woocommerce-page .woocommerce-error::before,
+.woocommerce-page .woocommerce-info::before,
+.woocommerce-page .woocommerce-warning::before {
+  color: #ffffff;
+}
+
+/* Notification background color based on notification type */
+.woocommerce-page .woocommerce-message,
+.woocommerce-page .woocommerce-success {
+  background-color: $success-notification;
+}
+.woocommerce-page .woocommerce-error {
+  background-color: $error-notification;
+}
+.woocommerce-page .woocommerce-info {
+  background-color: $info-notification;
+}
+.woocommerce-page .woocommerce-warning {
+  background-color: $warning-notification;
+}
+
+/* Product Page */
+.woocommerce.single-product .woocommerce-error,
+.woocommerce.single-product .woocommerce-message {
+  float: right;
+  max-width: 50%;
+
+  a, a:hover {
+    color: inherit;
+  }
+}
+@media (max-width: 1199px) {
+  .woocommerce.single-product .woocommerce-error,
+  .woocommerce.single-product .woocommerce-message {
+    max-width: 45%;
+    margin-right: 28px;
+  }
+}
+@media (max-width: 992px) {
+  .woocommerce.single-product .woocommerce-error,
+  .woocommerce.single-product .woocommerce-message {
+    max-width: 40%;
+    margin-right: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .woocommerce.single-product .woocommerce-error,
+  .woocommerce.single-product .woocommerce-message {
+    float: none;
+    max-width: 1000%;
+    margin-right: 0;
+  }
+}

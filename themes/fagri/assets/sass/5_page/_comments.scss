@@ -1,0 +1,192 @@
+.section#comments {
+
+  .hestia-title {
+    color: #2c2c2c;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+    padding: 30px 0 0;
+    margin: 0 0 30px;
+  }
+
+  .comment {
+    .pull-left {
+
+      padding: 10px;
+
+      &:hover {
+        opacity: initial;
+      }
+
+      .comment-author.avatar {
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+
+        img {
+          filter: grayscale(100%);
+          @include no-box-shadow();
+        }
+      }
+    }
+    .media-body {
+      /* Comment author name */
+      .media-heading {
+
+        color: #2c2c2c;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 29px;
+        margin-bottom: 15px;
+
+        /* comment date */
+        small {
+          color: #6c757d;
+          font-size: 60%;
+        }
+      }
+      /* comment message */
+      p {
+        color: #888888;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25px;
+        margin-bottom: 16px;
+      }
+      /* Reply button */
+      .media-footer {
+        a {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16px;
+          text-transform: capitalize;
+          padding: 11px 22px;
+          margin-top: 10px;
+          margin-bottom: 20px;
+
+          i::before {
+            content: "\f1d9";
+          }
+        }
+      }
+    }
+  }
+  ul.children .comment-author.avatar {
+    width: 64px;
+    height: 64px;
+
+    img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
+/* Leave a reply logged in */
+.logged-in #respond.comment-respond {
+
+  /* Title */
+  .hestia-title {
+    margin: 0;
+  }
+
+  /* Author's avatar */
+  .pull-left.author {
+    margin: 45px 20px 0 0;
+  }
+  /* Logged in as - message */
+  .logged-in-as {
+
+    margin-bottom: 30px;
+
+    &::before {
+      content: "-";
+      margin-right: 5px;
+    }
+    &::after {
+      content: "-";
+      margin-left: 5px;
+    }
+
+    text-align: center;
+    transform: translateX(-8%);
+
+    a {
+      color: #6c757d;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+  /* What's on your mind - label */
+  .form-group.label-floating label.control-label,
+  .form-group.label-floating.is-focused label.control-label {
+    top: -28px;
+    font-size: 11px;
+    line-height: 14px;
+  }
+  /* Post comment button */
+  .form-submit {
+    input[type="submit"] {
+      @include default-button();
+      @include no-box-shadow();
+
+      &:hover {
+        @include button-hover();
+      }
+    }
+  }
+}
+
+/* Leave a reply logged out */
+#respond.comment-respond {
+
+  .pull-left.author {
+    margin: -15px 20px 0 0;
+
+    .avatar {
+      box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  /* Remove label ease up effect and font-size transform */
+  .form-group.label-floating label.control-label {
+    top: -7px;
+  }
+  .form-group.label-floating.is-focused label.control-label {
+    top: -7px;
+    font-size: inherit;
+    line-height: 18px;
+  }
+
+  /* Show label when the field is empty */
+  .col-md-4 > .form-group.is-empty label {
+    display: block;
+  }
+  /* Hide label if the field doesn't have the class is-empty */
+  .col-md-4 >.form-group label {
+    display: none;
+    margin-left: 10px;
+  }
+  /* Remove border-bottom and style rounded border */
+  .col-md-4 >.form-group .form-control {
+    background-image: none;
+    padding-left: 9px; /* cursor left margin */
+    border: 1px solid #E3E3E3;
+    border-radius: 30px;
+    transition: background 0s ease-out;
+  }
+  /* Remove loading underline from the first three input fields */
+  .col-md-4 >.form-group.is-focused .form-control {
+    background-image: none;
+  }
+
+  /* Post comment button */
+  .form-submit {
+    input[type="submit"] {
+      @include default-button();
+      @include no-box-shadow();
+
+      &:hover {
+        @include button-hover();
+      }
+    }
+  }
+}
