@@ -1,0 +1,195 @@
+// main: ../style.less
+
+/*
+  Extra Styles for WooCommerce
+*/
+
+
+
+/*
+- Star Rating
+-------------------------------------------------- */
+.star-rating {
+  font-family: 'Glyphicons Halflings';
+  width: 90px;
+  height: 22px;
+  font-size: @font-size-large;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: text-top;
+  margin: 0;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left:0;
+    content: "\e007\e007\e007\e007\e007";
+    color: @gray-light;
+  }
+
+  span {
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 1.5em;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left:0;
+      content: "\e006\e006\e006\e006\e006";
+      color:@brand-warning;
+    }
+  }
+}
+
+// star rating on comment form
+.comment-form-rating {
+  margin-bottom: 20px;
+
+  p.stars {
+    a {
+      position: relative;
+      width: 1em;
+      text-indent: -999em;
+      margin-right: 2px;
+      display: inline-block;
+      color: @gray-light;
+      &:before {
+        font-size: @font-size-large;
+        font-family: 'Glyphicons Halflings';
+        -webkit-font-smoothing: antialiased;
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 1em;
+        //height: 1em;
+        text-indent: 0;
+        content: "\e007";
+      }
+      &:hover {
+        //color:@star-rating-color;
+        &:before {
+        }
+      }
+      &.active {
+        //color:@star-rating-color;
+        &:before {
+        }
+      }
+    }
+    &.selected a.active,
+    &:hover a,
+    &.selected a:not(.active) {
+      color:@brand-primary;
+      &:before {
+        content: "\e006";
+      }
+    }
+    &.selected a.active~a,
+    a:hover~a {
+      color: @gray-light;
+      &:before {
+        content: "\e007";
+      }
+    }
+  }
+}
+
+
+
+/*
+- Reviews
+-------------------------------------------------- */
+.btn-reviews {
+  margin-top: @line-height-computed;
+}
+
+.woocommerce-Reviews {
+  margin-bottom: @line-height-computed;
+
+  p.woocommerce-noreviews {
+  }
+
+  #comments {
+    ol.commentlist {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 45px;
+      li {
+        img.avatar {
+          .img-circle;
+          margin-bottom: 15px;
+        }
+
+        .star-rating {
+          margin: 5px 0;
+        }
+
+        time {
+          color: @gray-light;
+          font-size: @font-size-small;
+          font-style: italic;
+        }
+        .description {
+        }
+
+        &.comment-author-admin,
+        &.bypostauthor {
+          .well {
+            //background: @brand-primary;
+            border-color: @brand-primary;
+          }
+          .meta {
+            .text-info;
+          }
+        }
+
+      }
+    }
+  }
+
+  #review_form {
+    #reply-title {
+    }
+  }
+}
+
+
+/*
+- Select2
+-------------------------------------------------- */
+.select2-container {
+  padding-right: 0
+}
+.select2-container .select2-choice {
+  border: none;
+  padding: 0;
+}
+
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices {
+  border: none;
+}
+
+
+/*
+- Password strength
+-------------------------------------------------- */
+.woocommerce-password-strength {
+  margin-top: 10px;
+  &.short {
+    .text-danger;
+  }
+  &.bad {
+    .text-danger;
+  }
+  &.good,
+  &.strong {
+    .text-success;
+  }
+}

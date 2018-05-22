@@ -1,0 +1,285 @@
+// main: ../style.less
+
+/*
+  Widget styles for WooCommerce
+*/
+
+
+/*
+- Mini Cart
+-------------------------------------------------- */
+.widget_shopping_cart {
+
+	ul.cart_list{
+		list-style-type: none;
+		margin: 0 0 10px;
+		padding: 0;
+		li {
+			overflow: hidden;
+		}
+	}
+
+	.media-left {
+		min-width: 80px;
+	}
+
+	a.remove {
+		line-height: 45px;
+		.pull-left;
+		margin-right: 7px;
+		//font-size: @font-size-large;
+		.text-danger;
+    padding: 0;
+	}
+
+	.media-heading {
+		font-weight: normal;
+	}
+
+	.thumbnail {
+		max-width: none;
+		width: 45px;
+		height: auto;
+		margin:0;
+		.pull-left;
+	}
+
+	dl.variation {
+    margin: 0 0 5px;
+	}
+
+	.quantity {
+		display: block;
+	}
+
+	.total {
+		padding-top: 15px;
+		margin-bottom: 15px;
+	}
+
+}
+
+
+/*
+- Rating Widget
+-------------------------------------------------- */
+.widget_rating_filter {
+  ul {
+    .list-unstyled;
+    li {
+      a {
+        .small;
+        color: @gray-light;
+        text-decoration: none;
+        .star-rating {
+          vertical-align: bottom;
+        }
+      }
+    }
+  }
+}
+
+
+/*
+- Layered Nav (filter by)
+-------------------------------------------------- */
+.widget_layered_nav {
+  ul {
+    li {
+      a {
+      }
+      .count {
+        color: @gray-light;
+      }
+    }
+  }
+
+  select {
+    .form-control;
+  }
+}
+
+
+/*
+- Filter by Price
+-------------------------------------------------- */
+.widget_price_filter {
+
+  .price_slider_wrapper {
+		max-width: 360px;
+
+  	.ui-widget-content {
+  		background: lighten(@brand-info,20%);
+  		height: .5em;
+  		position: relative;
+      text-align: left;
+      margin-left: .5em;
+      margin-right: .5em;
+  		margin-bottom: 1em;
+
+  		.ui-slider-range {
+  			background: darken(@brand-info,0%);
+  			top: 0;
+  			height: 100%;
+  			position: absolute;
+  			z-index: 1;
+  			font-size: @font-size-small;
+  			display: block;
+  			border: 0;
+  			border-radius: 1em;
+  		}
+
+  		.ui-slider-handle {
+  			background: darken(@brand-info,0%);
+  			position: absolute;
+  			z-index: 2;
+  			width: 1em;
+  			height: 1em;
+  			border-radius: 1em;
+  			cursor: ew-resize;
+  			outline: 0;
+  			top: -.3em;
+  			margin-left: -.5em;
+  		}
+  	}
+
+  	.price_slider_amount {
+  		.text-right;
+
+  		.price_label {
+  			//font-size: @font-size-small;
+  			line-height: 35px;
+  		}
+  		.button {
+  			.btn;
+  			.btn-primary;
+  			.pull-left;
+  		}
+  	}
+  }
+
+}
+
+
+/*
+- Product Categories
+-------------------------------------------------- */
+.widget_product_categories {
+
+  ul.product-categories {
+    .list-unstyled;
+  	li {
+
+  		a {
+
+  		}
+  		span.count {
+  			font-size: @font-size-small;
+  			color: @gray-light;
+  		}
+
+  		&.cat-parent {
+
+  			ul.children {
+  				list-style-type:disc;
+  				padding-left: 30px;
+  				margin-bottom: 10px;
+  				li {
+  					margin: 1px 0;
+  					a {
+  						font-size: @font-size-small;
+  					}
+  				}
+  			}
+  		}
+  	}
+  }
+
+  .dropdown_product_cat {
+  	.form-control;
+		max-width: 360px;
+  }
+}
+
+
+/*
+- Product List, Recently Viewd, Top Rated
+-------------------------------------------------- */
+.widget_products,
+.widget_recently_viewed_products,
+.widget_top_rated_products {
+
+  ul.product_list_widget {
+    .list-unstyled;
+  	li {
+  		a.thumbnail {
+  			margin: 0;
+  			img {
+  				max-width: 60px;
+  			}
+  		}
+
+      .media-heading {
+				font-weight: normal;
+      }
+
+  		.star-rating {
+  			margin: 0 0 5px;
+  		}
+
+  		.price {
+  			margin: 0;
+  			del {
+          font-size: @font-size-base;
+  				display: inline-block;
+  			}
+  		}
+  	}
+  }
+
+}
+
+
+/*
+- Product Search Form
+-------------------------------------------------- */
+.widget_product_search {
+
+  form.woocommerce-product-search {
+
+  }
+
+}
+
+
+/*
+- Recent Reviews
+-------------------------------------------------- */
+.widget_recent_reviews {
+
+	ul.product_list_widget {
+    .list-unstyled;
+		li {
+      overflow: hidden;
+      margin-bottom: 5px;
+			> a {
+        display: block;
+        font-size: @font-size-large;
+			}
+			img {
+				.img-thumbnail;
+				width: 60px;
+				height: auto;
+				.pull-left;
+				margin: 0 12px 12px 0;
+			}
+		}
+		.reviewer {
+			padding-left: 5px;
+			font-size: @font-size-small;
+			color: @gray-light;
+      vertical-align: sub;
+		}
+	}
+
+}

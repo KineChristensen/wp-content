@@ -1,0 +1,18 @@
+/*
+
+	style-wp-less.less
+	------------------
+	Use this file if the WordPress plugin WP-Less is activated.
+
+*/
+
+// main theme less file
+@import "style.less";
+
+// we use this variables as we get them from theme customizer
+@brand-primary:          @less-brand-primary;
+@brand-secondary:        @less-brand-secondary;
+
+// we need some path adjustments for LESS PHP compiler
+@icon-font-path: "../fonts/";
+@img-path:       "../../assets/img/";

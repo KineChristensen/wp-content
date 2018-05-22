@@ -1,0 +1,324 @@
+// main: ../style.less
+
+/*
+  WordPress styles
+*/
+
+/*
+- General Styles
+-------------------------------------------------- */
+.screen-reader-text {
+    .sr-only;
+}
+
+/*
+- Posts and pages
+-------------------------------------------------- */
+
+// category list
+.hentry {
+    overflow: hidden;
+
+    .entry-meta {
+        color: @gray-light;
+        font-size: @font-size-small;
+        margin-bottom: @line-height-computed/2;
+        font-style: italic;
+        .updated {
+            .sr-only;
+        }
+    }
+
+    .entry-footer {
+        clear: both;
+        color: @gray-light;
+        font-size: @font-size-small;
+        > * {
+            margin-right: 15px;
+        }
+    }
+
+    // on archive pages
+    &.content-archive {
+        margin-bottom: @line-height-computed *2;
+
+        .entry-title {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .thumbnail {
+            margin: 0 15px 15px 0;
+        }
+
+        .more-link {
+            .btn;
+            .btn-default;
+            .btn-sm;
+            margin-top: @line-height-computed/2;
+        }
+
+        .entry-footer {
+        }
+    }
+
+    // single
+    &.content-single {
+
+        .entry-title {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .thumbnail {
+            margin-bottom: @line-height-computed/2;
+        }
+
+    }
+}
+
+// Search pages
+.search-results {
+
+    .hentry {
+        margin-bottom: @line-height-computed *2;
+        .entry-title {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+    }
+
+}
+
+// categories list with tabs
+.wp-list-categories {
+    margin-bottom: @line-height-computed;
+}
+
+/*
+- Comments
+-------------------------------------------------- */
+.comments-area {
+    margin-bottom: @line-height-computed;
+
+    .comment-list {
+        margin-bottom: @line-height-computed;
+
+        .comment {
+
+            .comment-body {
+                .well;
+                margin-bottom: 20px;
+
+                .comment-meta {
+                    .avatar {
+                        .img-circle;
+                        margin-right: 5px;
+                    }
+                }
+
+                .comment-metadata {
+                    margin: 10px 0;
+                    font-size: @font-size-small;
+                    font-style: italic;
+                    a {
+                        color: @gray-light;
+                    }
+                    .edit-link {
+                        margin-left: 10px;
+                    }
+                }
+                .comment-content {
+                    margin-top: 10px;
+                }
+                .reply {
+                    a {
+                        .btn;
+                        .btn-default;
+                        .btn-xs;
+                    }
+                }
+            }
+
+            .comment-respond {
+                margin-bottom: 20px;
+                #cancel-comment-reply-link {
+                    .btn;
+                    .btn-warning;
+                    .btn-xs;
+                }
+            }
+
+            &.bypostauthor {
+                .comment-body {
+                    .bg-info;
+                    padding: 20px;
+                }
+            }
+        }
+
+        .children {
+            list-style-type: none;
+        }
+    }
+
+    .comment-awaiting-moderation {
+        .text-info;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+}
+
+/*
+- Widgets
+-------------------------------------------------- */
+
+// Archive widget
+.widget_archive {
+    select {
+        .form-control;
+        width: auto;
+    }
+}
+
+/*
+- Search form
+-------------------------------------------------- */
+form.search-form {
+    .form-group {
+        position: relative;
+    }
+    .btn {
+        position: absolute;
+        top: 1px;
+        right: -2px;
+    }
+}
+
+/*
+- if admin bar is active and nabar is fixed
+-------------------------------------------------- */
+body.admin-bar {
+
+    #site-header .navbar-fixed-top {
+        top: 32px;
+    }
+
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+
+.sticky {
+    position: relative;
+}
+
+.gallery-caption {
+    display: block;
+}
