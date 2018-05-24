@@ -1,8 +1,31 @@
 window.WPGMZA = {};
 
 (function($) {
-
+	
 jQuery(document).ready(function() {
+	
+	$("button[data-fit-bounds-to-shape]").each(function(index, el) {
+		
+		$(el).on("click", function(event) {
+			
+			var name = $(el).attr("data-fit-bounds-to-shape");
+			var shape = window[name];
+			var bounds;
+			
+			if(shape instanceof google.maps.Polygon || shape instanceof google.maps.Polyline)
+			{
+				bounds = new google.maps.LatLngBounds();
+				shape.getPath().forEach(function(element, index) {
+					bounds.extend(element);
+				});
+			}
+			else
+				bounds = shape.getBounds();
+		
+			MYMAP.map.fitBounds(bounds);
+		});
+		
+	});
     
     if($("input[name='wpgmza_directions_box_style'][value='modern']").length > 0){
         if($("input[name='wpgmza_directions_box_style'][value='modern']").is(':checked')){

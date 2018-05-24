@@ -10,7 +10,7 @@ require_once(plugin_dir_path(__FILE__) . 'class.custom-field-filter.php');
  
 class CustomFields implements \IteratorAggregate, \JsonSerializable, \Countable
 {
-	private static $installed = false;
+	private static $installed = null;
 	private $fields;
 	
 	public function __construct($map_id=null)
@@ -45,7 +45,7 @@ class CustomFields implements \IteratorAggregate, \JsonSerializable, \Countable
 		global $WPGMZA_TABLE_NAME_CUSTOM_FIELDS;
 		global $WPGMZA_TABLE_NAME_MARKERS_HAS_CUSTOM_FIELDS;
 		global $WPGMZA_TABLE_NAME_MAPS_HAS_CUSTOM_FIELDS_FILTERS;
-		
+				
 		dbDelta("
 			CREATE TABLE `$WPGMZA_TABLE_NAME_CUSTOM_FIELDS` (
 				`id` int(11) NOT NULL AUTO_INCREMENT,

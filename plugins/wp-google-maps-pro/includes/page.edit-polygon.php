@@ -1,15 +1,23 @@
 <?php
+
+// NB: This file is redundant
+
 /*
 Polygon functionality for WP Google Maps Pro
 
 
 */
 
-
+add_action('wp_enqueue_scripts', function() {
+	
+	wpgmza_enqueue_fontawesome();
+	
+});
 
 function wpgmza_pro_add_poly($mid) {
     global $wpgmza_tblname_maps;
     global $wpdb;
+	
     if ($_GET['action'] == "add_poly" && isset($mid)) {
         $res = wpgmza_get_map_data($mid);
         echo "
@@ -58,6 +66,7 @@ function wpgmza_pro_add_poly($mid) {
 function wpgmza_pro_edit_poly($mid) {
     global $wpgmza_tblname_maps;
     global $wpdb;
+	
     if ($_GET['action'] == "edit_poly" && isset($mid)) {
         $res = wpgmza_get_map_data($mid);
         $pol = wpgmza_return_poly_options($_GET['poly_id']);

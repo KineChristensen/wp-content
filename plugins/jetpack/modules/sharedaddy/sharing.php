@@ -1,12 +1,11 @@
 <?php
+if ( ! defined( 'WP_SHARING_PLUGIN_URL' ) ) {
+	define( 'WP_SHARING_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+	define( 'WP_SHARING_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+}
 
 class Sharing_Admin {
 	public function __construct() {
-		if ( ! defined( 'WP_SHARING_PLUGIN_URL' ) ) {
-			define( 'WP_SHARING_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-			define( 'WP_SHARING_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-		}
-
 		require_once WP_SHARING_PLUGIN_DIR . 'sharing-service.php';
 
 		add_action( 'admin_init', array( &$this, 'admin_init' ) );
@@ -422,7 +421,7 @@ class Sharing_Admin {
 			</table>
 
 			<p class="submit">
-					<input type="submit" name="submit" class="button-primary" value="<?php _e( 'Save Changes', 'jetpack' ); ?>" />
+					<input type="submit" name="submit" class="button-primary" value="<?php esc_attr_e( 'Save Changes', 'jetpack' ); ?>" />
 			</p>
 
 				<input type="hidden" name="_wpnonce" value="<?php echo wp_create_nonce( 'sharing-options' );?>" />
@@ -457,7 +456,7 @@ class Sharing_Admin {
 					<tr valign="top" width="100">
 						<th scope="row"></th>
 						<td>
-								<input type="submit" class="button-primary" value="<?php _e( 'Create Share Button', 'jetpack' ); ?>" />
+							<input type="submit" class="button-primary" value="<?php esc_attr_e( 'Create Share Button', 'jetpack' ); ?>" />
 							<img src="<?php echo admin_url( 'images/loading.gif' ); ?>" width="16" height="16" alt="loading" style="vertical-align: middle; display: none" />
 						</td>
 					</tr>

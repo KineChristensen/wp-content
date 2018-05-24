@@ -80,6 +80,8 @@ new WPCOM_JSON_API_Site_Settings_Endpoint( array(
 		'twitter_via'                  => '(string) Twitter username to include in tweets when people share using the Twitter button',
 		'jetpack-twitter-cards-site-tag' => '(string) The Twitter username of the owner of the site\'s domain.',
 		'eventbrite_api_token'         => '(int) The Keyring token ID for an Eventbrite token to associate with the site',
+		'google_my_business_keyring_id' => '(int) The Keyring token ID for a Google My Business token to associate with the site',
+		'google_my_business_location_id' => '(string) The Keyring external user ID representing the associated Google My Business location for this site',
 		'timezone_string'              => '(string) PHP-compatible timezone string like \'UTC-5\'',
 		'gmt_offset'                   => '(int) Site offset from UTC in hours',
 		'date_format'                  => '(string) PHP Date-compatible date format',
@@ -326,6 +328,8 @@ class WPCOM_JSON_API_Site_Settings_Endpoint extends WPCOM_JSON_API_Endpoint {
 					'twitter_via'             => (string) get_option( 'twitter_via' ),
 					'jetpack-twitter-cards-site-tag' => (string) get_option( 'jetpack-twitter-cards-site-tag' ),
 					'eventbrite_api_token'    => $this->get_cast_option_value_or_null( 'eventbrite_api_token', 'intval' ),
+					'google_my_business_keyring_id' => $this->get_cast_option_value_or_null( 'google_my_business_keyring_id', 'intval' ),
+					'google_my_business_location_id' => (string) get_option( 'google_my_business_location_id' ),
 					'gmt_offset'              => get_option( 'gmt_offset' ),
 					'timezone_string'         => get_option( 'timezone_string' ),
 					'date_format'             => get_option( 'date_format' ),
@@ -412,16 +416,22 @@ class WPCOM_JSON_API_Site_Settings_Endpoint extends WPCOM_JSON_API_Endpoint {
 	public function update_settings() {
 		// $this->input() retrieves posted arguments whitelisted and casted to the $request_format
 		// specs that get passed in when this class is instantiated
+		$input = $this->input();
+		$unfiltered_input = $this->input( false, false );
 		/**
 		 * Filters the settings to be updated on the site.
 		 *
 		 * @module json-api
 		 *
 		 * @since 3.6.0
+		 * @since 6.1.1 Added $unfiltered_input parameter.
 		 *
-		 * @param array $input Associative array of site settings to be updated.
+		 * @param array $input              Associative array of site settings to be updated.
+		 *                                  Cast and filtered based on documentation.
+		 * @param array $unfiltered_input   Associative array of site settings to be updated.
+		 *                                  Neither cast nor filtered. Contains raw input.
 		 */
-		$input = apply_filters( 'rest_api_update_site_settings', $this->input() );
+		$input = apply_filters( 'rest_api_update_site_settings', $input, $unfiltered_input );
 
 		$blog_id = get_current_blog_id();
 
@@ -566,6 +576,26 @@ class WPCOM_JSON_API_Site_Settings_Endpoint extends WPCOM_JSON_API_Endpoint {
 						} else if ( update_option( $key, $value ) ) {
 							$updated[ $key ] = (int) $value;
 						}
+					}
+					break;
+
+				case 'google_my_business_keyring_id':
+					if ( empty( $value ) || WPCOM_JSON_API::is_falsy( $value ) ) {
+						if ( delete_option( $key ) ) {
+							$updated[ $key ] = null;
+						}
+					} else if ( update_option( $key, $value ) ) {
+						$updated[ $key ] = (int) $value;
+					}
+					break;
+
+				case 'google_my_business_location_id':
+					if ( empty( $value ) || WPCOM_JSON_API::is_falsy( $value ) ) {
+						if ( delete_option( $key ) ) {
+							$updated[ $key ] = null;
+						}
+					} else if ( update_option( $key, $value ) ) {
+						$updated[ $key ] = (string) $value;
 					}
 					break;
 

@@ -78,6 +78,11 @@ function wpgmaps_admin_category_styles() {
 
 function wpgmza_pro_category_new_layout() {
     
+	// DB Fix
+	global $wpdb;
+	if(!$wpdb->get_results("SHOW COLUMNS FROM {$wpdb->prefix}wpgmza_categories LIKE 'parent'"))
+		$wpdb->query("ALTER TABLE {$wpdb->prefix}wpgmza_categories ADD COLUMN parent int(11)");
+	
 	$markerLibraryDialog = new WPGMZA\MarkerLibraryDialog();
 	$markerLibraryDialog->html();
 	
