@@ -3,9 +3,31 @@
 Plugin Name: WP Google Maps - Pro Add-on
 Plugin URI: http://www.wpgmaps.com
 Description: This is the Pro add-on for WP Google Maps. The Pro add-on enables you to add descriptions, pictures, links and custom icons to your markers as well as allows you to download your markers to a CSV file for quick editing and re-upload them when complete.
-Version:  7.03
+Version:  7.08
 Author: WP Google Maps
 Author URI: http://www.wpgmaps.com
+ *
+ * 7.08
+ *
+ * Improved spatial data migration function to be more robust
+ * Fixed undefined index use_fontawesome
+ *
+ * 7.07
+ * Added option to select FontAwesome version
+ *
+ * 7.06
+ * Fixed compatibility with Bootstrap themes loading jQuery 3.x.x
+ * Fixed admin Select All and Bulk Delete functionality
+ * 
+ * 7.05
+ * Added functionality to fit map to bounds when editing shapes
+ * Fixed a bug where in some circumstances marker filtering was not applied to modern listing
+ * Fixed custom fields installer erroneously running on every page load
+ *
+ * 7.04
+ * Fixed FontAwesome CSS being enqueued as script
+ * Fixed JS error in for ... in loop when adding methods to Array prototype
+ * Fixed \WPGMZA\CustomFieldFilterWidget\Checkboxes calling the wrong parent constructor
  *
  * 7.03 - 2018-04-06
  * Switched to WebFont / CSS FontAwesome 5 for compatibility reasons
@@ -727,7 +749,7 @@ define('WPGMZA_PRO_FILE', __FILE__);
 
 global $wpgmza_pro_version;
 global $wpgmza_pro_string;
-$wpgmza_pro_version = "7.03";
+$wpgmza_pro_version = "7.08";
 $wpgmza_pro_string = "pro";
 
 global $wpgmza_current_map_cat_selection;
@@ -3156,9 +3178,9 @@ function wpgmaps_tag_pro( $atts ) {
 	global $wpgmza_shortcode_atts_by_map_id;
 	
 	wpgmza_localize_category_data();
+
+	wpgmza_enqueue_fontawesome();
 	
-	wp_register_style('fontawesome', plugins_url('css/font-awesome.min.css', __FILE__));
-	wp_enqueue_style('fontawesome');
 	wp_register_style('wpgmaps-admin-style', plugins_url('css/wpgmaps-admin.css', __FILE__));
 	wp_enqueue_style('wpgmaps-admin-style');
 
@@ -4365,7 +4387,7 @@ function wpgmaps_user_javascript_pro($atts = false) {
             }
 
             wp_enqueue_script('wpgmaps_core', plugin_dir_url(__FILE__) .'/js/core.js', array(), $wpgmza_pro_version.'p' , false);
-			wp_enqueue_script('fontawesome', 'https://use.fontawesome.com/releases/v5.0.9/css/all.css');
+			wpgmza_enqueue_fontawesome();
 			
 			wp_localize_script('wpgmaps_core', 'wpgmza_localized_strings', array(
 				'no_results_found' 			=> __('No results found', 'wp-google-maps'),
@@ -4913,6 +4935,97 @@ function wpgmaps_admin_javascript_pro() {
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo wpgmaps_get_plugin_url(); ?>/css/data_table.css" />
     <script type="text/javascript" src="<?php echo wpgmaps_get_plugin_url(); ?>/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" >
+    (function($){
+	    var wpgmza_table_length;
+		function wpgmza_select_all_markers()
+		{
+			$("#wpgmza_table input[name='mark']").prop("checked", "checked");
+		}
+		jQuery("select[name=wpgmza_table_length]").change(function () {
+			wpgmza_table_length = jQuery(this).val();
+		})
+		function wpgmza_reinitialisetbl() {
+			//wpgmzaTable.fnClearTable( 0 );
+			if (wpgmza_table_length === "") { wpgmza_table_length = 10; }
+			var wpgmzaTable = jQuery('#wpgmza_table').DataTable({
+				"bProcessing": true,
+				"iDisplayLength": wpgmza_table_length
+			});
+		}
+		function wpgmza_bulk_delete()
+		{
+			var ids = [];
+
+			// Gather IDs to delete
+			$("#wpgmza_table input[name='mark']:checked").each(function(index, el) {
+				ids.push( $(el).closest("tr").attr("id").match(/\d+$/)[0] );
+			});
+
+			if(ids.length == 0)
+			{
+				alert("No markers selected");
+				return;
+			}
+
+			// Prompt user to confirm
+			if(!confirm("Confirm deleting " + ids.length + " marker(s)"))
+				return;
+
+			// Get ready
+			var data = {
+				action: "delete_marker",
+				security: '<?php echo $ajax_nonce; ?>',
+				map_id: <?php echo $_GET['map_id']; ?>
+			};
+
+			// Count responses separately since were shifting ids straight off the array async
+			var counter = ids.length;
+
+			function sendDeleteRequest(id)
+			{
+				$.post(ajaxurl, $.extend({marker_id: id}, data), function(response) {
+					if(--counter == 1)
+					{
+						// Send very last one synchronous so tables don't collide
+						var last = ids.shift();
+						sendDeleteRequest(last);
+					}
+					else if(counter == 0)
+					{
+						// Receive last response
+						jQuery("#wpgmza_marker_holder").html(JSON.parse(response).table_html);
+						wpgmza_reinitialisetbl();
+					}
+				});
+
+				//wpgmaps_markers_array[id].setMap(null);
+				//delete wpgmaps_markers_array[id];
+			}
+
+			// Send all but one delete request async, last one is send inside sendDeleteRequest
+			while(ids.length > 1)
+			{
+				var id = ids.shift();
+				sendDeleteRequest(id);
+			}
+		}
+		jQuery(document).ready(function(){
+			$(document.body).on("click", function(event) {
+				if($(event.target).is(".wpgmza.bulk_delete"))
+				{
+					wpgmza_bulk_delete();
+					return;
+				}
+
+				if($(event.target).is(".wpgmza.select_all_markers"))
+				{
+					wpgmza_select_all_markers();
+					return;
+				}
+			});
+		});
+	})(jQuery);
+    
     var heatmap = [];
     var WPGM_PathLine = [];
 	var WPGM_Path = [];
@@ -5901,6 +6014,12 @@ function wpgmaps_admin_javascript_pro() {
 				var data = $.extend({}, wpgmza_circle_data_array[circle_id]);
 				data.map = MYMAP.map;
 				
+				if(!data.center)
+				{
+					console.warn("No center data for circle ID " + circle_id)
+					continue;
+				}
+				
 				var m = data.center.match(/-?\d+(\.\d*)?/g);
 				data.center = new google.maps.LatLng({
 					lat: parseFloat(m[0]),
@@ -5922,6 +6041,12 @@ function wpgmaps_admin_javascript_pro() {
 			{
 				var data = $.extend({}, wpgmza_rectangle_data_array[rectangle_id]);
 				data.map = MYMAP.map;
+				
+				if(!data.cornerA || !data.cornerB)
+				{
+					console.warn("No center data for rectangle ID " + rectangle_id)
+					continue;
+				}
 				
 				var northWest = data.cornerA;
 				var southEast = data.cornerB;
@@ -7198,6 +7323,10 @@ function wpgmaps_settings_page_sub($section) {
         if (isset($wpgmza_settings['wpgmza_settings_retina_width'])) { $wpgmza_settings_retina_width = $wpgmza_settings['wpgmza_settings_retina_width']; } else { $wpgmza_settings_retina_width = "31"; }
         if (isset($wpgmza_settings['wpgmza_settings_retina_height'])) { $wpgmza_settings_retina_height = $wpgmza_settings['wpgmza_settings_retina_height']; } else { $wpgmza_settings_retina_height = "45"; }
 
+		$use_fontawesome = (isset($wpgmza_settings['use_fontawesome']) ? $wpgmza_settings['use_fontawesome'] : '5.*');
+		$use_fontawesome_5_selected		= ($use_fontawesome == '5.*' ? 'selected="selected"' : '');
+		$use_fontawesome_4_selected		= ($use_fontawesome == '4.*' ? 'selected="selected"' : '');
+		$use_fontawesome_none_selected	= ($use_fontawesome == 'none' ? 'selected="selected"' : '');
         
         return "
             <h3>".__("Map Settings","wp-google-maps")."</h3>
@@ -7259,6 +7388,19 @@ function wpgmaps_settings_page_sub($section) {
                                  <div class='switch'><input name='wpgmza_settings_remove_api' type='checkbox' class='cmn-toggle cmn-toggle-yes-no' id='wpgmza_settings_remove_api' value='yes' $wpgmza_remove_api_checked /> <label for='wpgmza_settings_remove_api' data-on='".__("Yes", "wp-google-maps")."' data-off='".__("No", "wp-google-maps")."'></label></div> ".__("Do not load the Google Maps API (Only check this if your theme loads the Google Maps API by default)", 'wp-google-maps')."<br />
                         </td>
                     </tr>
+					
+					<tr>
+						<td>
+							" . __("Use FontAwesome:", "wp-google-maps") . "
+						</td>
+						<td>
+							<select name='wpgmza_use_fontawesome'>
+								<option value='5.*' $use_fontawesome_5_selected>5.*</option>
+								<option value='4.*' $use_fontawesome_4_selected>4.*</option>
+								<option value='none' $use_fontawesome_none_selected>" . __("None", "wp-google-maps") . "</option>
+							</select>
+						</td>
+					</tr>
 
                     <tr>
                            <td width='200' valign='top'>".__("Use Google Maps API","wp-google-maps").":</td>
@@ -8208,6 +8350,10 @@ function wpgmaps_head_pro() {
         if (isset($_POST['wpgmza_settings_ugm_email_address'])) { $wpgmza_data['wpgmza_settings_ugm_email_address'] = esc_attr($_POST['wpgmza_settings_ugm_email_address']); } else { $wpgmza_data['wpgmza_settings_ugm_email_address'] = get_option('admin_email'); }
         if (isset($_POST['wpgmza_settings_force_jquery'])) { $wpgmza_data['wpgmza_settings_force_jquery'] = esc_attr($_POST['wpgmza_settings_force_jquery']); }
         if (isset($_POST['wpgmza_settings_remove_api'])) { $wpgmza_data['wpgmza_settings_remove_api'] = esc_attr($_POST['wpgmza_settings_remove_api']); }
+		
+		if(isset($_POST['wpgmza_use_fontawesome']))
+			$wpgmza_data['use_fontawesome'] = $_POST['wpgmza_use_fontawesome'];
+		
         if (isset($_POST['wpgmza_force_greedy_gestures'])) { $wpgmza_data['wpgmza_force_greedy_gestures'] = esc_attr($_POST['wpgmza_force_greedy_gestures']); }
         
         if (isset($_POST['wpgmza_settings_markerlist_category'])) { $wpgmza_data['wpgmza_settings_markerlist_category'] = esc_attr($_POST['wpgmza_settings_markerlist_category']); }
@@ -8359,9 +8505,13 @@ function wpgmza_b_real_pro_add_poly($mid) {
 
 
 }
+
 function wpgmza_b_real_pro_edit_poly($mid) {
     global $wpgmza_tblname_maps;
     global $wpdb;
+	
+	wpgmza_enqueue_fontawesome();
+	
     if ($_GET['action'] == "edit_poly" && isset($mid)) {
         $res = wpgmza_get_map_data($mid);
         $pol = wpgmza_b_return_poly_options(sanitize_text_field($_GET['poly_id']));
@@ -8411,6 +8561,19 @@ echo "
                         <td>".__("On Hover Opacity","wp-google-maps")."</td><td><input id=\"poly_hover_opacity\" name=\"poly_hover_opacity\" type=\"text\" value=\"".$pol->ohopacity."\" /> (0 - 1.0) example: 0.5 for 50%</td>   
                     </tr>
                         
+					<tr>
+						<td>".__('Show Polygon', 'wp-google-maps')."</td>
+						<td>
+							<button id='fit-bounds-to-shape' 
+								class='button button-secondary' 
+								type='button' 
+								title='" . __('Fit map bounds to shape', 'wp-google-maps') . "'
+								data-fit-bounds-to-shape='poly'>
+								<i class='fas fa-eye'></i>
+							</button>
+						</td>
+					</tr>
+						
                     </table>
                      <div class='wpgmza_map_seventy'> 
                         <div id=\"wpgmza_map\">&nbsp;</div>
@@ -8702,22 +8865,9 @@ function wpgmaps_admin_scripts_pro() {
 
 function wpgmaps_admin_styles_pro() {
     if (isset($_GET['page'])) {
-        /*if ($_GET['page'] == "wp-google-maps-menu-support") {
-            wp_register_style('fontawesome', plugins_url('css/font-awesome.min.css', __FILE__));
-            wp_enqueue_style('fontawesome');
-            wp_register_style('wpgmaps-admin-style', plugins_url('css/wpgmaps-admin.css', __FILE__));
-            wp_enqueue_style('wpgmaps-admin-style');
-            
-        }
-        if ($_GET['page'] == "wp-google-maps-menu" || $_GET['page'] == "wp-google-maps-menu-settings") {
-            wp_register_style('wpgmaps-admin-style', plugins_url('css/wpgmaps-admin.css', __FILE__));
-            wp_enqueue_style('wpgmaps-admin-style');
-
-        }*/
-
         if(strpos($_GET['page'], "wp-google-maps") !== false){
-            wp_register_style('fontawesome', plugins_url('css/font-awesome.min.css', __FILE__));
-            wp_enqueue_style('fontawesome');
+            wpgmza_enqueue_fontawesome();
+			
             wp_register_style('wpgmaps-admin-style', plugins_url('css/wpgmaps-admin.css', __FILE__));
             wp_enqueue_style('wpgmaps-admin-style');
         }
@@ -10198,7 +10348,7 @@ if(!function_exists('wpgmza_migrate_spatial_data'))
 		if($wpdb->get_var("SELECT COUNT(id) FROM $wpgmza_tblname WHERE latlng IS NULL LIMIT 1") == 0)
 			return; // Nothing to migrate
 		
-		$wpdb->query("UPDATE ".$wpgmza_tblname." SET latlng=PointFromText(CONCAT('POINT(', lat, ' ', lng, ')'))");
+		$wpdb->query("UPDATE ".$wpgmza_tblname." SET latlng=PointFromText(CONCAT('POINT(', CAST(lat AS DECIMAL(18,10)), ' ', CAST(lng AS DECIMAL(18,10)), ')'))");
 	}
 	
 	add_action('init', 'wpgmza_migrate_spatial_data', 1);
@@ -10336,3 +10486,36 @@ function wpgmza_upload_base64_image()
 }
 
 add_action('wp_ajax_wpgmza_upload_base64_image', 'wpgmza_upload_base64_image');
+
+
+if(!function_exists('wpgmza_enqueue_fontawesome'))
+{
+	function wpgmza_enqueue_fontawesome()
+	{
+		$settings = get_option('WPGMZA_OTHER_SETTINGS');
+		
+		if($settings)
+			$settings = maybe_unserialize($settings);
+		else
+			$settings = array(
+				'use_fontawesome' => '5.*'
+			);
+		
+		$version = (empty($settings['use_fontawesome']) ? '4.*' : $settings['use_fontawesome']);
+		
+		switch($version)
+		{
+			case '5.*':
+				wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.0.9/css/all.css');
+				break;
+				
+			case 'none':
+				break;
+				
+			default:
+				wp_enqueue_style('fontawesome', plugins_url('css/font-awesome.min.css', __FILE__));
+				break;
+		}
+	}
+}
+

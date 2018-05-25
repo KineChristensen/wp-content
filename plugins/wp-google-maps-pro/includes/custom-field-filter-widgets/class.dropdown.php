@@ -2,6 +2,8 @@
 
 namespace WPGMZA\CustomFieldFilterWidget;
 
+require_once(plugin_dir_path(__DIR__) . 'custom-fields/class.custom-field-filter-widget.php');
+
 class Dropdown extends \WPGMZA\CustomFieldFilterWidget
 {
 	public function __construct($filter)

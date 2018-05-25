@@ -654,11 +654,22 @@ function wpgmza_filter_marker_lists(wpgmza_map_id,selectedValue) {
                     wpgmzaTable[wpgmza_map_id].destroy();
                     
 					wpgmza_update_data_table(response, wpgmza_map_id);
-                }
+                }else if(MYMAP[wpgmza_map_id].markerListing instanceof WPGMZA.ModernMarkerListing){
+					
+					var temp = $(response);
+					var visible_marker_ids = [];
+					$("[mid]").each(function(index, el) {
+						visible_marker_ids.push($(el).attr("mid"));
+					});
+					MYMAP[wpgmza_map_id].markerListing.setVisibleListItems(visible_marker_ids);
+					
+				}
 
             });
             
         }
+		
+		
 
     } 
     if (jQuery("#wpgmza_marker_list_"+wpgmza_map_id).length > 0) {
@@ -878,7 +889,7 @@ function reset_marker_lists(wpgmza_map_id) {
 
 jQuery(function() {
 
-    jQuery(window).load(function(){
+    jQuery(window).on("load", function(){
         jQuery(".wpgmaps_auto_get_directions").each(function() {
             var this_bliksem = jQuery(this);
             var this_bliksem_id = jQuery(this).attr('id');
@@ -1374,19 +1385,30 @@ jQuery(function() {
             }
         }
 		
-		if(window.wpgmza_circle_data_array) {
+		if(window.wpgmza_circle_data_array[mapid]) {
 			window.circle_array = [];
-			for(var circle_id in wpgmza_circle_data_array[mapid]) {
-				if (wpgmza_circle_data_array[mapid].hasOwnProperty(circle_id))
-					add_circle(mapid, wpgmza_circle_data_array[mapid][circle_id]);
+			
+			for(var circle_id in wpgmza_circle_data_array) {
+				
+				// Check that this belongs to the array itself, as opposed to its prototype, or else this will break if you add methods to the array prototype (please don't extend the native types)
+				if(!wpgmza_circle_data_array[mapid].hasOwnProperty(circle_id))
+					continue;
+				
+				add_circle(1, wpgmza_circle_data_array[mapid][circle_id]);
 			}
 		}
-        
-		if(window.wpgmza_rectangle_data_array) {
+		
+		if(window.wpgmza_rectangle_data_array[mapid]) {
 			window.rectangle_array = [];
-			for(var rectangle_id in wpgmza_rectangle_data_array[mapid]) {
-				if (wpgmza_rectangle_data_array[mapid].hasOwnProperty(rectangle_id))
-					add_rectangle(mapid, wpgmza_rectangle_data_array[mapid][rectangle_id]);
+			
+			for(var rectangle_id in wpgmza_rectangle_data_array) {
+				
+				// Check that this belongs to the array itself, as opposed to its prototype, or else this will break if you add methods to the array prototype (please don't extend the native types)
+				if(!wpgmza_rectangle_data_array[mapid].hasOwnProperty(rectangle_id))
+					continue;
+				
+				add_rectangle(1, wpgmza_rectangle_data_array[mapid][rectangle_id]);
+				
 			}
 		}
 		
@@ -3918,6 +3940,7 @@ if(!window.WPGMZA)
 			</ul>\
 		</div>");
 		
+		this.map_id = map_id;
 		this.mapElement = container;
 		this.mapElement.append(this.element);
 		
@@ -3977,6 +4000,14 @@ if(!window.WPGMZA)
 		$(document.body).on("click", ".wpgmza_sl_reset_button_" + map_id, function(event) {
 			$(self.element).find("li[mid]").show();
 		});
+		
+		$("select[mid='" + map_id + "'][name='wpgmza_filter_select']").on("change", function(event) {
+			self.updateFilteredItems();
+		});
+		
+		$(".wpgmza_checkbox[mid='" + map_id + "']").on("change", function(event) {
+			self.updateFilteredItems();
+		});
 	};
 	
 	WPGMZA.ModernMarkerListing.prototype = Object.create(WPGMZA.PopoutPanel.prototype);
@@ -3997,6 +4028,29 @@ if(!window.WPGMZA)
 				$(el).hide();
 			
 		});
+	}
+	
+	WPGMZA.ModernMarkerListing.prototype.updateFilteredItems = function()
+	{
+		//var categories = this.getSelectedCategories();
+	}
+	
+	WPGMZA.ModernMarkerListing.prototype.getSelectedCategories = function()
+	{
+		var select = $("select[mid='" + this.map_id + "'][name='wpgmza_filter_select']");
+		var checkboxes = $(".wpgmza_checkbox[mid='" + this.map_id + "']:checked");
+		var categories = [];
+		
+		if(select.length)
+			categories.push(select.val());
+		else
+		{
+			checkboxes.each(function(index, el) {
+				categories.push($(el).val());
+			});
+		}
+		
+		return categories;
 	}
 	
 	WPGMZA.ModernMarkerListing.listItemHTML = "\

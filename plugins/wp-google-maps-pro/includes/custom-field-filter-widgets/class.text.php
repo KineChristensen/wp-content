@@ -2,11 +2,13 @@
 
 namespace WPGMZA\CustomFieldFilterWidget;
 
+require_once(plugin_dir_path(__DIR__) . 'custom-fields/class.custom-field-filter-widget.php');
+
 class Text extends \WPGMZA\CustomFieldFilterWidget
 {
 	public function __construct($filter)
 	{
-		CustomFieldFilterWidget::__construct($filter);
+		\WPGMZA\CustomFieldFilterWidget::__construct($filter);
 	}
 	
 	public function html()
