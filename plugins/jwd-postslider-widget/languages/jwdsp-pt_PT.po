@@ -1,0 +1,533 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JWD_PostSlider_Widget\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2017-05-30 13:12+0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language: pt\n"
+
+# @ /inc/jwd_postslider.php - Line 46
+# @ /inc/jwdsp_widget.php - Line 488
+msgid "Settings"
+msgstr "Configurações"
+
+# @ /inc/jwd_postslider.php - Line 47
+msgid "Widgets"
+msgstr "Widgets"
+
+# @ /inc/jwdsp_admin_page.php - Line 45, 70
+msgid "See More"
+msgstr "Ver Mais"
+
+# @ /inc/jwdsp_admin_page.php - Line 49
+# @ /inc/jwdsp_widget.php - Line 275
+msgid "General Settings"
+msgstr "Configurações Gerais"
+
+# @ /inc/jwdsp_admin_page.php - Line 51
+msgid "Settings Field"
+msgstr "Campo Configurações"
+
+# @ /inc/jwdsp_admin_page.php - Line 51
+msgid "Add value here"
+msgstr "Adicione valor aqui"
+
+# @ /inc/jwdsp_admin_page.php - Line 95
+msgid "All Settings have been restored to default!"
+msgstr "Todas as configurações foram restauradas para o padrão!"
+
+# @ /inc/jwdsp_admin_page.php - Line 130
+msgid "Yes"
+msgstr "Sim"
+
+# @ /inc/jwdsp_admin_page.php - Line 131
+msgid "No"
+msgstr "Não"
+
+# @ /inc/jwdsp_admin_page.php - Line 163
+msgid "Do not include <code>&lt;style&gt;</code> tag!"
+msgstr "Não inclua a tag <code>&lt;style&gt;</code>!"
+
+# @ /inc/jwdsp_admin_page.php - Line 164
+msgid ""
+"Use the ID of targeted widget you want to customize. Go to %s to find the ID."
+msgstr ""
+"Utilizar o ID do widget segmentado que você deseja personalizar. Vá para %s "
+"para localizar o ID."
+
+# @ /inc/jwdsp_admin_page.php - Line 165
+msgid "Example"
+msgstr "Exemplo"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Post types"
+msgstr "Tipos de artigos"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Title color"
+msgstr "Cor do título"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Title hover"
+msgstr "Hover do título"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Title background"
+msgstr "Fundo do título"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Title background opacity"
+msgstr "Opacidade de fundo do título"
+
+# @ /inc/jwdsp_admin_page.php - Line 234, 239
+msgid "Only visible if <b>%1$s</b> is set to <b>%2$s</b>."
+msgstr "Apenas visível se <b>%1$s</b> está configurado para <b>%2$s</b>."
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Arrows color"
+msgstr "Cor das setas"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Arrows hover"
+msgstr "Hover das setas"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Content color"
+msgstr "Cor de conteúdo"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Meta color"
+msgstr "Cor da meta"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Meta hover"
+msgstr "Hover da meta"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Button text"
+msgstr "Texto do botão"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Button text color"
+msgstr "Cor do texto do botão"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Button text hover"
+msgstr "Hover do texto do botão"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Button background"
+msgstr "Fundo do botão"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Button background hover"
+msgstr "Hover de fundo do botão"
+
+# @ /inc/jwdsp_widget.php - Line 600
+msgid "Button style"
+msgstr "Estilo do botão"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Button size"
+msgstr "Tamanho do botão"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Full"
+msgstr "Totalmente"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Auto"
+msgstr "Automaticamente"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Pagination color"
+msgstr "Cor de paginação"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Pagination type"
+msgstr "Tipo de paginação"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Show icons"
+msgstr "Ícones de exibição"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+msgid "Slide effect"
+msgstr "Efeito do slide"
+
+# @ /inc/jwdsp_admin_page.php - Line 205
+# @ /inc/jwdsp_widget.php - Line 483
+msgid "Custom css"
+msgstr "CSS customizado"
+
+# @ /inc/jwdsp_admin_page.php - Line 209
+msgid "Choose post types to be used by the widget; Default: <code>post</code>."
+msgstr ""
+"Escolha os tipos de artigos a serem usados pelo widget; Padrão: <code>post</"
+"code>."
+
+# @ /inc/jwdsp_admin_page.php - Line 212
+msgid "Whether to display icons for date, comments, categories and tags."
+msgstr "Se deseja exibir ícones para data, comentários, categorias e tags."
+
+# @ /inc/jwdsp_admin_page.php - Line 214
+msgid "Progress"
+msgstr "Progresso"
+
+# @ /inc/jwdsp_admin_page.php - Line 214,
+msgid "Bullets"
+msgstr "Bolhas"
+
+# @ /inc/jwdsp_admin_page.php - Line 216
+msgid "Slide"
+msgstr "Slide"
+
+# @ /inc/jwdsp_admin_page.php - Line 216
+msgid "Flip"
+msgstr "Sacudir"
+
+# @ /inc/jwdsp_admin_page.php - Line 245
+msgid "Save Settings"
+msgstr "Salvar Configurações"
+
+# @ /inc/jwdsp_admin_page.php - Line 252
+msgid "Reset Settings"
+msgstr "Redefinir Configurações"
+
+# @ /inc/jwdsp_admin_page.php - Line 253
+msgid ""
+"return window.confirm(\"Are you sure you want to RESET ALL the settings to "
+"default?\")"
+msgstr ""
+"return window.confirm(\"Tem a certeza de que pretende REINICIAR TODAS as "
+"definições para predefinição?\")"
+
+# @ /inc/jwdsp_ajax.php - Line 42
+# @ /inc/jwdsp_hooks.php - Line 64
+msgid "No taxonomies found"
+msgstr "Nenhuma taxonomia encontrada"
+
+# @ /inc/jwdsp_ajax.php - Line 49, 80
+# @ /inc/jwdsp_hooks.php - Line 96
+msgid "No terms found"
+msgstr "Nenhum termo encontrado"
+
+# @ /inc/jwdsp_enqueue.php - Line 31
+msgid "Changes you made may not be saved. Do you want to leave this page?"
+msgstr ""
+"As alterações feitas não podem ser salvas. Você quer sair desta página?"
+
+# @ /inc/jwdsp_hooks.php - Line 18
+msgid "Post Type"
+msgstr "Tipo de Artigos"
+
+# @ /inc/jwdsp_hooks.php - Line 49
+msgid "Taxonomy"
+msgstr "Taxonomia"
+
+# @ /inc/jwdsp_hooks.php - Line 77
+msgid "Term"
+msgstr "Termo"
+
+# @ /inc/jwdsp_hooks.php - Line 107
+msgid "Order by date:"
+msgstr "Ordenar por data:"
+
+# @ /inc/jwdsp_hooks.php - Line 116
+msgid "Descending"
+msgstr "Descendente"
+
+# @ /inc/jwdsp_hooks.php - Line 117
+msgid "Ascending"
+msgstr "Ascendente"
+
+# @ /inc/jwdsp_hooks.php - Line 130
+msgid "Label name here"
+msgstr "Nome do rótulo aqui"
+
+# @ /inc/jwdsp_hooks.php - Line 155, 175
+msgid "Option name here"
+msgstr "Option name here"
+
+# @ /inc/jwdsp_hooks.php - Line 288
+msgid "Powered by"
+msgstr "Distribuído por"
+
+# @ /inc/jwdsp_hooks.php - Line 310
+msgid "If you like our plugin"
+msgstr "Se você gostar do nosso plugin"
+
+# @ /inc/jwdsp_hooks.php - Line 311
+msgid "Don't forget to Rate it"
+msgstr "Não se esqueça de avaliá-lo"
+
+# @ /inc/jwdsp_hooks.php - Line 313
+msgid "Thank you!"
+msgstr "Obrigado!"
+
+# @ /inc/jwdsp_hooks.php - Line 313
+msgid "It helps us to become better for you!"
+msgstr "Isso nos ajuda a nos tornarmos melhores para você!"
+
+# @ /inc/jwdsp_hooks.php - Line 306
+msgid "is a product of"
+msgstr "é um produto de"
+
+# @ /inc/jwdsp_widget.php - Line 20
+msgid ""
+"Create responsive post slider widget using default Posts, Categories & Tags "
+"or any Custom Post Type and Custom Taxonomies registered."
+msgstr ""
+"Crie um widget de controle deslizante responsivo usando as Mensagens, "
+"Categorias e Tags padrão ou qualquer Tipo de Correio Personalizado e "
+"Taxonomias Personalizadas registradas."
+
+# @ /inc/jwdsp_widget.php - Line 222
+msgid "Proudly powered by %s"
+msgstr "Orgulhosamente alimentado por %s"
+
+# @ /inc/jwdsp_widget.php - Line 226
+msgid "No post found."
+msgstr "Nenhum post encontrado."
+
+# @ /inc/jwdsp_widget.php - Line 275
+msgid "Go to %s to define more custom post types."
+msgstr "Vá para %s para definir mais tipos de postagem personalizados."
+
+# @ /inc/jwdsp_widget.php - Line 298
+msgid "Posts to show:"
+msgstr "Artigos a apresentar:"
+
+# @ /inc/jwdsp_widget.php - Line 310
+msgid "Exclude"
+msgstr "Excluir"
+
+# @ /inc/jwdsp_widget.php - Line 312
+msgid "Post IDs, separated by commas."
+msgstr "IDs de página, separados por vírgulas."
+
+# @ /inc/jwdsp_widget.php - Line 315
+msgid "Custom Query from post type: %s"
+msgstr "Consulta personalizada do tipo de postagem: %s"
+
+# @ /inc/jwdsp_widget.php - Line 317
+msgid "Post title:"
+msgstr "Título da artigo:"
+
+# @ /inc/jwdsp_widget.php - Line 325
+msgid "Button text:"
+msgstr "Texto do botão:"
+
+# @ /inc/jwdsp_widget.php - Line 333
+msgid "Button corner radius:"
+msgstr "Botão de circularidade:"
+
+# @ /inc/jwdsp_widget.php - Line 341
+msgid "Button height:"
+msgstr "Altura do botão:"
+
+# @ /inc/jwdsp_widget.php - Line 341
+msgid "Button width:"
+msgstr "Largura do botão:"
+
+# @ /inc/jwdsp_widget.php - Line 349
+msgid "Post content:"
+msgstr "Conteúdo do artigo:"
+
+# @ /inc/jwdsp_widget.php - Line 356
+msgid "Post meta:"
+msgstr "Meta do artigo:"
+
+# @ /inc/jwdsp_widget.php - Line 365
+msgid "Trim title to "
+msgstr "Aparar o título para "
+
+# @ /inc/jwdsp_widget.php - Line 368, 376
+msgid "words"
+msgstr "palavras"
+
+# @ /inc/jwdsp_widget.php - Line 368
+msgid "Trim excerpt to "
+msgstr "Aparar o trecho para "
+
+# @ /inc/jwdsp_widget.php - Line 381
+msgid "Cover"
+msgstr "Tampa"
+
+# @ /inc/jwdsp_widget.php - Line 389
+msgid "Contain"
+msgstr "Conter"
+
+# @ /inc/jwdsp_widget.php - Line 397
+msgid "Display post title"
+msgstr "Exibir o título do artigo"
+
+# @ /inc/jwdsp_widget.php - Line 403
+msgid "Display arrows"
+msgstr "Exibir as setas"
+
+# @ /inc/jwdsp_widget.php - Line 409
+msgid "Display pagination"
+msgstr "Exibir a paginação"
+
+# @ /inc/jwdsp_widget.php - Line 415
+msgid "Display date"
+msgstr "Exibir a data"
+
+# @ /inc/jwdsp_widget.php - Line 421
+msgid "Display comments"
+msgstr "Exibir os comentários"
+
+# @ /inc/jwdsp_widget.php - Line 427
+msgid "Display excerpt"
+msgstr "Exibir o trecho"
+
+# @ /inc/jwdsp_widget.php - Line 433
+msgid "Display categories"
+msgstr "Exibir as categorias"
+
+# @ /inc/jwdsp_widget.php - Line 439
+msgid "Display tags"
+msgstr "Exibir as tags"
+
+# @ /inc/jwdsp_widget.php - Line 445
+msgid "Slide posts in <b>loop mode</b>"
+msgstr "Deslize os artigos no <b>modo de loop</b>"
+
+# @ /inc/jwdsp_widget.php - Line 510
+msgid "Exclude current post from loop"
+msgstr "Excluir o artigo atual do loop"
+
+# @ /inc/jwdsp_widget.php - Line 452
+msgid "Display <b>See More</b> button"
+msgstr "Exibir <b>Ver Mais</b> botão"
+
+# @ /inc/jwdsp_widget.php - Line 459
+msgid "Display \"Proudly powered by\" credit link"
+msgstr "Exibir \"Orgulhosamente alimentado por\" link de crédito"
+
+# @ /inc/jwdsp_widget.php - Line 466
+msgid "Display image"
+msgstr "Exibir a imagem"
+
+# @ /inc/jwdsp_widget.php - Line 472
+msgid "<b>Hide</b> posts <b>with no image</b>"
+msgstr "<b>Ocultar</b> os artigos </b>sem imagem</b>"
+
+# @ /inc/jwdsp_widget.php - Line 479
+msgid "Title"
+msgstr "Título"
+
+# @ /inc/jwdsp_widget.php - Line 483
+msgid "Use this ID %1$s in your %2$s for this widget."
+msgstr "Utilizar esta ID %1$s no seu %2$s para este widget."
+
+# @ /inc/jwdsp_widget.php - Line 487
+msgid "Posts"
+msgstr "Artigos"
+
+# @ /inc/jwdsp_widget.php - Line 489
+msgid "Customize"
+msgstr "Personalizar"
+
+# @ /inc/jwdsp_widget.php - Line 506
+msgid "Display image as"
+msgstr "Exibir a imagem como"
+
+# @ /inc/jwdsp_widget.php - Line 509
+msgid "Also..."
+msgstr "Além disso..."
+
+# @ /inc/jwdsp_widget.php - Line 524, 539
+msgid "Customize More"
+msgstr "Personalizar Mais"
+
+# @ /inc/jwdsp_widget.php - Line 529
+msgid "Font size"
+msgstr "Tamanho da fonte"
+
+# @ /inc/jwdsp_widget.php - Line 529
+msgid "Trim content"
+msgstr "Aparar o conteúdo"
+
+# @ /inc/jwdsp_widget.php - Line 563
+msgid "Title position"
+msgstr "Posição do título"
+
+# @ /inc/jwdsp_widget.php - Line 446
+msgid "Over the image"
+msgstr "Sobre a imagem"
+
+# @ /inc/jwdsp_widget.php - Line 454
+msgid "Under the image"
+msgstr "Debaixo da imagem"
+
+# @ /inc/jwdsp_widget.php - Line 563
+msgid "This option has been moved to %s"
+msgstr "Esta opção foi movida para %s"
+
+# @ /inc/jwdsp_metabox.php - Line 21
+# @ /inc/jwdsp_enqueue.php - Line 42
+msgid "Featured image for JWD PostSlider Widget"
+msgstr "Imagem de destaque para JWD PostSlider Widget"
+
+# @ /inc/jwdsp_metabox.php - Line 33
+msgid "Add featured image to be used by the JWD PostSlider Widget"
+msgstr "Adicionar imagem de destaque para ser usada pelo JWD PostSlider Widget"
+
+# @ /inc/jwdsp_metabox.php - Line 34
+msgid "Square shape; Minimum size: 800x800 px"
+msgstr "Forma quadrada; Tamanho mínimo: 800x800 px"
+
+# @ /inc/jwdsp_metabox.php - Line 38
+# @ /inc/jwdsp_enqueue.php - Line 40
+msgid "Remove Image"
+msgstr "Remover Imagem"
+
+# @ /inc/jwdsp_metabox.php - Line 40
+# @ /inc/jwdsp_enqueue.php - Line 41
+msgid "Add Image"
+msgstr "Adicionar Imagem"
+
+# @ /inc/jwdsp_enqueue.php - Line 43
+msgid "Use This Image"
+msgstr "Use Esta Imagem"
+
+# @ /inc/jwdsp_admin_page.php - Line 61
+msgid "Button position"
+msgstr "Posição do botão"
+
+# @ /inc/jwdsp_admin_page.php - Line 220
+msgid "Left"
+msgstr "Esquerda"
+
+# @ /inc/jwdsp_admin_page.php - Line 220
+msgid "Center"
+msgstr "Centro"
+
+# @ /inc/jwdsp_admin_page.php - Line 220
+msgid "Right"
+msgstr "Direita"
+
+# @ /inc/jwdsp_admin_page.php - Line 66
+msgid "Autoplay"
+msgstr "Reprodução automática"
+
+# @ /inc/jwdsp_admin_page.php - Line 239
+msgid "Delay between transitions (seconds)."
+msgstr "Atraso entre transições (segundos)."
+
+# @ /inc/jwdsp_widget.php - Line 343
+msgid "Button Link"
+msgstr "Link do botão"
+
+# @ /inc/jwdsp_widget.php - Line 346
+msgid "Leave empty for default."
+msgstr "Deixe vazio para o padrão."
