@@ -3,6 +3,10 @@
 */
 .light-theme.wp-posts-carousel { overflow: visible; width: 80%; }
 .light-theme.wp-posts-carousel .wp-posts-carousel-slide { display: none; padding: 1%; position: relative; margin-left: 2%; width: 90%; }
+@media only screen and (max-width: 950px) {
+.light-theme.wp-posts-carousel { overflow: visible; width: 70%;}
+.light-theme.wp-posts-carousel .wp-posts-carousel-slide { display: none; padding: 1% 1% 1% 10px; position: relative; margin-left: 12px; width: 90%; }
+}
 .light-theme.wp-posts-carousel.owl-loaded .wp-posts-carousel-slide { display: block; }
 .light-theme.wp-posts-carousel .wp-posts-carousel-container { border: 1px solid transparent; padding: 10px; transition: all 0.3s ease 0s; }
 .light-theme.wp-posts-carousel .wp-posts-carousel-container:hover { border-color: #ebebeb; background: #fcfcfc; }
@@ -38,10 +42,10 @@
 * navigation
 */
 .light-theme.wp-posts-carousel .owl-nav div:before  { font-family: "FontAwesome"; font-size: 30px; display: inline-block; content: '\f137'; }
-.light-theme.wp-posts-carousel .owl-controls .owl-nav div  {background: transparent; color: #a01831; border: 0px; text-align: center; text-decoration: none; display: block; width: 0px; height: 30px;line-height: 30px; margin: -50px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; border-radius: 50%; -webkit-border-radius: 50%; }
-.light-theme.wp-posts-carousel .owl-controls .owl-nav .owl-prev { left: -50px; padding: 0px 30px 0px 17px; }
+.light-theme.wp-posts-carousel .owl-controls .owl-nav div  {background: transparent; color: #a01831; text-align: center; text-decoration: none; display: block; width: 0px; height: 30px;line-height: 30px; margin: -55px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
+.light-theme.wp-posts-carousel .owl-controls .owl-nav .owl-prev { left: -50px; padding: 0px 30px 0px 20px; }
 .light-theme.wp-posts-carousel .owl-nav .owl-next:before  { content: '\f138'; }
-.light-theme.wp-posts-carousel .owl-controls .owl-nav .owl-next { right: -50px; padding: 0px 27px 0px 20px; }
+.light-theme.wp-posts-carousel .owl-controls .owl-nav .owl-next { right: -50px; padding: 0px 30px 0px 20px; }
 .light-theme.wp-posts-carousel:hover .owl-controls .owl-nav .owl-prev { opacity: 0.7; left: 0px; }
 .light-theme.wp-posts-carousel:hover .owl-controls .owl-nav .owl-next  { opacity: 0.7; right: 0px; }
 .light-theme.wp-posts-carousel:hover .owl-controls .owl-nav .owl-prev:hover,
