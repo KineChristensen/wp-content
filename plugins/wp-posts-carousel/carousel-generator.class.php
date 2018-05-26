@@ -291,7 +291,7 @@ class WpPostsCarouselGenerator {
                 }
 
                 $featured_image = '<div class="wp-posts-carousel-image">';
-                    $featured_image.= '<a href="' . $post_url . '" title="' . __('Read more', 'wp-posts-carousel') . ' ' . $post->post_title . '">';
+                    $featured_image.= '<a href="' . $post_url . '" title="' . __('Les om') . ' ' . $post->post_title . '">';
                         $featured_image.= '<img alt="' . $post->post_title . '" style="max-width:' . $params['image_width'] . '%;max-height:' . $params['image_height'] . '%" ' . $data_src . $image_class . '>';
                     $featured_image.= '</a>';
                 $featured_image.= '</div>';
