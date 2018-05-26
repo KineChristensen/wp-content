@@ -616,15 +616,10 @@
 
 					// BUTTONS BOX SHADOW
 					style += 'input#searchsubmit:hover, .pagination span.current, .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary.active, .btn.btn-primary:active:focus, .btn.btn-primary:active:hover, .woocommerce nav.woocommerce-pagination ul li span.current, .added_to_cart.wc-forward:hover, .woocommerce .single-product div.product form.cart .button:hover, .woocommerce #respond input#submit:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, #add_payment_method .wc-proceed-to-checkout a.checkout-button:hover, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover, .woocommerce div.product .woocommerce-tabs ul.tabs.wc-tabs li.active a, .woocommerce div.product .woocommerce-tabs ul.tabs.wc-tabs li.active a:hover, .woocommerce-message a.button:hover, .woocommerce a.button.wc-backward:hover, .hestia-sidebar-open.btn.btn-rose:hover, .hestia-sidebar-close.btn.btn-rose:hover' +
-					'{	' +
-					'-webkit-box-shadow: 0 14px 26px -12px' + accentColorVariation3 + ',0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px ' + accentColorVariation2 + '!important;' +
-					'box-shadow: 0 14px 26px -12px ' + accentColorVariation3 + ',0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px ' + accentColorVariation2 + '!important;' +
-					'}	';
+					'{}';
 
 					style += '.form-group.is-focused .form-control, div.wpforms-container .wpforms-form .form-group.is-focused .form-control, .nf-form-cont input:not([type=button]):focus, .nf-form-cont select:focus, .nf-form-cont textarea:focus, .woocommerce-cart .shop_table .actions .coupon .input-text:focus, .woocommerce-checkout #customer_details .input-text:focus, .woocommerce-checkout #customer_details select:focus, .woocommerce-checkout #order_review .input-text:focus, .woocommerce-checkout #order_review select:focus, .woocommerce-checkout .woocommerce-form .input-text:focus, .woocommerce-checkout .woocommerce-form select:focus, .woocommerce div.product form.cart .variations select:focus, .woocommerce .woocommerce-ordering select:focus {' +
-					'background-image: -webkit-gradient(linear,left top, left bottom,from(' + newval + '),to(' + newval + ')),-webkit-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));' +
-					'background-image: -webkit-linear-gradient(' + newval + '),to(' + newval + '),-webkit-linear-gradient(#d2d2d2,#d2d2d2);' +
-					'background-image: linear-gradient(' + newval + '),to(' + newval + '),linear-gradient(#d2d2d2,#d2d2d2);' +
+					'background-color:transparent;' +
 					'}';
 
 					style += '</style>';

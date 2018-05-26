@@ -1,0 +1,179 @@
+/*
+Plugin Name: WP Mega Menu Pro
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named style-rtl.css.
+
+See: https://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+.wpmm_enable_rtl .wp-megamenu-main-wrapper.wpmm-orientation-horizontal ul.wpmm-mega-wrapper > li > a,
+.rtl .wp-megamenu-main-wrapper.wpmm-orientation-horizontal ul.wpmm-mega-wrapper > li > a {
+	padding: 20px 18px 20px 25px;
+	text-align: right;
+}
+.wpmm_enable_rtl .wp-megamenu-main-wrapper.wpmm-orientation-vertical ul li.menu-item-has-children > a:after,
+.rtl .wp-megamenu-main-wrapper.wpmm-orientation-vertical ul li.menu-item-has-children > a:after {
+	left: 10px;
+    right: auto;
+}
+.wpmm_enable_rtl .wp-megamenu-main-wrapper.wpmm-orientation-horizontal.wpmm-askins-wrapper ul.wpmm-mega-wrapper > li > a i.wpmm-mega-menu-icon:before, 
+.wpmm_enable_rtl .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper ul.wpmm-mega-wrapper > li > a i.wpmm-mega-menu-icon:before,
+.wpmm_enable_rtl .wpmm-sub-menu-wrap ul li a.wp-mega-menu-link i,
+.rtl .wp-megamenu-main-wrapper.wpmm-ctheme-wrapper ul.wpmm-mega-wrapper > li > a i.wpmm-mega-menu-icon:before,
+.rtl .wpmm-sub-menu-wrap ul li a.wp-mega-menu-link i {
+	padding-right: 0;
+	padding-left: 5px;
+}
+.wpmm_enable_rtl .wp-megamenu-main-wrapper.wpmm-orientation-horizontal.wpmm-askins-wrapper ul.wpmm-mega-wrapper > li.menu-item-has-children > a:after,
+.rtl .wp-megamenu-main-wrapper.wpmm-orientation-horizontal.wpmm-askins-wrapper ul.wpmm-mega-wrapper > li.menu-item-has-children > a:after {
+	right: auto;
+	left: 9px;
+}
+.wpmm_enable_rtl .wp-megamenu-main-wrapper ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap,
+.wpmm_enable_rtl .wpmm_megamenu .wp-megamenu-main-wrapper ul ul li a,
+.wpmm_megamenu ul.wp-mega-sub-menu li a,
+.rtl .wp-megamenu-main-wrapper ul.wpmm-mega-wrapper li .wpmm-sub-menu-wrap,
+.rtl .wpmm_megamenu .wp-megamenu-main-wrapper ul ul li a,
+.rtl ul.wp-mega-sub-menu li a {
+	text-align: right !important;
+}
+.wpmm_enable_rtl .wpmm-pro-recent-posts-widget .wpmm-recentposts-section .wpmm-content-right-section .wpmm-comment-number,
+.rtl .wpmm-pro-recent-posts-widget .wpmm-recentposts-section .wpmm-content-right-section .wpmm-comment-number {
+	padding-left: 0;
+	padding-right: 15px;
+}
+.wpmm_enable_rtl .wpmm-pro-recent-posts-widget .wpmm-recentposts-section .wpmm-content-right-section .wpmm-comment-number:before,
+.rtl .wpmm-pro-recent-posts-widget .wpmm-recentposts-section .wpmm-content-right-section .wpmm-comment-number:before {
+	left: auto;
+	right: 1px;
+}
+.wpmm_enable_rtl .wpmm-pro-recent-posts-widget .wpmm-recentposts-section .wpmm-content-right-section,
+.rtl .wpmm-pro-recent-posts-widget .wpmm-recentposts-section .wpmm-content-right-section {
+	padding: 0 0 15px 15px;
+}
+.wpmm_enable_rtl .wp-mega-sub-menu li .wpmm-sub-menu-wrapper.wpmm_menu_1 li, 
+.wpmm_enable_rtl .wp-mega-sub-menu .widget_nav_menu li, 
+.wpmm_enable_rtl .wp-mega-sub-menu .widget_pages li, 
+.wpmm_enable_rtl .wp-mega-sub-menu .widget_categories li, 
+.wpmm_enable_rtl .wp-mega-sub-menu .widget_archive li, 
+.wpmm_enable_rtl .wp-mega-sub-menu .widget_meta li, 
+.wpmm_enable_rtl .wp-mega-sub-menu .widget_product_categories ul.product-categories li a, 
+.wpmm_enable_rtl .wp-mega-sub-menu .widget_recent_comments li, 
+.wpmm_enable_rtl .wp-mega-sub-menu .widget_recent_entries li,
+.rtl .wp-mega-sub-menu li .wpmm-sub-menu-wrapper.wpmm_menu_1 li, 
+.rtl .wp-mega-sub-menu .widget_nav_menu li, 
+.rtl .wp-mega-sub-menu .widget_pages li, 
+.rtl .wp-mega-sub-menu .widget_categories li, 
+.rtl .wp-mega-sub-menu .widget_archive li, 
+.rtl .wp-mega-sub-menu .widget_meta li, 
+.rtl .wp-mega-sub-menu .widget_product_categories ul.product-categories li a, 
+.rtl .wp-mega-sub-menu .widget_recent_comments li, 
+.rtl .wp-mega-sub-menu .widget_recent_entries li {
+	padding-left: 0;
+	padding-right: 10px;
+}
+.wpmm_enable_rtl .wpmm-orientation-horizontal .wp-mega-sub-menu li .wpmm-sub-menu-wrapper.wpmm_menu_1 li:before, 
+.wpmm_enable_rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_pages li:before, 
+.wpmm_enable_rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_categories li:before, 
+.wpmm_enable_rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_archive li:before, 
+.wpmm_enable_rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_meta li:before, 
+.wpmm_enable_rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_recent_comments li:before, 
+.wpmm_enable_rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_recent_entries li:before, 
+.wpmm_enable_rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_product_categories ul.product-categories li a:before, 
+.wpmm_enable_rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_categories li:before, 
+.wpmm_enable_rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_archive li:before,
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu li .wpmm-sub-menu-wrapper.wpmm_menu_1 li:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_pages li:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_categories li:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_archive li:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_meta li:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_recent_comments li:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_recent_entries li:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_product_categories ul.product-categories li a:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_categories li:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_archive li:before,
+.rtl .wpmm-orientation-horizontal .wp-mega-sub-menu li .wpmm-sub-menu-wrapper.wpmm_menu_1 li:before, 
+.rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_pages li:before, 
+.rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_categories li:before, 
+.rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_archive li:before, 
+.rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_meta li:before, 
+.rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_recent_comments li:before, 
+.rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_recent_entries li:before, 
+.rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_product_categories ul.product-categories li a:before, 
+.rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_categories li:before, 
+.rtl .wpmm-orientation-horizontal .wp-mega-sub-menu .widget_archive li:before,
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu li .wpmm-sub-menu-wrapper.wpmm_menu_1 li:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_pages li:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_categories li:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_archive li:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_meta li:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_recent_comments li:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_recent_entries li:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_product_categories ul.product-categories li a:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_categories li:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_archive li:before {
+	left: auto;
+	right: 0;
+}
+.wpmm_enable_rtl .wpmm-background-image img,
+.rtl .wpmm-background-image img {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+}
+.wpmm_enable_rtl.woocommerce .wpmm-mega-wrapper ul.cart_list li img, 
+.wpmm_enable_rtl.woocommerce .wpmm-mega-wrapper ul.product_list_widget li img,
+.rtl.woocommerce .wpmm-mega-wrapper ul.cart_list li img, 
+.rtl.woocommerce .wpmm-mega-wrapper ul.product_list_widget li img {
+	float: right;
+	margin-right: 0;
+	margin-left: 10px;
+}
+.wpmm_enable_rtl .wpmm-pro-productlist-wrap .all-product-list li .wpmm-second-wrapper .wpmm-woo-content .price ins, 
+.wpmm_enable_rtl .wpmm-pro-recent-product-widget .all-re-product-list li .wpmm-recentpro-right-section .price ins, 
+.wpmm_enable_rtl .wpmm-pro-recent-product-widget .all-re-product-list li .wpmm-recentpro-right-section .price ins,
+.wpmm_enable_rtl .wpmm-pro-woo-product-widget ul.all-woo-product-new-layout li .wpmm-new-layout-bottom-section span.price ins,
+.rtl .wpmm-pro-productlist-wrap .all-product-list li .wpmm-second-wrapper .wpmm-woo-content .price ins, 
+.rtl .wpmm-pro-recent-product-widget .all-re-product-list li .wpmm-recentpro-right-section .price ins, 
+.rtl .wpmm-pro-recent-product-widget .all-re-product-list li .wpmm-recentpro-right-section .price ins,
+.rtl .wpmm-pro-woo-product-widget ul.all-woo-product-new-layout li .wpmm-new-layout-bottom-section span.price ins {
+	float: none;
+}
+.wpmm_enable_rtl .wpmm-pro-productlist-wrap .all-product-list li .wpmm-second-wrapper .wpmm-woo-content .star-rating,
+.wpmm_enable_rtl .wpmm-pro-woo-product-widget ul.all-woo-product-new-layout li .wpmm-new-layout-bottom-section .star-rating,
+.rtl .wpmm-pro-productlist-wrap .all-product-list li .wpmm-second-wrapper .wpmm-woo-content .star-rating,
+.rtl .wpmm-pro-woo-product-widget ul.all-woo-product-new-layout li .wpmm-new-layout-bottom-section .star-rating {
+	width: 5.4em;
+	float: none;
+}
+.wpmm_enable_rtl .wpmm-orientation-vertical ul.wpmm-mega-wrapper > li > a i.wpmm-mega-menu-icon,
+.rtl .wpmm-orientation-vertical ul.wpmm-mega-wrapper > li > a i.wpmm-mega-menu-icon {
+	margin-right: 0;
+	margin-left: 5px;
+}
+.wpmm_enable_rtl .wpmm-orientation-vertical ul.wpmm-mega-wrapper > li > a.wp-mega-menu-link,
+.rtl .wpmm-orientation-vertical ul.wpmm-mega-wrapper > li > a.wp-mega-menu-link {
+	padding: 12px 15px 12px 15px;
+}
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu li .wpmm-sub-menu-wrapper.wpmm_menu_1 li:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_pages li:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_meta li:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wpmm-sub-menu-wrapper.wpmm-menu1 .wp-mega-sub-menu li a span.wpmm-mega-menu-href-title:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_product_categories ul.product-categories li a:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_recent_comments li:before, 
+.wpmm_enable_rtl .wpmm-orientation-vertical  .wp-mega-sub-menu .widget_recent_entries li:before,
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu li .wpmm-sub-menu-wrapper.wpmm_menu_1 li:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_pages li:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_meta li:before, 
+.rtl .wpmm-orientation-vertical .wpmm-sub-menu-wrapper.wpmm-menu1 .wp-mega-sub-menu li a span.wpmm-mega-menu-href-title:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_product_categories ul.product-categories li a:before, 
+.rtl .wpmm-orientation-vertical .wp-mega-sub-menu .widget_recent_comments li:before, 
+.rtl .wpmm-orientation-vertical  .wp-mega-sub-menu .widget_recent_entries li:before {
+	-webkit-transform: translateY(50%);
+	-ms-transform: translateY(50%);
+	transform: translateY(50%);
+}
+.wpmm_enable_rtl ul.wpmm-mega-wrapper li.wpmega-menu-flyout ul.wp-mega-sub-menu > li > a,
+.rtl ul.wpmm-mega-wrapper li.wpmega-menu-flyout ul.wp-mega-sub-menu > li > a {
+	padding-right: 20px; 
+}

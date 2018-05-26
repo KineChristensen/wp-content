@@ -2592,8 +2592,6 @@ body:not(.home) .navbar-default .navbar-nav > .active > a, body:not(.home) .navb
   top: 40px;
 }
 .navbar.navbar-scroll-point, .navbar.navbar-scroll-point.header-with-topbar, .navbar.navbar-scroll-point.hestia_center, .navbar.navbar-scroll-point.hestia_right {
-  position: fixed;
-  top: 0;
 }
 .navbar.full-screen-menu.header-with-topbar {
   position: absolute;
