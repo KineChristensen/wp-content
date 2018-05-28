@@ -1,4 +1,4 @@
-/** Saturday 26th May 2018 21:27:10 UTC (core) **/
+/** Monday 28th May 2018 10:44:04 UTC (core) **/
 
 #mega-menu-wrap-primary, #mega-menu-wrap-primary #mega-menu-primary, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
   -moz-transition: none;
@@ -67,7 +67,7 @@
 #mega-menu-wrap-primary #mega-menu-primary {
   visibility: visible;
   text-align: center;
-  padding: 0px 0px 0px -30px;
+  padding: 0px 0px 0px 0px;
 }
 @media only screen and (max-width: 600px) {
   #mega-menu-wrap-primary #mega-menu-primary {
@@ -82,6 +82,10 @@
 #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
   cursor: pointer;
   display: inline;
+  -webkit-transition: background 200ms linear, color 200ms linear;
+  -moz-transition: background 200ms linear, color 200ms linear;
+  -o-transition: background 200ms linear, color 200ms linear;
+  transition: background 200ms linear, color 200ms linear;
 }
 #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link .mega-description-group {
   vertical-align: middle;
@@ -228,7 +232,7 @@
   position: static;
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item {
-  margin: 0 10px 0 0;
+  margin: 0 35px 0 0;
   display: inline-block;
   height: auto;
   vertical-align: middle;
@@ -238,7 +242,7 @@
 }
 @media only screen and (min-width: 601px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-item-align-right {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 35px;
   }
 }
 @media only screen and (min-width: 601px) {
@@ -250,24 +254,11 @@
   background: rgba(0, 0, 0, 0);
   color: #555;
   font-weight: normal;
-  text-decoration: underline;
-  border-color: #fff;
+  text-decoration: none;
+  border-color: #666;
 }
 @media only screen and (max-width: 600px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus {
-    color: #fff;
-    background: #333;
-  }
-}
-#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {
-  background: rgba(0, 0, 0, 0);
-  color: #555;
-  font-weight: normal;
-  text-decoration: underline;
-  border-color: #fff;
-}
-@media only screen and (max-width: 600px) {
-  #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {
     color: #fff;
     background: #333;
   }
@@ -279,7 +270,7 @@
   border-bottom: 0px solid #fff;
   outline: none;
   text-decoration: none;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 0px 0px 0px;
   line-height: 10%;
   font-weight: normal;
   height: 10%;
@@ -288,7 +279,7 @@
   width: auto;
   display: block;
   color: #222;
-  text-transform: none;
+  text-transform: capitalize;
   text-decoration: none;
   background: rgba(0, 0, 0, 0);
   -webkit-border-radius: 0px 0px 0px 0px;
@@ -1188,7 +1179,7 @@
 #mega-menu-wrap-primary {
   top: 68px !important;
   left: 50% !important;
-  transform: translateX(-56%);
+  transform: translateX(-55%);
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -1216,4 +1207,24 @@
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
   text-transform: capitalize !important;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:before {
+  content: "" !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 2px !important;
+  bottom: 0 !important;
+  top: 13px !important;
+  left: 0 !important;
+  background-color: #434b62 !important;
+  visibility: hidden !important;
+  -webkit-transform: scaleX(0) !important;
+  transform: scaleX(0) !important;
+  -webkit-transition: all 0.3s ease-in-out 0s !important;
+  transition: all 0.3s ease-in-out 0s !important;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover:before {
+  visibility: visible !important;
+  -webkit-transform: scaleX(1) !important;
+  transform: scaleX(1) !important;
 }
