@@ -345,6 +345,9 @@ class WpPostsCarouselGenerator {
                 $created_date.= ' | ';
                     $created_date.= get_post_meta( get_the_ID(), 'event_time', true );
                 $created_date.= '</p>';
+                $created_date.= '<p class="event-category">';
+                    $created_date.= get_post_meta( get_the_ID(), 'event_category', true );
+                $created_date.= '</p>';
             }
 
             /*
