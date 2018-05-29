@@ -5,7 +5,8 @@ Author Email: m.gierada@teastudio.pl
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-(function($, window, document) {
+// Code that uses other library's $ can follow here.
+$(document).ready(function($, window, document) {
     $(document).ready(function() {
         $('body').on('change keyup', '.wp-posts-carousel-field.field-validate', function(event) {
             var plugin_field = $(this);
