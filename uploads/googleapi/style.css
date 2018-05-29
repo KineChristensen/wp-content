@@ -1,0 +1,124 @@
+
+#map{
+    position: absolute;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    left:0;
+    top:0;
+}
+
+#right-panel {
+    position: absolute;
+    background-color: #999999;
+    right: 0;
+    z-index: 210;
+    width: 20%;
+}
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+input.chk-btn{
+    width:20px;
+    height:10px;
+    display: none;
+}
+
+input.chk-btn + label{
+    margin: auto;
+    position: fixed;
+    z-index:100;
+    background: red;
+    cursor: pointer;
+    width:80px;
+    height:10px;
+    padding:10px;
+    border:1px solid black;
+    vertical-align: top;
+
+}
+
+input#school + label[for=school]{
+    top:250px;
+    left:0;
+
+}
+
+input#food + label[for=food]{
+    top:300px;
+    left:0;
+}
+
+input#transport + label[for=transport]{
+    top: 350px;
+    left:0;
+}
+
+input#bar + label[for=bar]{
+    top: 400px;
+    left:0;
+}
+
+input#gym + label[for=gym]{
+    top: 450px;
+    left:0;
+}
+
+input.chk-btn:not(.checked)+label:hover{
+    box-shadow: 0 1px 3px;
+    left:0;
+}
+
+input.chk-btn+label:active, input.chk-btn:checked+label{
+    box-shadow: 0 0 3px inset;
+    background: #870401;
+}
+
+#filterButtons{
+    position: relative;
+    background: darkgrey;
+    height:400px;
+    width:400px;
+}
+
+
+input.info-btn{
+    display: none;
+}
+
+input.info-btn + label[for=moreInfo]{
+    margin: auto;
+    position: relative;
+    z-index:200;
+    background: red;
+    cursor: pointer;
+    width:80px;
+    height:10px;
+    padding:10px;
+    border:1px solid black;
+}
+
+input.info-btn:not(.checked)+label[for=moreInfo]:hover{
+    box-shadow: 0 1px 3px;
+    left:0;
+}
+
+input.info-btn+label[for=moreInfo]:active, input.info-btn:checked+label[for=moreInfo]{
+    box-shadow: 0 0 3px inset;
+    background: #870401;
+}
+
+
+

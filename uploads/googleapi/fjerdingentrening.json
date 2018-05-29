@@ -1,0 +1,514 @@
+{
+  "html_attributions": [],
+  "results": [
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.91618200000001,
+          "lng": 10.757546
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.91757283029151,
+            "lng": 10.7587525802915
+          },
+          "southwest": {
+            "lat": 59.91487486970851,
+            "lng": 10.7560546197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "214a38ffdde29444521d45b4f4c8b8413ac93b9d",
+      "name": "Actic Storgata",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 2160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106759319362219186426/photos\">Mada Stoica</a>"
+          ],
+          "photo_reference": "CmRaAAAABguQbWP24u-bn-_803VPfKjS23UoBKJb6TqtFejjmkKQU9Dnl0gTrn1FWG5QosLhahTYqjINxXIPyEH2iJ3Q56wXsdGrgtwOh7gTMKsw8u5s6eaCZm6gZ4EKDShZr7owEhDG3hJY9UQmTKtVrKKlafeGGhTEQdrcOt6AwZEC4pt2HyHQYcCSHA",
+          "width": 3840
+        }
+      ],
+      "place_id": "ChIJoyW52GBuQUYRaYABplzYnJ4",
+      "rating": 3.9,
+      "reference": "CmRSAAAAorr3hQ1s_dA_-fQDn14uU5MhrE5PTzMINYiL2IgtW7YPUaQlkTM93xD9BE15KggEnWmkyEiMsUuFkUocqFfAYGy92jdSUBQfjvfpjYSOvhoMSMqgEOrtuEdpp86KokeOEhDDeXyvkXOhdTHWbsPbV6dgGhTDRDMt3fNrjxWt3EGBRVvnfo8Icw",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Storgata 38, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.9157868,
+          "lng": 10.7587026
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.91704728029151,
+            "lng": 10.7599473302915
+          },
+          "southwest": {
+            "lat": 59.9143493197085,
+            "lng": 10.7572493697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "9c96b264f5ac53cd6eed8bcbfb4ac8cca06e2167",
+      "name": "Harald's Gym",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110465198778143741874/photos\">Øystein Kolstad Kvalø</a>"
+          ],
+          "photo_reference": "CmRaAAAA0sQ3F0Kub0umSemSzGt6u7VvJMLIj17WL2rk4DI3ysVxabmqfjb7IyYzMHY4EIzsQmdbJraFSP8Gnn_CSn3Mmq8Z77OOEPC21ZBvJQ2rspz4h8kslDNGtWPEIiK-fgofEhBCM8rmhKSjfNbw1o7LIDRPGhQAn5aBkV76Y55wFniCTLHrtcJbwg",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJA2pjwmBuQUYR8OMcBexWR7c",
+      "rating": 4.3,
+      "reference": "CmRSAAAA6R8lV-2PcbAhHrajviiEPUTaIUz0Ww0JVupr8x8JIQszxe1YYAOb4S8owx6ltVSZUpb-3tv2dh6fWijP0dZjSLQ1VICfq1xQ7_pxVe2QNJ9sd3WVzqrFkiPsawhmqqAUEhC0W1i3JAi9vXIa11rR1GrPGhTWmFoX0nXjg0PkpNB2fBs3F7ggJQ",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Hausmanns gate 6, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.91569419999999,
+          "lng": 10.7669234
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.91699138029149,
+            "lng": 10.7683483302915
+          },
+          "southwest": {
+            "lat": 59.91429341970848,
+            "lng": 10.7656503697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "3edb2d4a756d30f22db857ee924b1c7e33d246d6",
+      "name": "Yggdrasil Yogaskole",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 2988,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101342855924624067713/photos\">Erik Steinsto</a>"
+          ],
+          "photo_reference": "CmRaAAAAw14XZcyIhbU1OSOaKafhM3bbDOuPyiBIFkEAA0iq3NUacqZfWtqQFT0p0mWw1DJ7CBP3ZHi_uruiWB1TXD0vEmQ7lPNRYhgbNhNnzOWP_tkbruoPMgKLS4qT4gzcJEb2EhB6NbsQ8AUVyEue3Jy0i_MRGhSxeLFoWaihJWogrXtW8myKgBjQ4A",
+          "width": 5312
+        }
+      ],
+      "place_id": "ChIJA0WiiF5uQUYRUH_nrMWuZqY",
+      "rating": 4.5,
+      "reference": "CmRSAAAAAxj-UjzT7T9pCetUEeSdbRa8PS9O39_9ueiPfxwXnk1hiiArfYwMZzvRRrSMrPD5NkLfPREU0e0SYoSPIQ-kgXLPcdz9G-WgBP8NAXTyGBRi3J-Ng-jFBxqcVOJrKK_EEhBR4keWe2dovboBE4OwtYwBGhTqc7A0sShy0KtioE2Aw4R9JDN20w",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Motzfeldts gate 26, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.9188379,
+          "lng": 10.7603446
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.9200669802915,
+            "lng": 10.7618295302915
+          },
+          "southwest": {
+            "lat": 59.91736901970849,
+            "lng": 10.7591315697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "a791adb593cddec142836814c71a781c6fd1f293",
+      "name": "SATS Schous plass",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111757438090323170401/photos\">Eirik Amundsen</a>"
+          ],
+          "photo_reference": "CmRaAAAA7f5sUOwWloXwwhe7rGKQ1rkZpn0Y91Yx_-_hMoAgyS86P17Q8Y1vExWhL0erZZhD6wHpiajeuXd4cDOu1m9L6LD8nLV_tkYOCKlPpphuz40sb58DQyVtaHqH7j-_5HwrEhAc8VFzaMcwMnCwAB0j_0foGhQTAWNqH8mXi67_XRx9xss0xlDTVA",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJFRLUbmduQUYRfUXIDHWbqEg",
+      "rating": 4.2,
+      "reference": "CmRRAAAA2oJTystW8vF7q5Typ4Zz4rlLJNcStM7yNfesHtkRPkoZ1OMMAnc4enhFXf4nykdM5VxVqwlDwYTsAUahtoWc66OPdDQOhn2sRNmtUzd02FKsN1tLJNJ-wRHNluY7OZKKEhA4q9Itw8z6rrkA5OmviQ0LGhR0zKn8QaYgfVh7hVV7rpnNqd9rGg",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Trondheimsveien 2D, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.9199906,
+          "lng": 10.7598709
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.9213355802915,
+            "lng": 10.7609502302915
+          },
+          "southwest": {
+            "lat": 59.91863761970849,
+            "lng": 10.7582522697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "23e39003242a4a757c1b0d4cbb70549258c30c86",
+      "name": "EVO Grünerløkka",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116826641361075887986/photos\">Håvard Kindem</a>"
+          ],
+          "photo_reference": "CmRaAAAAhYdKcuXIlKTVgLq3vM8giPQ8r49ZGTMQ1QiFTx87t8bhIDnIVvuQxy8A1Zn1f6Nt40WSmZQ8Yb8freT0Nd_TxNRPRC3MO9dE0PN-PUNnx7wJ-DDlCSFAIEXN4VgcbYMXEhBQB1BIQKtdZGTfO_DI8WFaGhQQfEFAQcNGLvoxJAv3CJotz59UTw",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ-3LOAGduQUYR1BQk9kbc9WM",
+      "rating": 3.7,
+      "reference": "CmRRAAAAmBCwa8pR8no87Lyt3X1T-RVX3m7hYLpnq9yDwr1tyVtT4OqFl4YFZ73TA-E05XxyuPXbprHu3iiLAsMhfrvoNM0D3Bo8uv1rixgQ6eUPfHa73ZFvx9C1x73NF4sxb0PpEhBcJzuS43gtHmdA5cL_A-BRGhSsOdou-c7WIZO-_mudp1w4uu-U0g",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Thorvald Meyers gate 72, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.9128297,
+          "lng": 10.7549285
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.9140266302915,
+            "lng": 10.7564385802915
+          },
+          "southwest": {
+            "lat": 59.9113286697085,
+            "lng": 10.7537406197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "bcde2778eaf2a2b8a26767a05645f575e13a6b6f",
+      "name": "SATS Spektrum",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117135075262073160915/photos\">Ahmad Ali Baik</a>"
+          ],
+          "photo_reference": "CmRaAAAAhxF1jVAmOT7ViNZk4KWSYzuKSOkLyCUnW2qGvSsra2demqjtfEa3V3nHFu4K9mSQMbd-ay297qeY3kB73vO9iQ2-7liv_R8zIMfBr1yzXoCL6zELuVJ0zpjOS4jNbWSkEhBJxJ26UpgRHGtUjxBJ3ZOwGhT9SCRQo8z6hjy9HI-AGuIirq51rw",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJFRLUbmduQUYReegUeDYTBmE",
+      "rating": 3.9,
+      "reference": "CmRRAAAAVFwgT9FgJ5Q9RMaZDrPcGk7fGkT0XjdClxtnFc3ehJPlSS1Wi9lyGVdkgrprLyNlm5sTCoxkxVdgCbHbwbl2uCP7Q_7JP-imTHAfLK2ZxH6gC8uUcJPWOtarfhhDybFpEhA7KTxLZHuqmHVJyCmPqOqOGhQgpdgRNGaG8vvh2SBZ-A2nMdjV_w",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Sonja Henies plass 4, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.91779949999999,
+          "lng": 10.7625983
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.91913458029151,
+            "lng": 10.7638965302915
+          },
+          "southwest": {
+            "lat": 59.91643661970851,
+            "lng": 10.7611985697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "8b7c1f9268545f4e865670982b0a3f76236363b5",
+      "name": "Leela Yoga",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 2400,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116653123243085955769/photos\">Leela Yoga</a>"
+          ],
+          "photo_reference": "CmRaAAAA_D-yGXbCOaNKRTsYd6aawYDv0cFgcVPRXcrwS8MQxPFnWt4trM6qzlhzn5vGo0JDKpLUpaFP5UMiaBOogpn75QIdxPCb30GoI_YPQ1uhslBsK7vcC3IzR1HyjP8_uoqfEhBYvl5a4UHbXFn7RF8qjdYuGhSPK1VgwsijoNYu0Ro8YqEk9RlCLA",
+          "width": 3600
+        }
+      ],
+      "place_id": "ChIJYyC8XWduQUYRkvQXPDSYtZE",
+      "rating": 4.6,
+      "reference": "CmRSAAAABTOAJ6ed4Bvrky0D8qRhfos31BtkXETqeoRwXsGh46We6j97ybl-UtcsP1FCLbeJXg9q5fupStukTbPrXB5jsEeUECEy_KZcNjccixYHvzvBmCRKKbf7AabVZV5emQwxEhA36_4rfv9a78-RVv6Z-h3qGhSfDWkcrUm_iFOSaYZGGstTBzRSig",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "gym",
+        "store",
+        "health",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Heimdalsgata 10, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.9170116,
+          "lng": 10.7587169
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.91841693029151,
+            "lng": 10.7599018802915
+          },
+          "southwest": {
+            "lat": 59.91571896970849,
+            "lng": 10.7572039197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "43c92c1d7cceebee25ba1280cddc0422dba21d25",
+      "name": "Gymmen",
+      "place_id": "ChIJ27yT0mBuQUYRRGHnifLQj94",
+      "reference": "CmRSAAAAFnpc0nTIMMxwVCO7iOdGbAIJLmqrrvvOzx_767gW22_PUPUkc4nDqk8lhFNgMl3EUJmQV8G_0vpGf2rhNoyA_ljkaaiC50pW-_mn9PtFsn-9135TlSyJ1MLJ-heylZCgEhARSiBK8yz6x7cLY7FUeyVjGhQcXZ67bRr8T-9QEnvI5ImgU_BKiw",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Storgata 40, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.91722379999998,
+          "lng": 10.7561713
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.91857278029149,
+            "lng": 10.7575202802915
+          },
+          "southwest": {
+            "lat": 59.91587481970848,
+            "lng": 10.7548223197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "16c2ee598799e339f272c57999703d28cd9d993a",
+      "name": "Lofoten Performance",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "place_id": "ChIJUTtvwyBvQUYRyOxQCYl4Dmg",
+      "reference": "CmRRAAAAURbCA-PVcL6wuFLatyB0BFON7nmi7P4PcepXpwvog_fddGk74iVQFvu_LpNYbv2saT2rtbF3Ijwl2z8qD7ivmIqk87r0MiB6pbmvDde2AApfAhUh3x1cdoAqL6Q6O9bdEhCZcus-qA39vEIXEV8EvtmSGhTYycRY8HrSwjj8-wCML3mYfo9zNQ",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Unnamed Road,0182, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.9164249,
+          "lng": 10.7662743
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.9179582802915,
+            "lng": 10.7680301802915
+          },
+          "southwest": {
+            "lat": 59.91526031970849,
+            "lng": 10.7653322197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "8352f96d053e7eff0084a699e0482bf90770349b",
+      "name": "Football ground ( Free To Play)",
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115359650973748639900/photos\">Rahul KK</a>"
+          ],
+          "photo_reference": "CmRaAAAAFlDJj92JA06EwWnU-IdYrd3gSqmUsta9CWx5xa01mTQF4GrmWkL55nIh0ZUXPQqlrG5UBJ9e46kKPzmOmDxmrB8lN0dJJeFHbS9YXKpfwWwRPBVm-rQFiBDbHicrw9jaEhCU1jgHuo_qeVEcoEeKU6K5GhQD0JcnUI6ZilCWUPax2m5JlRh2cQ",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJdxPVSQdvQUYRXsRCt6WhlFA",
+      "reference": "CmRRAAAA-oN6vt88leml15nz3iEihywKIfQv9lSkFzBNtaIn-6JKRf4SHRRp0QLTCfYtQmUSLAxF1HbOozcAFwL470k0hp6hl-iDk2mPOv3SBsUp3L7vT4Zp_zPEwT6UOq32ozOgEhAhgCbz0Abo-00GoOxVP7mqGhQhP929RTA0JGmQarQDgwQ-_69N6A",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Jens Bjelkes gate 0561, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.91708670000001,
+          "lng": 10.7516402
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.9184677302915,
+            "lng": 10.7529264802915
+          },
+          "southwest": {
+            "lat": 59.9157697697085,
+            "lng": 10.7502285197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "6394d194be7fe152217e81b061c1c66e09050e95",
+      "name": "Ananda Marga Meditasjon",
+      "place_id": "ChIJaejy8GNuQUYRzczemrapvR4",
+      "reference": "CmRRAAAAuMtV6qFuFUSKCkFfFBKSyCc_louw8_D5Mf2BFUCi1bgq3j0WXagkUUfgoLoBpti7-mfymdiOaGxSYaNFaYdz9pzhADxMc0b-IE-_-xwP5DWQItiwpbsEsF4NiOv4vBBXEhBcT2tt4tFKwwGDcH7UVnFbGhRgGd7RYkrjjUwO7VquOL02wNinOQ",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Mariboes gate 13, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.913968,
+          "lng": 10.752241
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.91531698029151,
+            "lng": 10.7535899802915
+          },
+          "southwest": {
+            "lat": 59.9126190197085,
+            "lng": 10.7508920197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "39ab92034b439cde0676d5f7719575b9d6456b55",
+      "name": "Dypyoga",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 504,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108157425657421291200/photos\">Naema Noor</a>"
+          ],
+          "photo_reference": "CmRaAAAA4saSIdjz1kfL5Cvf5KpC9BsXviHBOOSuHLlJLhIHT1FDYnQJrU6-9xt6hJIzgZBSeLO1fwGxz15abTvT9R6vaVjKpR2KdCe-Wj0blxyQg7O5jqqYPi4N--VDeUohFcGfEhAiV5pcvudTBEEtOqDXUGu9GhRr0hMuh4d4aNfQ5UHcfUEe07TlyA",
+          "width": 520
+        }
+      ],
+      "place_id": "ChIJESGviGFuQUYRLnUIPdQCtxM",
+      "reference": "CmRRAAAAk4NWerSyXZ6OOhTMQvF6ZoJiWJwBNrSSWkn6xDw94A-Tytslo-9PD2-l7AXERlZ8FqOpvV-TBzU1DMSdWYFO1kYJ_ogZSpiz6V5crxAbpboYTKJSDEXFvzB-4nrZ3GTcEhBbSfTaxiuiLtWS7M1DFqfVGhStbN1SuIGNiFg-WosMYRJ2oRuL_A",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "7, Munchs gate, Oslo"
+    }
+  ],
+  "status": "OK"
+}
