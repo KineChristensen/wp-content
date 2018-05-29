@@ -1,4 +1,4 @@
-/** Tuesday 29th May 2018 10:03:29 UTC (core) **/
+/** Tuesday 29th May 2018 16:19:55 UTC (core) **/
 
 #mega-menu-wrap-primary, #mega-menu-wrap-primary #mega-menu-primary, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
   -moz-transition: none;
@@ -586,7 +586,7 @@
   }
 }
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row .mega-menu-column > ul.mega-sub-menu > li.mega-menu-item {
-  padding: 0% 17% 0% 17%;
+  padding: 0% 0% 0% 0%;
   width: 100%;
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu {
@@ -597,7 +597,7 @@
   -o-border-radius: 0px 0px 0px 0px;
   border-radius: 0px 0px 0px 0px;
   background: #fff;
-  padding: 3% 10% 18px 10%;
+  padding: 2% 10% 25px 10%;
   position: absolute;
   width: 100%;
   border-top: 0px solid #fff;
@@ -773,7 +773,7 @@
   display: block;
   float: left;
   clear: none;
-  padding: 0% 17% 0% 17%;
+  padding: 0% 0% 0% 0%;
   vertical-align: top;
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item.mega-menu-clear, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item.mega-menu-clear {
@@ -1198,7 +1198,7 @@
     box-shadow: 0px 0px !important;
     left: 0 !important;
     transform: translateX(0) translateY(0) !important;
-    padding: 5% !important;
+    padding: 6% 1% 6% 1% !important;
   }
   .mega-menu-row:after {
     border-width: 0px !important;
@@ -1254,11 +1254,20 @@
   top: 68px !important;
   left: 50% !important;
   transform: translateX(-55%);
+  /*.mega-menu-column {
+	background-color: #f7f7f7 !important;
+    border: 15px solid #fff !important;
+    padding: 20px !important;
+    height: 100% !important;
+}*/
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu {
   box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1);
   left: 50%;
-  transform: translateX(-45%) translateY(68px);
+  transform: translateX(-45%) translateY(60px);
+}
+.mega-menu-row {
+  display: flex !important;
   /*.mega-menu-row:after {
     bottom: 100%;
     border: solid transparent;
@@ -1282,7 +1291,7 @@
   line-height: 100% !important;
 }
 #mega-menu-wrap-primary #mega-menu-primary input, #mega-menu-wrap-primary #mega-menu-primary img {
-  border-radius: 50% !important;
+  border-radius: 0% !important;
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
   text-transform: capitalize !important;
@@ -1306,4 +1315,89 @@
   visibility: visible !important;
   -webkit-transform: scaleX(1) !important;
   transform: scaleX(1) !important;
+  /*NEW MENU*/
+}
+.mega-menuitem {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center !important;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-content: center;
+  align-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
+  background-color: #f9f9f9 !important;
+  margin: 0% 5% 5% 5%;
+}
+.mega-menuitem:hover {
+  background-color: #efefef !important;
+}
+#mega-menuimage-kvadraturen {
+  background: url('http://localhost:8080/wordpress/wp-content/uploads/2018/05/DSC_1659.jpg') no-repeat;
+  height: 170px !important;
+  width: 100% !important;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+#mega-menuimage-fjerdingen {
+  background: url('http://localhost:8080/wordpress/wp-content/uploads/2018/05/westerdals.jpg') no-repeat;
+  height: 170px !important;
+  width: 100% !important;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+#mega-menuimage-vulkan {
+  background: url('http://localhost:8080/wordpress/wp-content/uploads/2018/05/vulkan.jpg') no-repeat;
+  height: 170px !important;
+  width: 100% !important;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+#mega-menuimage-brenneriveien {
+  background: url('http://localhost:8080/wordpress/wp-content/uploads/2018/05/brenneriveien.jpg') no-repeat;
+  height: 170px !important;
+  width: 100% !important;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.mega-menuheadline {
+  color: #2c2e34;
+  font-size: 1.9rem;
+  padding: 6px 0% 10px 0% !important;
+  font-family: 'Graphik-Semibold' !important;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.seperatorline {
+  width: 30% !important;
+  height: 1px;
+  margin: 0 auto;
+  display: block;
+  background-color: #bababa;
+  opacity: 0.3;
+}
+.mega-menutext {
+  color: #323c53;
+  font-size: 1.2rem;
+  line-height: 100%;
+  padding: 4% 10% 10% 10% !important;
+  font-family: 'Graphik-Regular' !important;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.mega-menutext p {
+  margin-bottom: -10px !important;
 }
