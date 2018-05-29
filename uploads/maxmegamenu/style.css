@@ -1,4 +1,4 @@
-/** Monday 28th May 2018 12:50:41 UTC (core) **/
+/** Tuesday 29th May 2018 09:47:43 UTC (core) **/
 
 #mega-menu-wrap-primary, #mega-menu-wrap-primary #mega-menu-primary, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
   -moz-transition: none;
@@ -24,7 +24,7 @@
   display: block;
   float: none;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 11px;
   height: auto;
   left: auto;
   line-height: 1.7;
@@ -69,12 +69,12 @@
   text-align: center;
   padding: 0px 0px 0px 0px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary {
     background: #222;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary {
     padding: 0;
   }
@@ -117,7 +117,7 @@
   display: inline-block;
   transition: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-icon-top > a.mega-menu-link {
     display: block;
     line-height: 40px;
@@ -153,7 +153,7 @@
   opacity: 1;
   pointer-events: auto;
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
   #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade"] li.mega-menu-item > ul.mega-sub-menu {
     opacity: 0;
     transition-duration: 200ms;
@@ -240,12 +240,12 @@
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-item-align-right {
   float: right;
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-item-align-right {
     margin: 0 0 0 35px;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-item-align-float-left {
     float: left;
   }
@@ -257,7 +257,7 @@
   text-decoration: none;
   border-color: #666;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus {
     color: #fff;
     background: #333;
@@ -290,19 +290,19 @@
   font-family: inherit;
   font-size: 20px;
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-multi-line > a.mega-menu-link {
     line-height: inherit;
     display: table-cell;
     vertical-align: middle;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-multi-line > a.mega-menu-link br {
     display: none;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item {
     display: list-item;
     margin: 0;
@@ -326,7 +326,7 @@
     background: transparent;
     text-align: left;
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row {
@@ -341,7 +341,7 @@
   background: transparent;
   border: 0;
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
   #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-1-of-1 {
     width: 100%;
   }
@@ -577,7 +577,7 @@
     width: 100%;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-column {
     width: 50%;
   }
@@ -586,7 +586,7 @@
   }
 }
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row .mega-menu-column > ul.mega-sub-menu > li.mega-menu-item {
-  padding: 0% 12% 0% 12%;
+  padding: 0% 17% 0% 17%;
   width: 100%;
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu {
@@ -597,7 +597,7 @@
   -o-border-radius: 0px 0px 0px 0px;
   border-radius: 0px 0px 0px 0px;
   background: #fff;
-  padding: 3% 20% 3% 20%;
+  padding: 3% 10% 18px 10%;
   position: absolute;
   width: 100%;
   border-top: 0px solid #fff;
@@ -607,14 +607,14 @@
   max-width: none;
   left: 0;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu {
     float: left;
     position: static;
     width: 100%;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-columns-1-of-1 {
     width: 100%;
   }
@@ -769,11 +769,11 @@
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item {
   color: #666;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 11px;
   display: block;
   float: left;
   clear: none;
-  padding: 0% 12% 0% 12%;
+  padding: 0% 17% 0% 17%;
   vertical-align: top;
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item.mega-menu-clear, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item.mega-menu-clear {
@@ -787,7 +787,7 @@
   text-decoration: none;
   font-weight: bold;
   margin: 0px 0px 0px 0px;
-  padding: 0px 5px 5px 0px;
+  padding: 5px 5px 5px 0px;
   vertical-align: top;
   display: block;
   visibility: inherit;
@@ -804,7 +804,7 @@
   text-decoration: none;
   font-weight: bold;
   margin: 5px 0px -5px 0px;
-  padding: 10px 0px -15px 0px;
+  padding: 10px 0px 3px 0px;
   vertical-align: top;
   display: block;
   border-top: 0px solid #555;
@@ -826,7 +826,7 @@
   text-decoration: none;
   font-weight: normal;
   margin: 0;
-  padding: -5px 0px 0px 0px;
+  padding: -5px 0px -10px 0px;
   vertical-align: top;
   display: block;
 }
@@ -836,7 +836,7 @@
   text-decoration: none;
   background: rgba(0, 0, 0, 0);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu {
     border: 0;
     padding: 10px;
@@ -862,7 +862,7 @@
   font-weight: normal;
   margin: 0;
   border: 0;
-  padding: -5px 0px 0px 0px;
+  padding: -5px 0px -10px 0px;
   vertical-align: top;
   display: block;
 }
@@ -884,7 +884,7 @@
   background: #f1f1f1;
   max-width: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu {
     float: left;
     position: static;
@@ -893,7 +893,7 @@
     border: 0;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item {
     clear: both;
   }
@@ -915,7 +915,7 @@
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item:first-child > a.mega-menu-link {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -925,7 +925,7 @@
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item:last-child > a.mega-menu-link {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -942,7 +942,7 @@
   left: 100%;
   top: 0;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item ul.mega-sub-menu {
     position: static;
     left: 0;
@@ -963,7 +963,7 @@
   transform: rotate(0);
   color: inherit;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children a.mega-menu-link:after {
     float: right;
   }
@@ -981,7 +981,7 @@
   content: '\f139';
   float: right;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item li.mega-menu-item-has-children > a.mega-menu-link:after {
     content: '\f140';
   }
@@ -989,7 +989,7 @@
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item a.mega-menu-link {
   text-align: right;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item a.mega-menu-link {
     text-align: left;
   }
@@ -998,7 +998,7 @@
   float: right;
   margin: 0 0 0 6px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item a.mega-menu-link:before {
     float: left;
     margin: 0 6px 0 0;
@@ -1009,7 +1009,7 @@
   float: left;
   margin: 0;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item-has-children > a.mega-menu-link:after {
     content: '\f140';
     float: right;
@@ -1026,12 +1026,12 @@
   display: inline;
   margin-right: 8px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary #mega-menu-primary li.mega-hide-on-mobile, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-hide-on-mobile {
     display: none;
   }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
   #mega-menu-wrap-primary #mega-menu-primary li.mega-hide-on-desktop, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-hide-on-desktop {
     display: none;
   }
@@ -1062,7 +1062,7 @@
   max-width: 100%;
   padding: 0;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary .mega-menu-toggle {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1128,7 +1128,7 @@
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #mega-menu-wrap-primary .mega-menu-toggle + #mega-menu-primary {
     display: none;
   }
@@ -1180,7 +1180,14 @@
 .navbar-toggle {
   display: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  .navbar {
+    position: relative !important;
+    margin-bottom: 0px !important;
+  }
+  .navbar .navbar-brand img, .navbar-scroll-point .navbar-brand img {
+    position: relative !important;
+  }
   .a11y-toolbar.rtl, .a11y-toolbar.right {
     display: none;
   }
@@ -1198,18 +1205,23 @@
   }
   #mega-menu-wrap-primary #mega-menu-primary {
     position: relative;
-    top: 80px;
+    top: -65px;
     margin-left: 5% !important;
     width: 100% !important;
-    background: #fff !important;
     color: #000 !important;
-    height: 100vh;
+    min-height: 100vh;
+    z-index: 1059 !important;
+    padding-bottom: 10px;
+    background-color: #fff !important;
+    border-bottom: 2px solid black;
   }
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
     color: #000 !important;
+    background-color: #fff !important;
   }
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus {
     color: #fff !important;
+    background-color: #000 !important;
   }
   #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children > a.mega-menu-link:after {
     position: absolute !important;
@@ -1222,7 +1234,7 @@
 .mega-menu-toggle {
   position: fixed !important;
   right: 10px !important;
-  top: -10px !important;
+  top: -160px !important;
   background-color: transparent !important;
 }
 .mega-toggle-label {
@@ -1234,6 +1246,9 @@
 #mega-menu-wrap-primary .mega-menu-toggle.mega-menu-open .mega-toggle-block-1:after {
   color: #000 !important;
   /* MOBILE MENU FIX END */
+}
+#mega-menu-wrap-primary #mega-menu-primary p {
+  margin-bottom: 5px;
 }
 #mega-menu-wrap-primary {
   top: 68px !important;
@@ -1247,12 +1262,12 @@
 }
 .mega-menu-row:after {
   bottom: 100%;
-  margin-left: -16%;
-  left: 50%;
   border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
+  content: "v";
+  color: #fff !important;
+  height: 30px;
+  width: 30px;
+  right: 50%;
   position: absolute;
   pointer-events: none;
   border-color: rgba(136, 183, 213, 0);
@@ -1261,6 +1276,10 @@
 }
 .mega-menu-link {
   text-align: center !important;
+}
+.mega-menu-item-type-widget {
+  text-align: center !important;
+  line-height: 100% !important;
 }
 #mega-menu-wrap-primary #mega-menu-primary input, #mega-menu-wrap-primary #mega-menu-primary img {
   border-radius: 50% !important;
