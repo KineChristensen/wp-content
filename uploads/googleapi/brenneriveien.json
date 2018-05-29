@@ -1,0 +1,374 @@
+{
+  "html_attributions": [],
+  "results": [
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.9217167,
+          "lng": 10.7569335
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.9230685802915,
+            "lng": 10.7585011302915
+          },
+          "southwest": {
+            "lat": 59.92037061970849,
+            "lng": 10.7558031697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "95e7cb147684fa492c2fcc81eb1a52baea60d38f",
+      "name": "Fitness24Seven",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103355649820136735757/photos\">Nicolás Ramírez Calderón</a>"
+          ],
+          "photo_reference": "CmRaAAAASG1Cb3_qpXxpWhcmi8xlYI1euPrwQiMEui_ey_DB7NbSoVTAl0Vxdn1fTjRNVE31b1Lm351I1mjDlz51H5S2WO9k9ZDATKLAZP7nfgjL1_EWnTHKWntV0VvfL2vNg1dwEhDOynirAXMaxLuFX1vioAI3GhTPjDBij2gju0cjZEBG1UNawBOGiw",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJU0I8FWZuQUYRXDJE2JytriI",
+      "rating": 3,
+      "reference": "CmRRAAAAzw3uJ3yZ157XgJjEXVGJgMmRH9CEhphp7xHZFQnqwD0T28-xOBZvuT0rJxpi3eElAef-zFTZWJwdnq9YubjOnw-ygM4VnbJa8w_Ef8XvkprW0Lig2d4lqXgHEpxh4rsWEhBnkuxG0kTW068trgdc211zGhSqv-paUEEqiX6iZegB6gU42c8W9g",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Markveien 35, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.9158796,
+          "lng": 10.7507381
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.9171618302915,
+            "lng": 10.7522235302915
+          },
+          "southwest": {
+            "lat": 59.91446386970849,
+            "lng": 10.7495255697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "f5c923270600093665723320e3410f6465cc0a1b",
+      "name": "Torggata Bad Treningssenter",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "place_id": "ChIJIwSkxmNuQUYR7JYnSkran0A",
+      "rating": 3.4,
+      "reference": "CmRRAAAAXcBhDm1p1LWwSjcKBr-XSF9d7aQ98kz2V1Qe87DbDGpqHKaUetm8293BTy-aTRGg7ae3HT7RYVQI9Q8DJrE9dDK4cNYf8gagilRcO9mQDAMtsbRofZ0ovwoNMUWV7yOTEhAxFgfKonnn-aYymuTYmF0QGhRH77vtBBiqChaxQbVbS8d8o-K3zA",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Torggata 16, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.91789739999999,
+          "lng": 10.7446063
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.91923313029151,
+            "lng": 10.7457397302915
+          },
+          "southwest": {
+            "lat": 59.9165351697085,
+            "lng": 10.7430417697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "e1658f56563ae4213c8d99165135e3188763f5b8",
+      "name": "Kurbadet fysikalske institutt",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "place_id": "ChIJ7z3DU2NuQUYR3mTizi-1rBM",
+      "rating": 4.7,
+      "reference": "CmRRAAAAnXkVrpuTCgG4QfYVMY3X5Wmt7VxQSSTcBOOgy2nKjy82vFbiCLTpmei4DTVZMBK5ww4vbFge7zrkS0vf_wh4w7pH8h0Sbs8KHbBGcz_4U7ra9KUQEdP82v8o8LeMwF0hEhCqaJMO2ZRAf1lC6VERsh28GhQVa9jGYuC4Ct2mFzZEGqnpvMoRfw",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Akersgata 74, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.9179339,
+          "lng": 10.7458547
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.91940488029151,
+            "lng": 10.7471399302915
+          },
+          "southwest": {
+            "lat": 59.9167069197085,
+            "lng": 10.7444419697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "94efcd13855f4aeaa58d6582d17bc47b8a09732d",
+      "name": "SQF - Sentrum Squash & Fitness",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 3968,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108269539209235353935/photos\">Andre Ingebretsen</a>"
+          ],
+          "photo_reference": "CmRaAAAAnaPnwyOWFs4_Tu3qYRL4Ne6hTOxad8b_B4uDKuy0JLmOh30-n8M9gLsdz72_TYeaF2KquSgEz6fL4GiEXEEW2LY2_o5XKutcvimiH7rQshznDTsvhE3aWzpn8Jq6gf0IEhDIs_NdQFf76IM48ogfuUP6GhSt6tp57t5Z3ZoYPL4gysChokLA5g",
+          "width": 2976
+        }
+      ],
+      "place_id": "ChIJVzL0WGNuQUYRW0ZVyg6UKm8",
+      "rating": 4.4,
+      "reference": "CmRRAAAA_1o9udsOHpshbwGG5Pvhvd-EhgpxVEIoYbYrQ_35XBpDJKvz6ZLz_bR5kHt-x9ktmar9ABcQRBd92UFFxlZx_oSET4aa-k4cW7MaoVuDI7qAmzFKdly8zdnAqIl0pCTtEhDSuc7RGXTndnZTHYSHUnZPGhR9zpG7FWk4Aazwsa_2qwCYPErmwQ",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Thor Olsens gate 5B, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.9229098,
+          "lng": 10.7516566
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.9242819802915,
+            "lng": 10.7526239802915
+          },
+          "southwest": {
+            "lat": 59.92158401970849,
+            "lng": 10.74992601970849
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "c0d7f47892a0bcb65622e639a5af0261d46de7f6",
+      "name": "Mysore Yoga Oslo",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107144582481396160844/photos\">Jon Bekkevoll</a>"
+          ],
+          "photo_reference": "CmRaAAAAIBGC53ZAkgDZvFq5om5Hx31UuBDoK0p9PpZtEkbUv05YF1a6KVVN7SZJY82T5JMK-0odHPJjrpg-8YROwm5eP3ZWG3VTYmRMm-rVpWeo5-8uQ8GFtHCthVrdW3FdcNaHEhAlxvV-0GYHDoX4mEO2BCmLGhQLeiLznxDe-11TD0zHpbcUBql73w",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJlZbqhGVuQUYRc9W_f0VwkmY",
+      "rating": 5,
+      "reference": "CmRRAAAA0t1CSQRYUuy8h_ZXCep9ZrMOMI9ScDNOOIWGxI3SjK4dWlwaPkFP9va_roiZZINX-JGu0FiUg-RygNsdLBSXec0fVt2QoH1nF7ipGcdDa-p6c6m0-9WvypjQwv9IYBZxEhCf9rr0xkYoSnTnqkJ_0XKKGhRUGuag8OtM15KmSLu3OkS6KDt9xQ",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Maridalsveien 15 b, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.923149,
+          "lng": 10.7521981
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.9245087302915,
+            "lng": 10.7534275802915
+          },
+          "southwest": {
+            "lat": 59.92181076970849,
+            "lng": 10.7507296197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "0bb52ac11753475a4db6f3e4f7acd05b55287561",
+      "name": "SiO Vulkan",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117048827624488026977/photos\">SiO Athletica Vulkan</a>"
+          ],
+          "photo_reference": "CmRaAAAAO4cpocnFL_o6BGTKWPpMmHRhy357Z1rvh_vgmthnQKjp3qmo3BbC0JMQR_XCovybXpukJNNJZjJ1g0ftGaT_VTWLE7K_IC4NZJRg3yn3AGXDYK4_JNJUvcfFuS5aJ9Y2EhA1Ihkwg6trIJqp4Euz8BWyGhRcaT9YhOOML7fPO73ORKHD5nlSag",
+          "width": 1620
+        }
+      ],
+      "place_id": "ChIJ-6UshmVuQUYRMlRXyPvVe2Y",
+      "rating": 4.3,
+      "reference": "CmRRAAAA7gQtKkrz9irD2fsbSla2qx1ZORtBQWsfwSkv4_1C_LzOsBd1jskKPs2u58HhyrcW1JD9V42b6ozZ7zO7gG2HyI1-fzoIVT9ySwZVBygFmdAAnB3aozbCJPdPe_rttPeZEhC9lYu258V2itEDLUFqKatzGhQbvxx6ortQAxLX00VU-QjOg8OA4w",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Vulkan 15, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.9194054,
+          "lng": 10.7482629
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.9208458802915,
+            "lng": 10.7496582802915
+          },
+          "southwest": {
+            "lat": 59.9181479197085,
+            "lng": 10.7469603197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "5ba317bea590fa4eeabb482cf71175ae45fc1ba0",
+      "name": "Leelawade Thai Massage",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1920,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108269539209235353935/photos\">Andre Ingebretsen</a>"
+          ],
+          "photo_reference": "CmRaAAAAOAIIIPBdUq1KHVTxg9s8OVTDX6uipgvD2n31reanT2xFU5lLGRa3DADJTPYIdiZwmGxAMQCJLteQSoXeoOHZrLQasEVM0qA0praAKb6_rtf2-Hht-YxToOYiafYQRRSGEhBFtt2pT_9PdTIk3rNC8X-qGhR_kE1hCPD_zdPzPn_2vIAFkGruFw",
+          "width": 1080
+        }
+      ],
+      "place_id": "ChIJXctRjWRuQUYRI9-n10E0x0U",
+      "rating": 1,
+      "reference": "CmRRAAAAH2WaP0F_rRLZezJbfxVlCWZWQ_K0MjQKk-N7NNaIk32X4HkZy6Q-Iof231b6_qWCJsU1JQXdoD065zm3xbjRegxfxS7v11o4GaoxbQI68fzaYbVx-JmIw3JYtP-gRjz7EhADKhD65hi7lW6LkPmFB2p3GhR5-MNEiC59a5sKRmkzFjYFwxA-XQ",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Rosteds gate 16B, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.91708670000001,
+          "lng": 10.7516402
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.9184677302915,
+            "lng": 10.7529264802915
+          },
+          "southwest": {
+            "lat": 59.9157697697085,
+            "lng": 10.7502285197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "6394d194be7fe152217e81b061c1c66e09050e95",
+      "name": "Ananda Marga Meditasjon",
+      "place_id": "ChIJaejy8GNuQUYRzczemrapvR4",
+      "reference": "CmRRAAAAkTK_MiCTUb_IIQ7eplc_6D2PPBUziZA3pq5CiwGMCP0diLoNPVHm4dAW4RZAqZIWGSGJhc0ivM7OsV0LkPs72OEkO4OYUfMqBlS3iesl6o3N4GQgSBZPFfywEwHud1CWEhB92evZl_rxaviXxUaElz-gGhTwG71CcV0IIvGSkGbkW6-3WktvyQ",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Mariboes gate 13, Oslo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 59.91722379999998,
+          "lng": 10.7561713
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 59.91857278029149,
+            "lng": 10.7575202802915
+          },
+          "southwest": {
+            "lat": 59.91587481970848,
+            "lng": 10.7548223197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "16c2ee598799e339f272c57999703d28cd9d993a",
+      "name": "Lofoten Performance",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "place_id": "ChIJUTtvwyBvQUYRyOxQCYl4Dmg",
+      "reference": "CmRRAAAAU0Uuak2Av2gLyHuPxmusdv57gx-Clag2-u2L2q2skiJr0D1xh-WB33hwofrUAhXm5EbFWb1Yn5-AGMt_LpIvamioMdqP6MeCS841ocT4UpTBUveV9raB509BqW-eDjdtEhBr6APoRh_U9gjSqAmSX6b2GhRopiLpTmlBUsSqbCewG28xim5aOg",
+      "scope": "GOOGLE",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Unnamed Road,0182, Oslo"
+    }
+  ],
+  "status": "OK"
+}

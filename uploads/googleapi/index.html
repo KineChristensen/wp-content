@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Google Map</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcywjrM1xMu801996nWupqu4vSSrZ2l_s"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<div id="alt">
+<div id="filterButtons">
+
+        <input type="checkbox" name="filter" id="school" class="chk-btn">
+        <label for="school">School</label>
+
+        <input type="checkbox" name="filter" id="food" class="chk-btn">
+        <label for="food">Food</label>
+
+        <input type="checkbox" name="filter" id="transport" class="chk-btn">
+        <label for="transport">Transport</label>
+
+        <input type="checkbox" name="filter" id="bar" class="chk-btn">
+        <label for="bar">Utested/Bar</label>
+
+        <input type="checkbox" name="filter" id="gym" class="chk-btn">
+        <label for="gym">Trening</label>
+</div>
+
+
+<div id="floating-panel">
+    <b>Mode of Travel: </b>
+    <select id="mode">
+        <option value="DRIVING">Driving</option>
+        <option value="WALKING">Walking</option>
+        <option value="BICYCLING">Bicycling</option>
+        <option value="TRANSIT">Transit</option>
+    </select>
+</div>
+
+<div id="right-panel"></div>
+
+
+<div id="map"></div>
+
+</div>
+
+<script src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/script.js"></script>
+</body>
+</html>
+
