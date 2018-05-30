@@ -16,6 +16,7 @@
     width: 20%;
 }
 
+
 #floating-panel {
     position: absolute;
     top: 10px;
@@ -53,7 +54,6 @@ input.chk-btn + label{
 input#school + label[for=school]{
     top:250px;
     left:0;
-
 }
 
 input#food + label[for=food]{
@@ -61,7 +61,7 @@ input#food + label[for=food]{
     left:0;
 }
 
-input#transport + label[for=transport]{
+input#bysykkel + label[for=bysykkel]{
     top: 350px;
     left:0;
 }
@@ -73,6 +73,11 @@ input#bar + label[for=bar]{
 
 input#gym + label[for=gym]{
     top: 450px;
+    left:0;
+}
+
+input#kollektivt + label[for=kollektivt]{
+    top: 500px;
     left:0;
 }
 
@@ -120,5 +125,73 @@ input.info-btn+label[for=moreInfo]:active, input.info-btn:checked+label[for=more
     background: #870401;
 }
 
+#window{
+    position: relative;
+    height:300px;
+    width:300px;
 
+}
+
+#infoImg{
+    position:absolute;
+    padding:5px;
+    width:280px;
+    height:200px;
+    top:0;
+}
+
+.windowBtnClass{
+    position:absolute;
+    display: block;
+    margin: 6px 10px !important;
+    padding: 5px;
+    width: auto;
+    height:20px;
+    bottom:20px;
+    background-color:red;
+
+}
+
+#bike-btn{
+    left:0;
+}
+
+#walk-btn{
+    left:60px;
+}
+
+#drive-btn{
+    left:90px;
+}
+
+#transit-btn{
+    left:120px;
+}
+
+#info-btn{
+    left:180px;
+}
+
+.windowTekst{
+    position:absolute;
+    padding: 5px;
+    z-index:100;
+}
+
+
+#stedsNavn{
+    bottom:50px;
+}
+
+#adresse{
+    bottom:40px;
+}
+
+#apninstidUke{
+    bottom:30px;
+}
+
+#apninstidHelg{
+    bottom:20px;
+}
 
