@@ -1,4 +1,4 @@
-/** Wednesday 30th May 2018 14:20:48 UTC (core) **/
+/** Wednesday 30th May 2018 18:40:58 UTC (core) **/
 
 #mega-menu-wrap-primary, #mega-menu-wrap-primary #mega-menu-primary, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
   -moz-transition: none;
@@ -1347,6 +1347,7 @@
   -webkit-align-items: center;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+  justify-content: center;
   position: relative;
   background-color: #f9f9f9 !important;
   margin: 0% 5% 5% 5%;

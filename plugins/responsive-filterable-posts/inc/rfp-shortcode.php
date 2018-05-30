@@ -47,7 +47,7 @@ function rfp_shortcode_func( $atts ) {
 				<!-- .rfp-filter -->
 				<div class="rfp-filter">
 					<ul class="filter rfpfilters">
-						<li><a href="JavaScript:void(0);" data-filter="*" class="active" id="rfp_clearall"><?php _e('All','rfp'); ?></a></li>
+						<li><a href="JavaScript:void(0);" data-filter="*" class="active"><?php _e('All','rfp'); ?></a></li>
 						<?php
 						$filter_terms = unserialize($_rfp_taxterms);
 						foreach( $filter_terms as $term_id ) 
@@ -56,7 +56,7 @@ function rfp_shortcode_func( $atts ) {
 							$term_slug = $term->slug;
 							$term_name = $term->name; 
 							?>
-							<li><a href="JavaScript:void(0);" id="rfp_<?php echo $term_name; ?>" data-filter="<?php echo $term_slug; ?>"><?php echo $term_name; ?></a></li>
+							<li><a href="JavaScript:void(0);" data-filter="<?php echo $term_slug; ?>" id="rfp_<?php echo $term_slug; ?>"><?php echo $term_name; ?></a></li>
 							<?php 
 						} 
 						?>
@@ -81,8 +81,7 @@ function rfp_shortcode_func( $atts ) {
 						<div class="rfp-item item <?php echo $data_type; $data_type = null; ?> rfp-grid <?php echo $_rfp_st_dcol.' '.$_rfp_st_tcol.' '.$_rfp_st_pcol; ?>">
 							<?php if(isset($post_thumb[0]) && $post_thumb[0] !=""){ ?><div class="rfp-imgwrap"><img alt="<?php the_title(); ?>" src="<?php echo $post_thumb[0]; ?>" class="rfp-img"></div><?php } ?>
 							<a class="rfp-mask" href="<?php the_permalink(); ?>"></a>
-							<div class="rfp-item-title"><?php the_title(); ?></div>
-							<div class="rfp_category"><?php echo get_post_meta( $postID, 'event_category', true ); ?></div>
+							<div class="rfp-item-title"><?php the_title(); ?><?php get_post_meta( get_the_ID(), 'event_category', true ); ?></div>
 						</div>
 						<?php
 					endwhile;
