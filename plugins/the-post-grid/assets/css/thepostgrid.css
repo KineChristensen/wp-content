@@ -84,8 +84,8 @@
     padding-right: 5px;
 }
 .post-meta-user span.comment-link {
-    text-align: right;
-    float: right;
+    text-align: left;
+    float: left;
     padding-right: 0;
 }
 .post-meta-user span.post-tags-links {
@@ -453,6 +453,8 @@
 
 /* isotope Buttons */
 .rt-tpg-container .rt-tpg-isotope-buttons {
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
     margin: 15px 0;
 }
