@@ -1,0 +1,35 @@
+
+.rfp-item{
+	margin-top:20px;
+}
+
+.rfp-item .rfp-label{
+    color: #007cb0;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#rfp_selterms label{
+	margin-right:10px;
+}
+
+.rfp_loader{
+	background: rgba(0, 0, 0, 0) url("../images/ajax-loader.gif") no-repeat scroll 0 0;
+    display: none;
+    height: 16px;
+    left: 150px;
+    position: absolute;
+    top: -46px;
+    width: 16px;
+}
+
+.rfp-textsc{
+	margin-top: 10px;
+}
+
+body.post-type-rfp-scode #side-sortables #misc-publishing-actions #visibility,
+body.post-type-rfp-scode #side-sortables #misc-publishing-actions .misc-pub-curtime{
+	display:none;
+}

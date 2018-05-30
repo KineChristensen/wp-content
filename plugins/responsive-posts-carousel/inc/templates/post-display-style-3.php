@@ -6,18 +6,12 @@
 	</div>
 
 	<div class="rpc-post-category">
-		<?php $categories = get_the_category();
-			$separator = ' , ';
-			$output = '';
-			if ( ! empty( $categories[0] ) ) {
-			        $output .= '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>' . $separator;
-			    echo trim( $output, $separator );
-			}
-		?>
+        <a href="<?php the_permalink(); ?>"><?php echo get_post_meta( get_the_ID(), 'event_category', true ); ?></a>
 	</div>
 	<span class="rpc-post-date rpc-date">
-		<i class="fa fa-clock-o"></i>
-		<?php echo get_the_date(); ?>
+		
+		<?php echo get_post_meta( get_the_ID(), 'event_date', true ); ?><?php echo " - kl. " ?><?php echo get_post_meta( get_the_ID(), 'event_time', true ); ?><i class="fa fa-clock-o"></i><br>
+	    <?php echo get_post_meta( get_the_ID(), 'event_location', true ); ?><i class="fa fa-map-marker"></i>
 	</span>
 	<h3 class="rpc-post-title">
 		<a href="<?php the_permalink(); ?>" class="rpc-title" target="<?php echo $carousel_settings['read_more_target']; ?>">
