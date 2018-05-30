@@ -339,7 +339,6 @@ function hestia_widgets_init() {
 			'footer-three-widgets' => esc_html__( 'Footer Three', 'hestia' ),
 		)
 	);
-
 	/**
 	 * Number of footer sidebars that need to be registered.
 	 * This option is available only in the PRO version. In Hestia, the value is always 3.

@@ -305,7 +305,6 @@ function fagri_about_page_filter( $old_value, $parameter ) {
 	return $return;
 }
 add_filter( 'hestia_about_page_filter', 'fagri_about_page_filter', 0, 3 );
-
 /**
  * Declare text domain for this child theme.
  * Translations can be filed in the /languages/ directory.
