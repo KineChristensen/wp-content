@@ -1,0 +1,157 @@
+/*
+SEARCHY.CSS
+
+*/
+
+
+ /* SEARCH RESULTS LOADING ANIMATION */
+ 
+.searchy-load-bubble {
+text-align: center;
+width:201px;
+height:126px;
+position: absolute;left: 30%;padding-top:20%;
+}
+
+.searchy-load-bubble span {
+display: inline-block;
+vertical-align: middle;
+width: 25px;
+height: 25px;
+margin: 63px auto;
+background: #EFF54C;
+-moz-border-radius: 126px;
+-moz-animation: searchy-load-bubble 1.3s infinite alternate;
+-webkit-border-radius: 126px;
+-webkit-animation: searchy-load-bubble 1.3s infinite alternate;
+-ms-border-radius: 126px;
+-ms-animation: searchy-load-bubble 1.3s infinite alternate;
+-o-border-radius: 126px;
+-o-animation: searchy-load-bubble 1.3s infinite alternate;
+border-radius: 126px;
+animation: searchy-load-bubble 1.3s infinite alternate;
+}
+
+#searchy-load-bubble_1 {
+-moz-animation-delay: 0.78s;
+-webkit-animation-delay: 0.78s;
+-ms-animation-delay: 0.78s;
+-o-animation-delay: 0.78s;
+animation-delay: 0.78s;
+}
+
+#searchy-load-bubble_2 {
+-moz-animation-delay: 0.39s;
+-webkit-animation-delay: 0.39s;
+-ms-animation-delay: 0.39s;
+-o-animation-delay: 0.39s;
+animation-delay: 0.39s;
+}
+
+#searchy-load-bubble_3 {
+-moz-animation-delay: 0s;
+-webkit-animation-delay: 0s;
+-ms-animation-delay: 0s;
+-o-animation-delay: 0s;
+animation-delay: 0s;
+}
+
+@-moz-keyframes searchy-load-bubble {
+0% {
+width: 25px;
+height: 25px;
+background-color:#EFF54C;
+-moz-transform: translateY(0);
+}
+
+100% {
+width: 60px;
+height: 60px;
+background-color:#FF5900;
+-moz-transform: translateY(-53px);
+}
+
+}
+
+@-webkit-keyframes searchy-load-bubble {
+0% {
+width: 25px;
+height: 25px;
+background-color:#EFF54C;
+-webkit-transform: translateY(0);
+}
+
+100% {
+width: 60px;
+height: 60px;
+background-color:#FF5900;
+-webkit-transform: translateY(-53px);
+}
+
+}
+
+@-ms-keyframes searchy-load-bubble {
+0% {
+width: 25px;
+height: 25px;
+background-color:#EFF54C;
+-ms-transform: translateY(0);
+}
+
+100% {
+width: 60px;
+height: 60px;
+background-color:#FF5900;
+-ms-transform: translateY(-53px);
+}
+
+}
+
+@-o-keyframes searchy-load-bubble {
+0% {
+width: 25px;
+height: 25px;
+background-color:#EFF54C;
+-o-transform: translateY(0);
+}
+
+100% {
+width: 60px;
+height: 60px;
+background-color:#FF5900;
+-o-transform: translateY(-53px);
+}
+
+}
+
+@keyframes searchy-load-bubble {
+0% {
+width: 25px;
+height: 25px;
+background-color:#EFF54C;
+transform: translateY(0);
+}
+
+100% {
+width: 60px;
+height: 60px;
+background-color:#FF5900;
+transform: translateY(-53px);
+}
+
+}
+
+
+ /* SEARCH FILTER OVERLAYER TO PROTECT FILTER USAGE WHILE LOADING */
+#searchy-filter-overlayer
+{ position: absolute;top:0; left:0;   background: #fff;width:100%;height: 100%; opacity: 0.7; display: none;z-index: 2 }
+ 
+ #searchy-search-results {min-height: 400px}
+ 
+ /* DEBUG STUFF */
+ /*
+ .searchy-last-added-filter {background: lime}
+ */
+ 
+ 
+ 
