@@ -1,4 +1,4 @@
-/** Thursday 31st May 2018 10:46:57 UTC (core) **/
+/** Thursday 31st May 2018 14:19:24 UTC (core) **/
 
 #mega-menu-wrap-primary, #mega-menu-wrap-primary #mega-menu-primary, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
   -moz-transition: none;
@@ -1451,7 +1451,7 @@
 }
 .post-meta-user .date {
   font-family: 'Graphik-Semibold' !important;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 30px !important;
 }
 .post-meta-user .date .fa-calendar {
