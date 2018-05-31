@@ -920,9 +920,7 @@ function findUserPosition() {
             });
         })
     }
-else {
-	userMarker = fjerdingenMarker;
-}
+
 }
 
 function initDirections() {
