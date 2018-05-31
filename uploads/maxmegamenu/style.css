@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-/** Wednesday 30th May 2018 19:26:40 UTC (core) **/
-=======
-/** Wednesday 30th May 2018 18:40:58 UTC (core) **/
->>>>>>> 111c1565e7903d1f29b73e7f95ac99c4a8c16fc3
-=======
-/** Wednesday 30th May 2018 22:42:36 UTC (core) **/
->>>>>>> e6abc49d9be0e8b1f748a3a7d9040212962d68b6
+/** Thursday 31st May 2018 08:29:55 UTC (core) **/
 
 #mega-menu-wrap-primary, #mega-menu-wrap-primary #mega-menu-primary, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
   -moz-transition: none;
@@ -1335,19 +1327,11 @@
 }
 .mega-menuitem {
   opacity: 1;
-<<<<<<< HEAD
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -ms-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-=======
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
->>>>>>> e6abc49d9be0e8b1f748a3a7d9040212962d68b6
   display: -webkit-flex;
   display: flex;
   text-align: center !important;
