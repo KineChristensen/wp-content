@@ -247,7 +247,7 @@ if ( ! class_exists( 'rtTPGShortCode' ) ):
 								'the-post-grid' ) . '</button>';
 						if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
 							foreach ( $terms as $term ) {
-								$html .= "<button data-filter='.iso_{$term->term_id}'>" . $term->name . "</button>";
+								$html .= "<button id='filterbtn_{$term->term_id}' data-filter='.iso_{$term->term_id}'>" . $term->name . "</button>";
 							}
 						}
 						$html .= '</div>';

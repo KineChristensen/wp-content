@@ -1,4 +1,4 @@
-/** Thursday 31st May 2018 08:29:55 UTC (core) **/
+/** Thursday 31st May 2018 09:28:38 UTC (core) **/
 
 #mega-menu-wrap-primary, #mega-menu-wrap-primary #mega-menu-primary, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
   -moz-transition: none;
@@ -1437,7 +1437,7 @@
   color: #fcd9c4 !important;
 }
 .rt-img-holder {
-  margin-bottom: -20px !important;
+  margin-bottom: 0px !important;
   padding-bottom: 0 !important;
 }
 .rt-detail {
@@ -1473,4 +1473,15 @@
 }
 .rt-detail .entry-title a:focus {
   color: #101133 !important;
+}
+#filterbtn_42 {
+  height: 0px !important;
+  width: 0px !important;
+  overflow: hidden !important;
+}
+#subscribe .container .row .textwidget .rt-tpg-container .tpg-isotope .rt-tpg-isotope-buttons {
+  display: none !important;
+}
+.rt-tpg-isotope {
+  margin-top: 40px !important;
 }
