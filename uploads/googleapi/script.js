@@ -869,7 +869,7 @@ function findUserPosition() {
                     title: "Her er du",
                     icon: userMarker = {
                         scaledSize: new google.maps.Size(20, 20),
-                        url: "blaa-dot.png"
+                        url: "http://localhost:8080/wordpress/wp-content/uploads/googleapi/blaa-dot.png"
                     }
                 }
             );
