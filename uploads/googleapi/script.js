@@ -613,6 +613,7 @@ function initMap() {
     initMarkers();
     initKollektivMarkers();
     initDirections();
+    $('label[for=clearRoute], input#clearRoute').hide(); 
     Promise.all([
         bysykkelImportStations(),
         bysykkelLoadAvailability()
