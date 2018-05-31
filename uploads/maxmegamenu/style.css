@@ -1,4 +1,4 @@
-/** Thursday 31st May 2018 14:19:24 UTC (core) **/
+/** Thursday 31st May 2018 16:35:36 UTC (core) **/
 
 #mega-menu-wrap-primary, #mega-menu-wrap-primary #mega-menu-primary, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
   -moz-transition: none;
@@ -1453,6 +1453,7 @@
   font-family: 'Graphik-Semibold' !important;
   font-size: 1.5rem;
   line-height: 30px !important;
+  margin-top: 7px !important;
 }
 .post-meta-user .date .fa-calendar {
   display: none !important;
@@ -1496,4 +1497,11 @@
 }
 #subscribe .container .row .textwidget .rt-tpg-container .tpg-isotope .rt-tpg-isotope .isotope-item .rt-holder .rt-detail {
   padding: 6% 6% 3% 6% !important;
+}
+.categories-links {
+  margin-bottom: 20px !important;
+}
+.categories-links p {
+  font-family: 'Graphik-Semibold' !important;
+  margin-bottom: 0px !important;
 }

@@ -410,11 +410,11 @@ width: 100%;
   color: #c61b32;
     margin-top: 3px;
   font-size: 14px;
-  padding: 2px 5px;
+    padding-bottom: 0 !important;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-title {
+    margin-top: 1px !important;
   margin-bottom: 0px;
-  margin-top: 5px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-title a {
   text-decoration: none;
@@ -422,6 +422,7 @@ width: 100%;
   line-height: 1.2;
     font-family: 'Graphik-Semibold' !important;
   font-size: 19px;
+    padding-bottom: 0 !important;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-meta {
   float: left;
@@ -430,6 +431,15 @@ width: 100%;
 }
 .rpt-content {
   font-size: 13px;
+}
+.slick-prev:before {
+    content: '\ \f137' !important;
+}
+.slick-next:before {
+    content: '\ \f138 ' !important;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 25px !important; 
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-date {
 width: 100% !important;

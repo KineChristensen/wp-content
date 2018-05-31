@@ -263,7 +263,7 @@ if ( ! class_exists( 'rtTPGShortCode' ) ):
 						$arg['pLink']   = get_permalink();
 						$arg['author']  = '<a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '">' . get_the_author() . '</a>';
 						$cc             = wp_count_comments( $pID );
-							$arg['date']    = get_post_meta( $pID, 'event_location', true ) . ' | ' . get_post_meta( $pID, 'event_date', true ) . ' | ' . get_post_meta( $pID, 'event_time', true );
+							$arg['date']    = '<p>' . get_post_meta( $pID, 'event_location', true ) . ' | ' . get_post_meta( $pID, 'event_date', true ) . ' | ' . get_post_meta( $pID, 'event_time', true ) . '</p>';
 						$arg['excerpt'] = get_the_excerpt();
 						if ( $excerpt_limit ) {
 							$arg['excerpt'] = $rtTPG->strip_tags_content( $arg['excerpt'], $excerpt_type,
@@ -271,7 +271,7 @@ if ( ! class_exists( 'rtTPGShortCode' ) ):
 								$excerpt_more_text );
 						}
 
-						$arg['categories'] = get_post_meta( $pID, 'event_category', true );
+						$arg['categories'] = '<p>' . get_post_meta( $pID, 'event_category', true ) . '</p>';
 						$arg['tags']       = get_the_term_list( $pID, 'post_tag', null, ', ' );
 						if ( $isIsotope ) {
 							$isotope_filter = isset( $scMeta['isotope_filter'][0] ) ? $scMeta['isotope_filter'][0] : null;
