@@ -15,14 +15,14 @@
 	</h3>
 	<div class="clearfix"></div>
 	<div class="rpc-post-para rpc-content">
-        <?php do_action( 'rpc_carousel_desc', $post_id, $carousel_settings); ?>
+        <p><?php do_action( 'rpc_carousel_desc', $post_id, $carousel_settings); ?></p>
         <?php do_action( 'rpc_read_more_btn', $post_id, $carousel_settings); ?>
 	</div>
 	<div class="clearfix"></div>
-	<span class="rpc-post-date rpc-date">
+	<p class="rpc-post-date rpc-date">
 		
 	    <?php echo get_post_meta( get_the_ID(), 'event_location', true ); ?><?php echo " | " ?>
-		<?php echo get_post_meta( get_the_ID(), 'event_date', true ); ?><?php echo " | " ?><?php echo get_post_meta( get_the_ID(), 'event_time', true ); ?></span>
+		<?php echo get_post_meta( get_the_ID(), 'event_date', true ); ?><?php echo " | " ?><?php echo get_post_meta( get_the_ID(), 'event_time', true ); ?></p>
 	<?php if (!isset($carousel_settings['hidemeta'])) { ?>
 	<span class="rpc-post-meta wcp-disable-post-meta">
 		<i class="fa fa-user"></i>

@@ -412,13 +412,14 @@ width: 100%;
   padding: 2px 5px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-title {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 5px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-title a {
   text-decoration: none;
   color: #000;
   line-height: 1.2;
+    font-family: 'Graphik-Semibold' !important;
   font-size: 19px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-meta {
@@ -430,7 +431,7 @@ width: 100%;
 width: 100% !important;
   font-size: 13px;
     text-align: center !important;
-  padding-top: 14px;
+  padding-top: 0px !important;
     display: inline-block;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-date i {
