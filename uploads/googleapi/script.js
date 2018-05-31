@@ -671,10 +671,10 @@ function initMarkers() {
                 '<p      id="adresse" class="windowTekst"> ' + markers[i][8] + '</p>' +
                 '<p      id="apninstidUke" class="windowTekst">' + markers[i][9] + '</p>' +
                 '<p      id="apninstidHelg" class="windowTekst">' + markers[i][10] + '</p>' +
-                '<input type="image" id="bike-btn"      class="windowBtnClass" onclick="findDirectionsFromButton(' + i + ', travelModes.bike)" src="infovindu-bilder/sykkel.png">' +
-                '<input type="image" id="walk-btn"      class="windowBtnClass" onclick="findDirectionsFromButton(' + i + ', travelModes.walk)" src="infovindu-bilder/walk.png">' +
-                '<input type="image" id="drive-btn"     class="windowBtnClass" onclick="findDirectionsFromButton(' + i + ', travelModes.drive)" src="infovindu-bilder/bil.png">' +
-                '<input type="image" id="transit-btn"   class="windowBtnClass" onclick="findDirectionsFromButton(' + i + ', travelModes.transit)" src="infovindu-bilder/kollektivt.png">' +
+                '<input type="image" id="bike-btn"      class="windowBtnClass" onclick="findDirectionsFromButton(' + i + ', travelModes.bike)" src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/sykkel.png">' +
+                '<input type="image" id="walk-btn"      class="windowBtnClass" onclick="findDirectionsFromButton(' + i + ', travelModes.walk)" src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/walk.png">' +
+                '<input type="image" id="drive-btn"     class="windowBtnClass" onclick="findDirectionsFromButton(' + i + ', travelModes.drive)" src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/bil.png">' +
+                '<input type="image" id="transit-btn"   class="windowBtnClass" onclick="findDirectionsFromButton(' + i + ', travelModes.transit)" src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/kollektivt.png">' +
                 '<button id="info-btn"  class="windowBtnClass" onclick="infoLink(' + i + ')">More Info</button>' +
                 '</div>');
 
