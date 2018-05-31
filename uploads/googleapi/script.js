@@ -1,4 +1,4 @@
- //MarkerArrays
+//MarkerArrays
 var gMarkers = [];
 var kMarkers = [];
 var markers = [
@@ -6,10 +6,10 @@ var markers = [
 //
 //Skole markører
 //
-    ['Campus Fjerdingen', 59.916224, 10.759697, 0, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', 'http://facebook.com', 'infovindu-bilder/fjerdingen.jpg', 'Adresse: Chr. Krohgs gate 32, 0186 Oslo', '08.00 – 24.00', '10.00 – 23.00'],
-    ['Campus Vulkan', 59.9233391, 10.7503081, 1, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', 'http://facebook.com', 'infovindu-bilder/vulkan.jpg', 'Adresse: Vulkan 19, 0178 Oslo', '08.00 – 22.00', '10.00-18.00'],
-    ['Campus Brenneriveien', 59.920352, 10.7506041, 2, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', 'http://facebook.com', 'infovindu-bilder/brenneriveien.jpg', 'Adresse: Brenneriveien 9, 0182 Oslo', '07.30 – 24.00', '10.00 – 23.00'],
-    ['Campus Kvadraturen', 59.911015, 10.7439543, 3, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', 'http://facebook.com', 'infovindu-bilder/hk.jpg', 'Adresse: Kirkegata 24-26, 0153 Oslo', '08.00 – 23.00', '09.00 – 17.00'],
+    ['Campus Fjerdingen', 59.916224, 10.759697, 0, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', '/fjerdingen', 'infovindu-bilder/fjerdingen.jpg', 'Adresse: Chr. Krohgs gate 32, 0186 Oslo', '08.00 – 24.00', '10.00 – 23.00'],
+    ['Campus Vulkan', 59.9233391, 10.7503081, 1, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', '/vulkan', 'infovindu-bilder/vulkan.jpg', 'Adresse: Vulkan 19, 0178 Oslo', '08.00 – 22.00', '10.00-18.00'],
+    ['Campus Brenneriveien', 59.920352, 10.7506041, 2, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', '/brenneriveien', 'infovindu-bilder/brenneriveien.jpg', 'Adresse: Brenneriveien 9, 0182 Oslo', '07.30 – 24.00', '10.00 – 23.00'],
+    ['Campus Kvadraturen', 59.911015, 10.7439543, 3, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', '/kvadraturen', 'infovindu-bilder/hk.jpg', 'Adresse: Kirkegata 24-26, 0153 Oslo', '08.00 – 23.00', '09.00 – 17.00'],
 //
 //Spisested markører
 //
@@ -735,7 +735,7 @@ function initKollektivMarkers() {
         ['Øvre Slottsgate', 59.912216, 10.741954, 'holdeplass', ['kvadradturen'], ['trikk'], ['12', '13', '19'], [], []],
         ['Wessels Plass', 59.912087, 10.738758, 'holdeplass', ['kvadradturen'], ['trikk'], ['12', '13', '19'], [], []],
         ['Stortinget', 59.913797, 10.740925, 'holdeplass', ['kvadradturen'], ['t-bane'], [], [], ['1', '2', '3', '4', '5']],
-        ['Møllerveien', 59.920786, 10.751499, 'holdeplass', ['vulkan'], ['buss'], ['34', '54']],
+        ['Møllerveien', 59.920786, 10.751499, 'holdeplass', ['vulkan'], ['buss'], [], ['34', '54'], []],
         ['Schous Plass', 59.921044, 10.759481, 'holdeplass', ['vulkan', 'fjerdingen'], ['trikk'], ['11', '12', '13', '19']],
         ['Jernbanetorget', 59.912022, 10.750408, 'holdeplass', ['fjerdingen', 'kvadradturen', 'vulkan', 'brenneriveien'], ['trikk', 'buss', 't-bane'], ['11', '12', '13', '17', '18', '19'], ['30', '31', '31E', '36E', '54', 'N5', 'N12', 'N30'], ['1', '2', '3', '4', '5']]
     ];
@@ -749,14 +749,13 @@ function initKollektivMarkers() {
             map: this.map,
         })
 
-
         marker.setVisible(false);
 
         google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
 
-            var trikkIconSrc = '<img src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png"></img>';
-            var bussIconSrc = '<img src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png"></img>';
-            var tbaneIconSrc = '<img src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png"></img>';
+            var trikkIconSrc = '<img class="kollImg" id="trikkImg" src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/trikk.png"></img>';
+            var bussIconSrc = '<img class="kollImg" id="bussImg" src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/buss.png"></img>';
+            var tbaneIconSrc = '<img class="kollImg" id="tbaneImg" src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/tbane.png"></img>';
 
 
             var trikkDivString = '';
@@ -765,23 +764,21 @@ function initKollektivMarkers() {
             var infoWindowHtml = '';
 
             if (kollektivtMarkers[j][5].includes('trikk')) {
-                trikkDivString = '<div id="trikkDiv">' + trikkIconSrc;
+                trikkDivString = '<div class="trikkBoksContainer">'+ trikkIconSrc +'"<div class="kollDiv" id="trikkDiv">';
 
                 if (kollektivtMarkers[j][6] !== undefined) {
                     kollektivtMarkers[j][6].forEach(s => {
-                        if(s !== undefined
-                )
+                        if(s !== undefined)
                     {
                         trikkDivString += '<div class="boks">' + s + '</div>'
                     }
-                })
-                    ;
-                    trikkDivString += '</div>';
+                });
+                    trikkDivString += '</div></div>';
                 }
             }
 
             if (kollektivtMarkers[j][5].includes('buss')) {
-                bussDivString = '<div id="bussDiv">' + bussIconSrc;
+                bussDivString = '<div class="bussBoksContainer">'+ bussIconSrc +'<div class="kollDiv" id="bussDiv">';
 
                 if (kollektivtMarkers[j][7] !== undefined) {
                     kollektivtMarkers[j][7].forEach(s => {
@@ -792,29 +789,35 @@ function initKollektivMarkers() {
                     }
                 })
                     ;
-                    bussDivString += '</div>';
+                    bussDivString += '</div></div>';
                 }
             }
 
             if (kollektivtMarkers[j][5].includes('t-bane')) {
-                tbaneDivString = '<div id="tbaneDiv">' + tbaneIconSrc;
+                tbaneDivString = '<div class="tbaneBoksContainer">'+ tbaneIconSrc +'<div class="kollDiv" id="tbaneDiv">';
 
                 if (kollektivtMarkers[j][8] !== undefined) {
                     kollektivtMarkers[j][8].forEach(s => {
-                        if(s !== undefined
-                )
+                        if(s !== undefined)
                     {
                         tbaneDivString += '<div class="boks">' + s + '</div>'
                     }
                 })
                     ;
-                    tbaneDivString += '</div>';
+                    tbaneDivString += '</div></div>';
                 }
             }
 
             infoWindowHtml = trikkDivString + bussDivString + tbaneDivString;
 
-            var infoWindowContent = ('<h1>' + kollektivtMarkers[i][0] + '</h1>' + infoWindowHtml);
+            var infoWindowContent = ('<h1>' + kollektivtMarkers[i][0] + '</h1>' + infoWindowHtml +
+                '<div id="visMegVei">' +
+                '<input type="image" id="bike-btn"      class="windowBtnClass" onclick="findDirectionsFromButtonKollektiv(' + j + ', travelModes.bike)" src="trikk.png">' +
+                '<input type="image" id="walk-btn"      class="windowBtnClass" onclick="findDirectionsFromButtonKollektiv(' + j + ', travelModes.walk)" src="trikk.png">' +
+                '<input type="image" id="drive-btn"     class="windowBtnClass" onclick="findDirectionsFromButtonKollektiv(' + j + ', travelModes.drive)" src="trikk.png">' +
+                '<input type="image" id="transit-btn"   class="windowBtnClass" onclick="findDirectionsFromButtonKollektiv(' + j + ', travelModes.transit)" src="trikk.png">' +
+                '</div>'
+            );
 
             return function () {
                 infowindow.setContent(infoWindowContent);
@@ -925,7 +928,28 @@ function findDirectionsFromButton(i, travelMode) {
             lng: markers[i][2]
         },
         travelMode: travelMode,
-        provideRouteAlternatives: true
+        provideRouteAlternatives: false
+    };
+    directionsService.route(directionRequest,
+        function (response, status) {
+            if (status == 'OK') {
+                directionsDisplay.setDirections(response);
+            } else {
+                window.alert('Directions request failed due to ' + status);
+            }
+        });
+    infowindow.close();
+}
+
+function findDirectionsFromButtonKollektiv(i, travelMode) {
+    var directionRequest = {
+        origin: userPosition,
+        destination: {
+            lat: kollektivtMarkers[i][1],
+            lng: kollektivtMarkers[i][2]
+        },
+        travelMode: travelMode,
+        provideRouteAlternatives: false
     };
     directionsService.route(directionRequest,
         function (response, status) {
