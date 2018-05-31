@@ -6,49 +6,60 @@ var markers = [
 //
 //Skole markører
 //
-    ['Campus Fjerdingen', 59.916224, 10.759697, 0, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', 'http://facebook.com', 'infovindu-bilder/hk.jpg', 'Adresse: Chr. Krohgs gate 32, 0186 Oslo', '08.00 – 24.00', '10.00 – 23.00'],
-    ['Campus Vulkan', 59.9233391, 10.7503081, 1, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', 'http://facebook.com', 'infovindu-bilder/hk.jpg', 'Adresse: Vulkan 19, 0178 Oslo', '08.00 – 22.00', '10.00-18.00'],
-    ['Campus Brenneriveien', 59.920352, 10.7506041, 2, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', 'http://facebook.com', 'infovindu-bilder/hk.jpg', 'Adresse: Brenneriveien 9, 0182 Oslo', '07.30 – 24.00', '10.00 – 23.00'],
-    ['Campus Kvadraturen', 59.911015, 10.7439543, 3, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', 'http://facebook.com', 'infovindu-bilder/hk.jpg', 'Adresse: Kirkegata 24-26, 0153 Oslo', '08.00 – 23.00', '09.00 – 17.00'],
+    ['Campus Fjerdingen', 59.916224, 10.759697, 0, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/fjerdingen.jpg', 'Adresse: Chr. Krohgs gate 32, 0186 Oslo', '08.00 – 24.00', '10.00 – 23.00'],
+    ['Campus Vulkan', 59.9233391, 10.7503081, 1, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/vulkan.jpg', 'Adresse: Vulkan 19, 0178 Oslo', '08.00 – 22.00', '10.00-18.00'],
+    ['Campus Brenneriveien', 59.920352, 10.7506041, 2, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/hk.jpg', 'Adresse: Brenneriveien 9, 0182 Oslo', '07.30 – 24.00', '10.00 – 23.00'],
+    ['Campus Kvadraturen', 59.911015, 10.7439543, 3, 'school', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/sirkelmarker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/hk.jpg', 'Adresse: Kirkegata 24-26, 0153 Oslo', '08.00 – 23.00', '09.00 – 17.00'],
 //
 //Spisested markører
 //
-    ['Talor og Jørgen', 59.9149799, 10.7504415, 4, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'infovindu-bilder/t&j.jpg', 'Adresse: Youngs gate 9, 0181 Oslo', '07.30 - 17.00', '12.00 - 17.00'],
-    ['Mathallen', 59.922217, 10.749852, 5, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'infovindu-bilder/t&j.jpg', 'Adresse: Vulkan 5, 0178 Oslo', '10.00 - 20.00 (stengt mandag)', '11.00 - 18.00'],
-    ['Taco República', 59.9170294, 10.7509215, 6, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'infovindu-bilder/taco-republica.jpg', 'Adresse: Torggata 30, 0183 Oslo', '16.00 - 23.00 (stengt mandag)', '12.00 - 00.30'],
-    ['Freddy Fuego', 59.9178054, 10.7515039, 7, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'infovindu-bilder/t&j.jpg', 'Adresse: Hausmanns gate 31a, 0182 Oslo', '11.00 - 21.00', '11.00 - 23.00'],
-    ['Peloton', 59.9174132, 10.7522924, 8, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'infovindu-bilder/peloton.jpg', 'Adresse: Torggata 35, 0183 Oslo', '08.00 - 11.30', '11.00 - 03.30'],
-    ['Munchies', 59.91638, 10.7490935, 9, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'infovindu-bilder/munchies.jpg', 'Adresse:  Torggata 18c, 0181 Oslo', '11.00 - 22.00', '11.00 - 03.00'],
-    ['Haralds Vaffler', 59.913759, 10.745212, 10, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'infovindu-bilder/vafler.jpg', 'Adresse: Torggata 7, 0181 Oslo', '11.00 - 20.00', '11.00 - 20.00'],
-    ['Würst', 59.9137012, 10.7465163, 11, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'infovindu-bilder/wurst.jpg', 'Adresse: Torggata 11, 0181 Oslo', '13.00 - 00.30', '13.00 - 03.00'],
-    ['Bari Pizza', 59.9166197, 10.7527744, 12, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'infovindu-bilder/bari-pizza.jpg', 'Adresse: Torggata 23, 0183 Oslo', '12.00 - 00.00', '12.00 - 03.00'],
+    ['Talor og Jørgen', 59.9149799, 10.7504415, 4, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/t&j.jpg', 'Adresse: Youngs gate 9, 0181 Oslo', '07.30 - 17.00', '12.00 - 17.00'],
+    ['Mathallen', 59.922217, 10.749852, 5, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/t&j.jpg', 'Adresse: Vulkan 5, 0178 Oslo', '10.00 - 20.00 (stengt mandag)', '11.00 - 18.00'],
+    ['Taco República', 59.9170294, 10.7509215, 6, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/taco-republica.jpg', 'Adresse: Torggata 30, 0183 Oslo', '16.00 - 23.00 (stengt mandag)', '12.00 - 00.30'],
+    ['Freddy Fuego', 59.9178054, 10.7515039, 7, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/t&j.jpg', 'Adresse: Hausmanns gate 31a, 0182 Oslo', '11.00 - 21.00', '11.00 - 23.00'],
+    ['Peloton', 59.9174132, 10.7522924, 8, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/peloton.jpg', 'Adresse: Torggata 35, 0183 Oslo', '08.00 - 11.30', '11.00 - 03.30'],
+    ['Munchies', 59.91638, 10.7490935, 9, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/munchies.jpg', 'Adresse:  Torggata 18c, 0181 Oslo', '11.00 - 22.00', '11.00 - 03.00'],
+    ['Haralds Vaffler', 59.913759, 10.745212, 10, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/vafler.jpg', 'Adresse: Torggata 7, 0181 Oslo', '11.00 - 20.00', '11.00 - 20.00'],
+    ['Würst', 59.9137012, 10.7465163, 11, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/wurst.jpg', 'Adresse: Torggata 11, 0181 Oslo', '13.00 - 00.30', '13.00 - 03.00'],
+    ['Bari Pizza', 59.9166197, 10.7527744, 12, 'food', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/food-marker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/bari-pizza.jpg', 'Adresse: Torggata 23, 0183 Oslo', '12.00 - 00.00', '12.00 - 03.00'],
 //
 //Bar/utested markører
 //
-    ['Cafe Sara', 59.9176068, 10.754149, 13, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://facebook.com', 'infovindu-bilder/cafe-sara.jpg', 'Adresse: Hausmanns gate 29, 0182 Oslo', '11.00 - 03.30', '11.00 - 03.30'],
-    ['Verkstedet', 59.9177192, 10.7517947, 14, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'infovindu-bilder/verkstedet.jpg', 'Adresse:  Hausmanns gate 29, 0182 Oslo', '19.00 - 03.00 (stengt man, tirs, ons)', '19.00 - 03.00'],
-    ['Cafe Sør', 59.9141846, 10.7461596, 15, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'infovindu-bilder/cafe-&-sor.jpg', 'Adresse: Torggata 11, 0181 Oslo', '11:00 — 00:30', '11:00—  03:30'],
-    ['Crow bar', 59.9171999, 10.7512208, 16, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'infovindu-bilder/crow.jpg', 'Adresse: Torggata 32, 0183 Oslo', '15.00 - 03.00', '15.00 - 03.00'],
-    ['Tilt', 59.9162015, 10.7485173, 17, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'infovindu-bilder/tilt.jpg', 'Adresse:  Badstugata 6, 0183 Oslo', '15.00 - 03.30', '15.00 - 03.30'],
-    ['Angst', 59.9139828, 10.7465088, 18, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'infovindu-bilder/angst.jpg', 'Adresse: Torggata 11, 0181 Oslo', '12.00 - 01.30', '12.00 - 03.00'],
-    ['Peretroska', 59.9135765, 10.7470165, 19, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'infovindu-bilder/peretroika.jpg', 'Adresse: Storgata 13, 0155 Oslo', '16.00 - 03.30', '16.00 - 03.30'],
-    ['Kniven', 59.9163927, 10.7490339, 20, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'infovindu-bilder/kniven.jpg', 'Adresse:  Bernt Ankers gate 5, 0183 Oslo', '14.00 - 03.30', '18.00 - 03.30'],
-    ['Oslo Bar & Bowling', 59.9158823, 10.7485441, 21, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'infovindu-bilder/bar-&-bowling.jpg', 'Adresse: Torggata 16, 0181 Oslo', '11.00 - 00.00', '11.00 - 02.00'],
-    ['Kulturhuset', 59.9146546, 10.7486177, 22, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'infovindu-bilder/kulturhuset.jpg', 'Adresse: Youngs gate 6, 0181 Oslo', '08.00 - 03.30', '11.00 - 03.30'],
+    ['Cafe Sara', 59.9176068, 10.754149, 13, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://facebook.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/cafe-sara.jpg', 'Adresse: Hausmanns gate 29, 0182 Oslo', '11.00 - 03.30', '11.00 - 03.30'],
+    ['Verkstedet', 59.9177192, 10.7517947, 14, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/verkstedet.jpg', 'Adresse:  Hausmanns gate 29, 0182 Oslo', '19.00 - 03.00 (stengt man, tirs, ons)', '19.00 - 03.00'],
+    ['Cafe Sør', 59.9141846, 10.7461596, 15, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/cafe-&-sor.jpg', 'Adresse: Torggata 11, 0181 Oslo', '11:00 — 00:30', '11:00—  03:30'],
+    ['Crow bar', 59.9171999, 10.7512208, 16, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/crow.jpg', 'Adresse: Torggata 32, 0183 Oslo', '15.00 - 03.00', '15.00 - 03.00'],
+    ['Tilt', 59.9162015, 10.7485173, 17, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/tilt.jpg', 'Adresse:  Badstugata 6, 0183 Oslo', '15.00 - 03.30', '15.00 - 03.30'],
+    ['Angst', 59.9139828, 10.7465088, 18, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/angst.jpg', 'Adresse: Torggata 11, 0181 Oslo', '12.00 - 01.30', '12.00 - 03.00'],
+    ['Peretroska', 59.9135765, 10.7470165, 19, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/peretroika.jpg', 'Adresse: Storgata 13, 0155 Oslo', '16.00 - 03.30', '16.00 - 03.30'],
+    ['Kniven', 59.9163927, 10.7490339, 20, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/kniven.jpg', 'Adresse:  Bernt Ankers gate 5, 0183 Oslo', '14.00 - 03.30', '18.00 - 03.30'],
+    ['Oslo Bar & Bowling', 59.9158823, 10.7485441, 21, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'ihttp://localhost:8080/wordpress/wp-content/uploads/googleapi/nfovindu-bilder/bar-&-bowling.jpg', 'Adresse: Torggata 16, 0181 Oslo', '11.00 - 00.00', '11.00 - 02.00'],
+    ['Kulturhuset', 59.9146546, 10.7486177, 22, 'bar', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/kulturhuset.jpg', 'Adresse: Youngs gate 6, 0181 Oslo', '08.00 - 03.30', '11.00 - 03.30'],
 //
 //Treningssentre
+//
+    ['Actic Storgata', 59.91618200000001, 10.757546, 23, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/actic.jpg', 'Adresse: Storgata 38, 0182 Oslo', '05.00 - 23.00', '08.00 - 23.00'],
+    ['Haralds Gym', 59.9157868, 10.7587026, 24, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/haralds-gym.jpg', 'Adresse: Hausmanns gate 6, 0186 Oslo', '06.00 - 12.00', '06.00 - 12.00'],
+    ['SATS Schous plass', 59.9188379, 10.7603446, 25, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/sats.jpg', 'Adresse: Trondheimsveien 2D, 0560 Oslo', '06.00 - 22.30', '08.30 - 19.00'],
+    ['EVO Grünerløkka', 59.9199906, 10.7598709, 26, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/evo.png', 'Adresse: Thorvald Meyers gate 72, 0552 Oslo', '05.00 - 12.00', '05.00 - 12.00'],
+    ['SATS Spektrum', 59.9128297, 10.7549285, 27, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/sats.jpg', 'Adresse: Sonja Henies plass 4, 0185 Oslo', '06.15 - 21.30', '10.00 - 17.00'],
+    ['SiO Athletica Vukan', 59.9231517, 10.7500041, 28, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/athletica.jpg', 'Adresse: Vulkan 15, 0178 Oslo', '06.00 - 22.00', '09.00 - 18.00'],
+    ['SiO Athletica Centrum', 59.9186627, 10.731186, 29, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/athletica.jpg', 'Adresse: Holbergs gate 21, 0166 Oslo', '07.00 - 22.00', '11.00 - 18.00'],
+    ['24Fitness AS', 59.91266, 10.743449, 30, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/24hourfitness.png', 'Adresse: Karl Johans gate 17, 0159 Oslo', '05.00 - 00.00', '05.00 - 00.00'],
+    ['SATS Akersgata', 59.914745, 10.7432694, 31, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/sats.jpg', 'Adresse: Akersgata 51, 0180 Oslo', '06.00 - 21.30', '10.00 - 19.00'],
+    ['Fresh Fitness St Hanshaugen', 59.925468, 10.7454316, 32, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/fresh.png', 'Waldemar Thranes gate 25, 0171 Oslo', '05.00 - 23.00', '05.00 - 23.00'],
+//
+//Matbutikk
+//
+    ['REMA 1000', 59.9140393, 10.7567231, 33, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/rema.png', 'Adresse: Christian Krohgs gate 1-11, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
+    ['REMA 1000', 59.9137399, 10.7471823, 34, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/rema.png', 'Adresse: Torggata 2, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
+    ['MENY Oslo City', 59.9126314, 10.752499, 35, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/meny.jpg', 'Adresse: Stenersgata 1, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
+    ['REMA 1000', 59.919193, 10.7470611, 36, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/rema.png', 'Adresse: Fredensborgveien 24, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
+    ['REMA 1000', 59.9200256, 10.7386707, 37, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/rema.png', 'Adresse: Pilestredet Park 31, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
+    ['Rema 1000 Vulkan', 59.92329949999999, 10.7512015, 38, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'gym-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/rema.png', 'Adresse: Maridalsveien 15, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
+    ['Bunnpris Gunerius', 59.9138834, 10.7536016, 39, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/infovindu-bilder/bunnpris.png', 'Adresse: Storgata 32, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)']
 
-    ['Actic Storgata', 59.91618200000001, 10.757546, 23, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'infovindu-bilder/t&j.jpg', 'Adresse: Storgata 38, 0182 Oslo', '05.00 - 23.00', '08.00 - 23.00'],
-    ['Haralds Gym', 59.9157868, 10.7587026, 24, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'infovindu-bilder/t&j.jpg', 'Adresse: Hausmanns gate 6, 0186 Oslo', '06.00 - 12.00', '06.00 - 12.00'],
-    ['SATS Schous plass', 59.9188379, 10.7603446, 25, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'infovindu-bilder/t&j.jpg', 'Adresse: Trondheimsveien 2D, 0560 Oslo', '06.00 - 22.30', '08.30 - 19.00'],
-    ['EVO Grünerløkka', 59.9199906, 10.7598709, 26, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'infovindu-bilder/t&j.jpg', 'Adresse: Thorvald Meyers gate 72, 0552 Oslo', '05.00 - 12.00', '05.00 - 12.00'],
-    ['SATS Spektrum', 59.9128297, 10.7549285, 27, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'infovindu-bilder/t&j.jpg', 'Adresse: Sonja Henies plass 4, 0185 Oslo', '06.15 - 21.30', '10.00 - 17.00'],
-    ['SiO Athletica Vukan', 59.9231517, 10.7500041, 28, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'infovindu-bilder/t&j.jpg', 'Adresse: Vulkan 15, 0178 Oslo', '06.00 - 22.00', '09.00 - 18.00'],
-    ['SiO Athletica Centrum', 59.9186627, 10.731186, 29, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'infovindu-bilder/t&j.jpg', 'Adresse: Holbergs gate 21, 0166 Oslo', '07.00 - 22.00', '11.00 - 18.00'],
-    ['24Fitness AS', 59.91266, 10.743449, 30, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'infovindu-bilder/t&j.jpg', 'Adresse: Karl Johans gate 17, 0159 Oslo', '05.00 - 00.00', '05.00 - 00.00'],
-    ['SATS Akersgata', 59.914745, 10.7432694, 31, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'infovindu-bilder/t&j.jpg', 'Adresse: Akersgata 51, 0180 Oslo', '06.00 - 21.30', '10.00 - 19.00'],
-    ['Fresh Fitness St Hanshaugen', 59.925468, 10.7454316, 32, 'gym', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/gym-marker.png', 'http://dogs.com', 'infovindu-bilder/t&j.jpg', 'Waldemar Thranes gate 25, 0171 Oslo', '05.00 - 23.00', '05.00 - 23.00']
-]
+];
 var kollektivtMarkers = [
     //kollektivt
     ['Heimdalsgata',    59.918500, 10.761413, 'holdeplass', ['fjerdingen'],             ['trikk', 'buss'], ['17'],                  ['30', '31', '31E', 'N390']],
@@ -659,13 +670,26 @@ function findCenter() {
 
 function initMarkers() {
     for(var i = 0; i < markers.length; i++){
+        var title;
+        if(i <= 3){
+            title = markers[i][0];
+        }
+        else{
+            title = " ";
+        }
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(markers[i][1], markers[i][2]),
+            label: {
+                text: title,
+                color: 'black',
+                fontWeight:'bold',
+                fontSize: '16px'
+            },
             map: map,
             icon: icon = {
                 scaledSize: new google.maps.Size(30, 30),
                 url: markers[i][5]
-            },
+            }
         });
 
         marker.setVisible(false);
@@ -696,12 +720,12 @@ function initMarkers() {
             }
         })(marker, i));
         //TODO skal denne være med?
-/*
+
         google.maps.event.addListener(marker, 'mouseout', (function(marker, i){
             setTimeout(function() {
                 infowindow.close()},1000);
             }));
-*/
+
         google.maps.event.addListener(map, 'click', (function(marker, i){
             return function() {
                 infowindow.close(map, marker);
@@ -768,43 +792,66 @@ function initKollektivMarkers() {
         marker.setVisible(false);
 
         google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
-            var trikkIconSrc;
-            var bussIconSrc;
-            var tbaneIconSrc;
+
+            var trikkIconSrc = '<img src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png"></img>';
+            var bussIconSrc = '<img src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png"></img>';
+            var tbaneIconSrc = '<img src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png"></img>';
 
 
-            var trikkDivString;
-            var bussDivString;
-            var tbaneDivString;
-            var infoWindowHtml;
+            var trikkDivString = '';
+            var bussDivString = '';
+            var tbaneDivString = '';
+            var infoWindowHtml = '';
 
+            if(kollektivtMarkers[j][5].includes('trikk')) {
+                trikkDivString = '<div id="trikkDiv">' + trikkIconSrc;
 
-            if(kollektivtMarkers[j][5].includes('trikk')){
-                trikkDivString =
-                    '<div id="trikkDiv">'+trikkIconSrc+
+                if (kollektivtMarkers[j][6] !== undefined) {
                     kollektivtMarkers[j][6].forEach(s => {
-                        '<label for=trikkboks>'+s+'</label>'
+                        if(s !== undefined) {
+                            trikkDivString += '<div class="boks">' + s + '</div>'
+                        }
                     });
-
-                    '</div>';
-
+                    trikkDivString += '</div>';
+                }
             }
+
             if (kollektivtMarkers[j][5].includes('buss')){
-                bussDivString = '<div id="bussDiv">'+bussIconSrc+'</div>';
+                bussDivString = '<div id="bussDiv">'+bussIconSrc;
+
+                if(kollektivtMarkers[j][7] !== undefined){
+                    kollektivtMarkers[j][7].forEach(s => {
+                        if(s !== undefined) {
+                            bussDivString += '<div class="boks">' + s + '</div>'
+                        }
+                    });
+                    bussDivString += '</div>';
+                }
             }
-            if (kollektivtMarkers[j][5].includes('tbane')){
-                tbaneDivString = '<div id="tbaneDiv">'+tbaneIconSrc+'</div>';
+
+            if (kollektivtMarkers[j][5].includes('t-bane')){
+                tbaneDivString = '<div id="tbaneDiv">'+tbaneIconSrc;
+
+                if(kollektivtMarkers[j][8] !== undefined) {
+                    kollektivtMarkers[j][8].forEach(s => {
+                        if(s !== undefined) {
+                            tbaneDivString += '<div class="boks">' + s + '</div>'
+                        }
+                    });
+                    tbaneDivString += '</div>';
+                }
             }
 
+            infoWindowHtml = trikkDivString + bussDivString + tbaneDivString;
 
-            var infoWindowContent = ('<h1>' + kollektivtMarkers[i][0] + '</h1>')
-
+            var infoWindowContent = ('<h1>' + kollektivtMarkers[i][0] + '</h1>') + infoWindowHtml;
 
             return function () {
                 infowindow.setContent(infoWindowContent);
                 infowindow.open(map, marker);
             }
         })(marker, j));
+
     }
 }
 
@@ -821,8 +868,8 @@ function findUserPosition() {
                     map: this.map,
                     title: "Her er du",
                     icon: userMarker = {
-                        scaledSize: new google.maps.Size(15, 15),
-                        url: "http://localhost:8080/wordpress/wp-content/uploads/googleapi/blaa-dot.png"
+                        scaledSize: new google.maps.Size(20, 20),
+                        url: "blaa-dot.png"
                     }
                 }
             );
