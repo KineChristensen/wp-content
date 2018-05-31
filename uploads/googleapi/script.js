@@ -919,8 +919,11 @@ function findUserPosition() {
                 position: userPosition,
             });
         })
-        }
     }
+else {
+	userMarker = fjerdingenMarker;
+}
+}
 
 function initDirections() {
     directionsDisplay.setMap(map);
