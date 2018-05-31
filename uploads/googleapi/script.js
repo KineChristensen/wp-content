@@ -53,7 +53,7 @@ var markers = [
 //
     ['REMA 1000', 59.9140393, 10.7567231, 33, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/2018/05/rema.png', 'Adresse: Christian Krohgs gate 1-11, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
     ['REMA 1000', 59.9137399, 10.7471823, 34, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/2018/05/rema.png', 'Adresse: Torggata 2, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
-    ['MENY Oslo City', 59.9126314, 10.752499, 35, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/2018/05/meny.jpg', 'Adresse: Stenersgata 1, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
+    ['MENY Oslo City', 59.9126314, 10.752499, 35, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/2018/05/meny2.jpg', 'Adresse: Stenersgata 1, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
     ['REMA 1000', 59.919193, 10.7470611, 36, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/2018/05/rema.png', 'Adresse: Fredensborgveien 24, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
     ['REMA 1000', 59.9200256, 10.7386707, 37, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/2018/05/rema.png', 'Adresse: Pilestredet Park 31, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
     ['Rema 1000 Vulkan', 59.92329949999999, 10.7512015, 38, 'matbutikk', 'http://localhost:8080/wordpress/wp-content/uploads/googleapi/supermarket.png', 'gym-marker.png', 'http://dogs.com', 'http://localhost:8080/wordpress/wp-content/uploads/2018/05/rema.png', 'Adresse: Maridalsveien 15, Oslo', '06.00 - 24.00', '07.00 - 24.00 (stengt søndag)'],
@@ -888,27 +888,6 @@ function clearRoute() {
 }
 
 function findUserPosition() {
-	this.map.setCenter(center);
-            userPosition = {
-		lat: 59.916224,
-		lng: 10.759696
-	};
-	
-            userMarker = new google.maps.Marker({
-                position: userPosition,
-            });
-		console.log(userMarker.getPosition());
-
-
-
-
-
-/*
-
-
-
-
-
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((position) => {
             var pos = {
@@ -934,10 +913,13 @@ function findUserPosition() {
                     },
                 }
             );
-            
+            this.map.setCenter(center);
+            userPosition = pos;
+            userMarker = new google.maps.Marker({
+                position: userPosition,
+            });
         })
     }
-*/
 }
 
 function initDirections() {
