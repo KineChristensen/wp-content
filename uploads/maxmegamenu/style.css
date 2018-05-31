@@ -1,4 +1,4 @@
-/** Thursday 31st May 2018 09:28:38 UTC (core) **/
+/** Thursday 31st May 2018 10:46:57 UTC (core) **/
 
 #mega-menu-wrap-primary, #mega-menu-wrap-primary #mega-menu-primary, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
   -moz-transition: none;
@@ -1323,6 +1323,9 @@
   visibility: visible !important;
   -webkit-transform: scaleX(1) !important;
   transform: scaleX(1) !important;
+}
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu ul.mega-sub-menu {
+  flex: 1;
   /*NEW MENU*/
 }
 .mega-menuitem {
@@ -1474,6 +1477,9 @@
 .rt-detail .entry-title a:focus {
   color: #101133 !important;
 }
+#subscribe .container .row .textwidget .rt-tpg-container {
+  padding: 0% 8% 0% 8% !important;
+}
 #filterbtn_42 {
   height: 0px !important;
   width: 0px !important;
@@ -1483,5 +1489,11 @@
   display: none !important;
 }
 .rt-tpg-isotope {
-  margin-top: 40px !important;
+  margin-top: 10px !important;
+}
+#subscribe .container .row .textwidget .rt-tpg-container .tpg-isotope .rt-tpg-isotope .isotope-item {
+  padding: 1% 2% 0 2% !important;
+}
+#subscribe .container .row .textwidget .rt-tpg-container .tpg-isotope .rt-tpg-isotope .isotope-item .rt-holder .rt-detail {
+  padding: 6% 6% 3% 6% !important;
 }
