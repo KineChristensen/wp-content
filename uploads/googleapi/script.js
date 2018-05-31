@@ -754,9 +754,9 @@ function initKollektivMarkers() {
 
         google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
 
-            var trikkIconSrc = '<img src="bar-marker.png"></img>';
-            var bussIconSrc = '<img src="bar-marker.png"></img>';
-            var tbaneIconSrc = '<img src="bar-marker.png"></img>';
+            var trikkIconSrc = '<img src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png"></img>';
+            var bussIconSrc = '<img src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png"></img>';
+            var tbaneIconSrc = '<img src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/bar-marker.png"></img>';
 
 
             var trikkDivString = '';
