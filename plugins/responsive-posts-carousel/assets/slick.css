@@ -407,13 +407,13 @@ width: 100%;
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-category a {
   text-decoration: none;
   display: inherit;
-  color: #000;
+  color: #c61b32;
     margin-top: 3px;
   font-size: 14px;
   padding: 2px 5px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-title {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   margin-top: 5px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-title a {
