@@ -213,11 +213,12 @@
   font-size: 19px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel1 .rpc-post-meta {
-  float: left;
   font-size: 12px;
   margin-top: 2px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel1 .rpc-post-date {
+    width: 100%
+        margin: 0 auto;
   font-size: 12px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel1 .rpc-post-date i {
@@ -398,15 +399,17 @@
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-category {
   margin: 10px 0;
   display: inline-block;
+width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-category a {
   text-decoration: none;
   display: inherit;
-  color: #fff;
-  background: #000;
-  font-size: 11px;
+  color: #000;
+  font-size: 13px;
   padding: 2px 5px;
-  margin-right: 2px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-title {
   margin-bottom: 10px;
@@ -424,9 +427,11 @@
   margin: 0;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-date {
-  font-size: 12px;
-  float: right;
+width: 100% !important;
+  font-size: 13px;
+    text-align: center !important;
   padding-top: 14px;
+    display: inline-block;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-date i {
   margin-right: 5px;
@@ -442,8 +447,7 @@
   margin-right: 15px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-comment-box {
-  float: right;
-  margin: 0;
+  margin: 0 auto;
   font-size: 12px;
 }
 .wcp-carousel-main-wrap .rpc-post-carousel4 .rpc-post-comment a {

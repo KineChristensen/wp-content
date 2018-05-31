@@ -8,11 +8,6 @@
 	<div class="rpc-post-category">
         <a href="<?php the_permalink(); ?>"><?php echo get_post_meta( get_the_ID(), 'event_category', true ); ?></a>
 	</div>
-	<span class="rpc-post-date rpc-date">
-		
-		<?php echo get_post_meta( get_the_ID(), 'event_date', true ); ?><?php echo " - kl. " ?><?php echo get_post_meta( get_the_ID(), 'event_time', true ); ?><i class="fa fa-clock-o"></i><br>
-	    <?php echo get_post_meta( get_the_ID(), 'event_location', true ); ?><i class="fa fa-map-marker"></i>
-	</span>
 	<h3 class="rpc-post-title">
 		<a href="<?php the_permalink(); ?>" class="rpc-title" target="<?php echo $carousel_settings['read_more_target']; ?>">
 			<?php do_action( 'rpc_carousel_title', $post_id,  $carousel_settings ); ?>
@@ -23,6 +18,11 @@
         <?php do_action( 'rpc_carousel_desc', $post_id, $carousel_settings); ?>
         <?php do_action( 'rpc_read_more_btn', $post_id, $carousel_settings); ?>
 	</div>
+	<div class="clearfix"></div>
+	<span class="rpc-post-date rpc-date">
+		
+	    <?php echo get_post_meta( get_the_ID(), 'event_location', true ); ?><?php echo " | " ?>
+		<?php echo get_post_meta( get_the_ID(), 'event_date', true ); ?><?php echo " | " ?><?php echo get_post_meta( get_the_ID(), 'event_time', true ); ?></span>
 	<?php if (!isset($carousel_settings['hidemeta'])) { ?>
 	<span class="rpc-post-meta wcp-disable-post-meta">
 		<i class="fa fa-user"></i>
