@@ -747,6 +747,11 @@ function initKollektivMarkers() {
                 lng: kollektivtMarkers[j][2]
             },
             map: this.map,
+	    icon: icon = {
+                scaledSize: new google.maps.Size(30, 30),
+                url: "http://localhost:8080/wordpress/wp-content/uploads/googleapi/kollektivt.png",
+                labelOrigin: new google.maps.Point(15, 40)
+            }
         })
 
         marker.setVisible(false);
