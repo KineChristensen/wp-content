@@ -817,10 +817,10 @@ function initKollektivMarkers() {
 
             var infoWindowContent = ('<h1>' + kollektivtMarkers[i][0] + '</h1>' + infoWindowHtml +
                 '<div id="visMegVei">' +
-                '<input type="image" id="bike-btn"      class="windowBtnClass" onclick="findDirectionsFromButtonKollektiv(' + j + ', travelModes.bike)" src="trikk.png">' +
-                '<input type="image" id="walk-btn"      class="windowBtnClass" onclick="findDirectionsFromButtonKollektiv(' + j + ', travelModes.walk)" src="trikk.png">' +
-                '<input type="image" id="drive-btn"     class="windowBtnClass" onclick="findDirectionsFromButtonKollektiv(' + j + ', travelModes.drive)" src="trikk.png">' +
-                '<input type="image" id="transit-btn"   class="windowBtnClass" onclick="findDirectionsFromButtonKollektiv(' + j + ', travelModes.transit)" src="trikk.png">' +
+                '<input type="image" id="bike-btn"      class="windowBtnClass" onclick="findDirectionsFromButtonKollektiv(' + j + ', travelModes.bike)" src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/trikk.png">' +
+                '<input type="image" id="walk-btn"      class="windowBtnClass" onclick="findDirectionsFromButtonKollektiv(' + j + ', travelModes.walk)" src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/trikk.png">' +
+                '<input type="image" id="drive-btn"     class="windowBtnClass" onclick="findDirectionsFromButtonKollektiv(' + j + ', travelModes.drive)" src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/trikk.png">' +
+                '<input type="image" id="transit-btn"   class="windowBtnClass" onclick="findDirectionsFromButtonKollektiv(' + j + ', travelModes.transit)" src="http://localhost:8080/wordpress/wp-content/uploads/googleapi/trikk.png">' +
                 '</div>'
             );
 
