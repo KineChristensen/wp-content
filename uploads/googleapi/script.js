@@ -882,8 +882,8 @@ function clearFilters() {
 }
 
 function clearRoute() {
-    directionsDisplay.set('directions', null);
-
+	$('label[for=clearRoute], input#clearRoute').hide();    
+	directionsDisplay.set('directions', null);
 }
 
 function findUserPosition() {
@@ -944,6 +944,8 @@ function findDirectionsFromButton(i, travelMode) {
             }
         });
     infowindow.close();
+    $('label[for=clearRoute], input#clearRoute').show();
+
 }
 
 function findDirectionsFromButtonKollektiv(i, travelMode) {
@@ -965,6 +967,8 @@ function findDirectionsFromButtonKollektiv(i, travelMode) {
             }
         });
     infowindow.close();
+    $('label[for=clearRoute], input#clearRoute').show();
+
 }
 
 function infoLink(markerNumber) {
